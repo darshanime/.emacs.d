@@ -1,0 +1,44 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/radar/projects/algos/" . "algorithms/")
+ ("/home/radar/projects/" . "til/")
+ ("/home/radar/" . ".emacs.d/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/radar/.emacs.d/"
+ "/home/radar/projects/algos/algorithms/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "README.rst"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/home/radar/.emacs.d/" (22382 17541 184343 598000) "session.10a938766a75eadce7146677870073173100000015950049" "bookmarks" "elpa/" "auto-save-list/" "ido.last" "init.el" "../" "init.el~" "lisp/" "./")
+
+ ("/home/radar/" (22382 9746 19736 325000) "Downloads/" ".wget-hsts" ".continuum/" ".viminfo" ".vim/" "Library/" "install.sh.1" "Public/" "BACKUP.md" "journal.txt" "examples.desktop" "Desktop/" "files/" "Videos/" ".gitmodules" ".Xauthority" ".cache/" ".tmux.conf" ".gnome2_private/" ".xsession-errors.old" "books/" "signature.html" "anaconda/" ".bash_logout" ".minio/" ".conda/" "Documents/" ".bundle/" "ENV/" ".xsession-errors" "act_net" ".inputrc" ".local/" ".gnupg/" "exports.sh" ".test" ".profile" ".thunderbird/" "ember/" ".gitconfig" ".bashrc-anaconda2.bak" ".config/" ".emacs" ".gphoto/" ".ipython/" ".node_repl_history" ".macromedia/" "Caskfile" "Brewfile" "Music/" "env/" ".ssh/" ".python_history" "private.sh" "appknox/" "com.dhilipsiva.dependencies_updater.plist" ".xchat2/" "functions.sh" ".hushlogin" "projects/" "Pictures/" ".osx" ".emacs~" "Templates/" ".compiz/" ".vimrc" ".erc/" ".emacs.d/" ".bash_history" ".pki/" ".dmrc" ".gitignore_global" ".tmuxinator/" ".bash_profile" ".adobe/" ".dbus/" "Dockerfile" "Projects/" ".sudo_as_admin_successful" "atom editor/" ".npm/" "tmux.conf" "../" ".atom/" "update.sh" ".nano/" "./" ".jupyter/" ".httpie/" ".gem/" ".gnome2/" ".gconf/" ".ICEauthority" ".mozilla/" ".gitignore" "aliases.sh" ".bashrc")
+
+ ("/home/radar/projects/til/" (22355 64814 845216 120000) "assets/" "_includes/" "404.html" "Gemfile.lock" "_sass/" "_data/" "_posts/" "README.md" "index.html" "_site/" "Gemfile" ".git/" "../" "_config.yml" "./" "_layouts/" "me/" "LICENSE")
+
+ ("/home/radar/projects/Learnings/" (22382 17481 33389 179000) "data_structures.txt" "try_dired/" "emcasLearnings.txt" "ssh into droplet:" "misc Learnings.txt" "fullStack_Learnings.txt" "git_atlassian.txt" "udacity/" "DataStructures.java" "java_learnings.txt" "tensorflow_learnings.txt" "gitLearnings.txt" "java_api_learnings.txy" "Python Basics.ipynb" "python_questions.txt~" "hadoop_basics.txt" "mysqlLearnings.txt" "flask_learnings.txt" "#python_questions.txt#" "emcasLearnings.txt~" "aws_learnings.txt" "python_questions.txt" ".ipynb_checkpoints/" "celery.txt" "../" "./" "scrapy_learnings" "Learnings.txt" "algorithms_learnings.txt")
+
+ ("/home/radar/projects/algos/algorithms/" (21998 53520 97317 0) "run_tests.py" "MANIFEST.in" "AUTHORS.rst" "algorithms/" "requirements.txt" "README.rst" "TODO.rst" ".git/" "../" "./" ".gitignore" "setup.py")
+
+ ("/home/radar/projects/algos/" (21998 53528 657317 0) "algorithms/" "Algorithms/" "../" "./")
+
+ ("/home/radar/projects/" (22375 49913 965192 809000) "Learnings/" "fullstack-exps/" "mcgill/" "original_emberald/" "misc/" "loccart/" "java_prac/" "spare/" "ember/" "polls/" "crafter/" "how_to_pip/" "finmgt/" "protobuf/" "Untitled.ipynb" "cloudhack/" "index.html" "xerox challenge/" "darshanime.github.io/" "wind/" "nando_dl/" ".ipynb_checkpoints/" "scrapy-tutorials/" "R/" "algos/" "ANNs - Dr. Sabreesh/" "Face Detection/" "../" "blog_projects/" "./" "scrapy/" "juspay/" "juspay_test.ipynb" "til/" "scrapycodes/" "old blogs/")
+
+ ("/home/" (22336 48796 749700 581000) "radar/" "../" "./")
+
+ ("/home/radar/Projects/" (22353 402 972209 667000) "dotfiles/" "appknox/" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

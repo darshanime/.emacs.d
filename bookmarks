@@ -1,0 +1,18 @@
+;;;; Emacs Bookmark Format Version 1 ;;;;
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("infobookmart"
+ (front-context-string . "   An exit statu")
+ (rear-context-string . " applications.\n\n")
+ (position . 118023)
+ (filename . "/usr/share/info/coreutils")
+ (info-node . "sum invocation")
+ (handler . Info-bookmark-jump))
+("bookmark1"
+ (filename . "~/projects/Learnings/emcasLearnings.txt")
+ (front-context-string)
+ (rear-context-string . " m (m for mark)\n")
+ (position . 9777)
+ (annotation . ""))
+)
