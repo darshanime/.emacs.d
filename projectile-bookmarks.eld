@@ -1,0 +1,1 @@
+("~/projects/loccart/facevote/" "~/.emacs.d/")

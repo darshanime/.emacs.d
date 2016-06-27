@@ -1,0 +1,16 @@
+;;; -*- coding: utf-8 -*-
+(("/home/radar/projects/"
+  (dired-filename . "/home/radar/projects/Learnings"))
+ ("/home/radar/projects/Learnings/.ipynb_checkpoints/"
+  (dired-filename . "/home/radar/projects/Learnings/.ipynb_checkpoints/.."))
+ ("/home/radar/projects/Learnings/"
+  (dired-filename . "/home/radar/projects/Learnings/emcasLearnings.txt"))
+ ("/home/radar/projects/Learnings/emcasLearnings.txt" . 44337)
+ ("/home/radar/.emacs.d/custom/setup-faces-and-ui.el" . 1098)
+ ("/home/radar/.emacs.d/recentf" . 681)
+ ("/home/radar/.emacs.d/ido.last" . 6095)
+ ("/home/radar/.emacs_workgroups" . 3941)
+ ("/home/radar/.emacs.d/init.el" . 9218)
+ ("/home/radar/.emacs.d/custom/"
+  (dired-filename . "/home/radar/.emacs.d/custom/setup-faces-and-ui.el"))
+ ("/home/radar/.emacs.d/custom/setup-external.el" . 27))

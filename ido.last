@@ -2,32 +2,54 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/radar/projects/misc/" . "hackerrank/")
+ ("/home/radar/.emacs.d/" . "custom/")
  ("/home/radar/projects/algos/" . "algorithms/")
- ("/home/radar/projects/" . "til/")
+ ("/home/radar/projects/" . "Learnings/")
  ("/home/radar/" . ".emacs.d/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
  "/home/radar/.emacs.d/"
+ "/home/radar/.emacs.d/custom/"
+ "/home/radar/projects/Learnings/"
+ "/home/radar/projects/misc/hackerrank/"
+ "/home/radar/.emacs.d/lisp/"
  "/home/radar/projects/algos/algorithms/"
 )
 
 ;; ----- ido-work-file-list -----
 (
  "init.el"
- "README.rst"
+ "setup-faces-and-ui.el"
+ "setup-environment.el"
+ "setup-development.el"
+ "setup-applications.el"
+ "emcasLearnings.txt"
+ "setup-programming.el"
+ "setup-communication.el"
+ "setup-external.el"
+ "setup-data.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/radar/" (22382 17763 960932 663000) "Downloads/" ".wget-hsts" ".continuum/" ".viminfo" ".vim/" "Library/" "install.sh.1" "Public/" "BACKUP.md" "journal.txt" "examples.desktop" "Desktop/" "files/" "Videos/" ".gitmodules" ".Xauthority" ".cache/" ".tmux.conf" ".gnome2_private/" ".xsession-errors.old" "books/" "signature.html" "anaconda/" ".bash_logout" ".minio/" ".conda/" "Documents/" ".bundle/" "ENV/" ".xsession-errors" "act_net" ".inputrc" ".local/" ".gnupg/" "exports.sh" ".test" ".profile" ".thunderbird/" "ember/" ".gitconfig" ".bashrc-anaconda2.bak" ".config/" ".gphoto/" ".ipython/" ".node_repl_history" ".macromedia/" "Caskfile" "Brewfile" "Music/" "env/" ".ssh/" ".python_history" "private.sh" "appknox/" "com.dhilipsiva.dependencies_updater.plist" ".xchat2/" "functions.sh" ".hushlogin" "projects/" "Pictures/" ".osx" "Templates/" ".compiz/" ".vimrc" ".erc/" ".emacs.d/" ".bash_history" ".pki/" ".dmrc" ".gitignore_global" ".tmuxinator/" ".bash_profile" ".adobe/" ".dbus/" "Dockerfile" "Projects/" ".sudo_as_admin_successful" "atom editor/" ".npm/" "tmux.conf" "../" ".atom/" "update.sh" ".nano/" "./" ".jupyter/" ".httpie/" ".gem/" ".gnome2/" ".gconf/" ".ICEauthority" ".mozilla/" ".gitignore" "aliases.sh" ".bashrc")
+ ("/home/radar/.emacs.d/" (22385 288 860255 220000) "session.10a938766a75eadce7146677870073173100000015950049" "snippets/" "bookmarks" "elpa/" "auto-save-list/" "ido.last" "custom/" "init.el" ".git/" "../" "init.el~" "lisp/" "./" "projectile-bookmarks.eld" "ido.last~")
 
- ("/home/radar/.emacs.d/" (22382 17541 184343 598000) "session.10a938766a75eadce7146677870073173100000015950049" "bookmarks" "elpa/" "auto-save-list/" "ido.last" "init.el" "../" "init.el~" "lisp/" "./")
+ ("/home/radar/.emacs.d/custom/" (22385 286 912267 283000) "setup-development.el~" "setup-communication.el~" "setup-convenience.el~" "setup-communication.el" "setup-external.el~" "setup-help.el" "setup-programming.el" "setup-files.el~" "setup-editing.el" "setup-editing.el~" "setup-data.el" "setup-convenience.el" "setup-external.el" "setup-data.el~" "setup-development.el" "setup-environment.el~" "setup-local.el" "setup-files.el" "../" "#setup-data.el#" "./" "setup-applications.el~" "setup-environment.el" "setup-text.el" "setup-faces-and-ui.el~" "setup-applications.el" "setup-programming.el~" "setup-faces-and-ui.el")
+
+ ("/home/radar/projects/Learnings/" (22384 64204 155984 386000) "data_structures.txt" "bashLearnings.txt~" "try_dired/" "emcasLearnings.txt" "ssh into droplet:" "misc Learnings.txt" "bashLearnings.txt" "fullStack_Learnings.txt" "git_atlassian.txt" "udacity/" "DataStructures.java" "java_learnings.txt" "tensorflow_learnings.txt" "gitLearnings.txt" "java_api_learnings.txy" "Python Basics.ipynb" "python_questions.txt~" "hadoop_basics.txt" "mysqlLearnings.txt" "flask_learnings.txt" "#python_questions.txt#" "emcasLearnings.txt~" "aws_learnings.txt" "python_questions.txt" ".ipynb_checkpoints/" "celery.txt" "../" ".#emcasLearnings.txt" "./" "scrapy_learnings" "Learnings.txt" "algorithms_learnings.txt" "#emcasLearnings.txt#")
+
+ ("/home/radar/" (22384 62957 810282 662000) "Downloads/" ".wget-hsts" ".continuum/" ".viminfo" ".vim/" "Library/" "install.sh.1" "Public/" "BACKUP.md" "journal.txt" "examples.desktop" "Desktop/" "files/" "Videos/" ".gitmodules" ".Xauthority" ".cache/" ".tmux.conf" ".gnome2_private/" ".xsession-errors.old" ".emacs_workgroups~" "books/" "signature.html" "anaconda/" ".bash_logout" ".minio/" ".conda/" "Documents/" ".bundle/" "ENV/" ".xsession-errors" "act_net" ".inputrc" ".local/" ".gnupg/" "exports.sh" ".test" ".profile" ".thunderbird/" "ember/" ".gitconfig" ".bashrc-anaconda2.bak" ".config/" ".gphoto/" ".ipython/" ".node_repl_history" ".macromedia/" "Caskfile" "Brewfile" "Music/" "env/" ".ssh/" ".python_history" "private.sh" "appknox/" "com.dhilipsiva.dependencies_updater.plist" ".xchat2/" "functions.sh" ".hushlogin" "projects/" "Pictures/" ".osx" "Templates/" ".compiz/" ".vimrc" ".emacs_workgroups" ".erc/" ".emacs.d/" ".bash_history" ".pki/" ".dmrc" ".gitignore_global" ".tmuxinator/" ".bash_profile" ".adobe/" ".dbus/" "Dockerfile" "Projects/" ".sudo_as_admin_successful" "atom editor/" ".npm/" "tmux.conf" "../" ".atom/" "update.sh" ".nano/" "./" ".jupyter/" ".httpie/" ".gem/" ".gnome2/" ".gconf/" ".ICEauthority" ".mozilla/" ".gitignore" "aliases.sh" ".bashrc")
+
+ ("/home/radar/projects/misc/hackerrank/" (22384 48511 781617 429000) "bash_pratice.sh~" "info" "six.pyc" "so_five.py" "trial.py" "one.py" "five.py" "Untitled1.ipynb" "pyDispatcher_receipe.py" "_" "two.py" "so_three.py" "bash_pratice.sh" "so_six.py" "Untitled.ipynb" "so_four.py" "_.py" "so_two.py" "trial" "exp_one.py" "so_one.py" ".ipynb_checkpoints/" "_.xml" "six.py" "three.py" "expert_regex_sample" "four.py" "standard_problems.txt" "../" "Dheere Dheere Se Meri Zindagi Video Song (OFFICIAL) Hrithik Roshan, Sonam Kapoor _ Yo Yo Honey Singh-nCD2hj6zJEc.ogg" "./" "Learnings.txt" "pyDispatcher_receipe.pyc" "so_seven.py" "diag.py" "four.pyc")
+
+ ("/home/radar/projects/misc/" (22378 24578 135974 870000) "foo" "celery/" "emacs_first_save~" "scrapy_docs/" "#emacs_first_save#" "read data from txt, relational operations/" "try_atom.py" "blackrock/" "hackerrank/" "git_try/" "gi3/" "random_notebooks/" "foo~" "gi2/" "algo_assignments/" "../" "./" "cuckoo/" "harshit/" "til/" "emacs_first_save")
+
+ ("/home/radar/.emacs.d/lisp/" (22382 26897 584984 922000) "smart-tab.el" "simpleclip.el" "../" "./")
 
  ("/home/radar/projects/til/" (22355 64814 845216 120000) "assets/" "_includes/" "404.html" "Gemfile.lock" "_sass/" "_data/" "_posts/" "README.md" "index.html" "_site/" "Gemfile" ".git/" "../" "_config.yml" "./" "_layouts/" "me/" "LICENSE")
-
- ("/home/radar/projects/Learnings/" (22382 17481 33389 179000) "data_structures.txt" "try_dired/" "emcasLearnings.txt" "ssh into droplet:" "misc Learnings.txt" "fullStack_Learnings.txt" "git_atlassian.txt" "udacity/" "DataStructures.java" "java_learnings.txt" "tensorflow_learnings.txt" "gitLearnings.txt" "java_api_learnings.txy" "Python Basics.ipynb" "python_questions.txt~" "hadoop_basics.txt" "mysqlLearnings.txt" "flask_learnings.txt" "#python_questions.txt#" "emcasLearnings.txt~" "aws_learnings.txt" "python_questions.txt" ".ipynb_checkpoints/" "celery.txt" "../" "./" "scrapy_learnings" "Learnings.txt" "algorithms_learnings.txt")
 
  ("/home/radar/projects/algos/algorithms/" (21998 53520 97317 0) "run_tests.py" "MANIFEST.in" "AUTHORS.rst" "algorithms/" "requirements.txt" "README.rst" "TODO.rst" ".git/" "../" "./" ".gitignore" "setup.py")
 
