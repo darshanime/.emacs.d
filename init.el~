@@ -1,7 +1,0 @@
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)
-
-(add-to-list 'load-path' "~/.emacs.d/lisp")
-(require 'simpleclip)
-(simpleclip-mode 1)
