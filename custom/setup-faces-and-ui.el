@@ -13,7 +13,7 @@
 
 (size-indication-mode t)
 
-;; more useful frame title, that show either a file or a
+;; monre useful frame title, that show either a file or a
 ;; buffer name (if the buffer isn't visiting a file)
 ;; taken from prelude-ui.el
 (setq frame-title-format

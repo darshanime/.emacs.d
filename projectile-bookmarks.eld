@@ -1,1 +1,1 @@
-("~/projects/loccart/facevote/" "~/.emacs.d/")
+("~/projects/scrapy/scrapy/" "~/projects/scrapycodes/dirbot/" "~/projects/loccart/g2/loccart.github.io/" "~/Projects/appknox/mycroft/" "~/Projects/appknox/molly/" "~/projects/cloudhack/vesta/" "~/projects/loccart/greedy/" "~/projects/loccart/facevote/" "~/projects/ulogme/" "~/.emacs.d/")
