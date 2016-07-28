@@ -44,3 +44,7 @@ flycheck_*.el
 # Custom
 recentf
 custom/*~
+ido.last
+places
+projectile-bookmarks.eld
+
