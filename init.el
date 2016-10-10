@@ -291,6 +291,18 @@
 (add-hook 'html-mode-hook 'rainbow-mode)
 (add-hook 'css-mode-hook 'rainbow-mode)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: helm-flyspell             ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; (define-key flyspell-mode-map (kbd "C-;") 'helm-flyspell-correct)
+(dolist (hook '(text-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode 1))))
+(dolist (hook '(change-log-mode-hook log-edit-mode-hook))
+  (add-hook hook (lambda () (flyspell-mode -1))))
+(add-hook 'Python-mode-hook
+        (lambda ()
+          (flyspell-prog-mode)
+        ))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Package: help+                     ;;
@@ -298,6 +310,23 @@
 ;; GROUP: Help                        ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (require 'help+)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; enable semantic mode               ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(semantic-mode 1) ;; this prettyfies the helm-semantic-or-imenu listings
+(setq-default indent-tabs-mode nil) ;; this disables tabs
+;; to still have them, do c-q <tab>
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; Package: direx                     ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(require 'direx)
+(global-set-key (kbd "C-x C-j") 'direx:jump-to-directory)
+
+;; disable lock files when using ember, see SO question 28884476
+(add-hook 'js-mode-hook (lambda () (create-lockfiles nil)))`
+(add-hook 'web-mode-hook (lambda () (create-lockfiles nil)))`
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -324,6 +353,10 @@
 ;;(add-to-list 'load-path "~/.emacs.d/vendor/emacs-powerline")
 ;;(require 'powerline)
 
+;; Smart shift mode
+;; used to move selected lines right,left,up,down
+(require 'smart-shift)
+(global-smart-shift-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; PACKAGE: nyan-mode                    ;;
@@ -467,3 +500,15 @@
 ;; Change some settings
 (workgroups-mode 1)
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(flycheck-checker-error-threshold 1000))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
