@@ -1,0 +1,78 @@
+;; Object spiders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spiders/"
+  :tables
+  (list
+    (semanticdb-table "sis_spider.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [18 27])
+            ("json" include nil nil [28 39])
+            ("sys" include nil nil [40 50])
+            ("urlparse" include nil nil [51 79])
+            ("scrapy.selector" include nil nil [82 118])
+            ("try" code nil nil [119 220])
+            ("scrapy.utils.response" include nil nil [220 266])
+            ("scrapy.contrib.spiders" include nil nil [267 319])
+            ("scrapy.contrib.linkextractors.sgml" include nil nil [320 391])
+            ("sis.items" include nil nil [393 416])
+            ("misc.log" include nil nil [417 439])
+            ("sisSpider" type
+               (:superclasses ("CrawlSpider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [476 488])
+                    ("ip" variable nil (reparse-symbol indented_block_body) [493 514])
+                    ("allowed_domains" variable nil (reparse-symbol indented_block_body) [519 541])
+                    ("ip_format" code nil (reparse-symbol indented_block_body) [546 599])
+                    ("'''
+    start_urls = [
+        # ip_format % d for d in [230] #[143, 230, 58]
+    ]
+    rules = [
+        # Rule(sle(allow=(\"/forum/thread-\\d*-1-1\\.html\")), callback='parse_2'),
+        # Rule(sle(allow=(\"/forum/forum-(143|230|58)-[0-9]{,2}\\.html\")), follow=True, callback='parse_1'),
+        Rule(sle(allow=(\"/forum/forum-230-[0-9]{,4}\\.html\")), follow=True, callback='parse_1'),
+    ]
+    '''" code nil (reparse-symbol indented_block_body) [604 998])
+                    ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [1071 1134])
+                            ("self" variable nil (reparse-symbol indented_block_body) [1143 1270])
+                            ("super" code nil (reparse-symbol indented_block_body) [1279 1327]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1017 1021])
+                            ("forum_id" variable nil (reparse-symbol function_parameters) [1023 1031])
+                            ("digit" variable nil (reparse-symbol function_parameters) [1036 1041])
+                            ("args" variable nil (reparse-symbol function_parameters) [1045 1050])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [1052 1060]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [1004 1328])
+                    ("parse_2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1345 1349])
+                            ("response" variable nil (reparse-symbol function_parameters) [1351 1359]))                          )
+                        (reparse-symbol indented_block_body) [1333 2157])
+                    ("parse_1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2174 2178])
+                            ("response" variable nil (reparse-symbol function_parameters) [2180 2188]))                          )
+                        (reparse-symbol indented_block_body) [2162 3543])
+                    ("_process_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3569 3573])
+                            ("request" variable nil (reparse-symbol function_parameters) [3575 3582]))                          )
+                        (reparse-symbol indented_block_body) [3548 3648]))                  
+                :type "class")
+                nil [442 3648]))          
+      :file "sis_spider.py"
+      :pointmax 3648
+      :fsize 3651
+      :lastmodtime '(22021 10333 445039 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!scrapycodes!scrapy-examples!sis!sis!spiders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

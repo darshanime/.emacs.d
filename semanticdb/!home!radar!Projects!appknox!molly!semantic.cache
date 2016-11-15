@@ -1,0 +1,23 @@
+;; Object molly/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "molly/"
+  :tables
+  (list
+    (semanticdb-table "trial_one.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("search.google_play" include nil nil [1 45])
+            ("search.models" include nil nil [46 75])
+            ("twitter" variable nil nil [77 118])
+            ("api" variable nil nil [119 140])
+            ("doc" variable nil nil [141 185])
+            ("details" variable nil nil [186 218])
+            ("if" code nil nil [220 2187]))          
+      :file "trial_one.py"
+      :pointmax 2188
+      :fsize 2187
+      :lastmodtime '(22425 40588 340433 297000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!molly!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

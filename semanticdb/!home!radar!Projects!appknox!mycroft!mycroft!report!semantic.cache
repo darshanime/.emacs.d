@@ -1,0 +1,34 @@
+;; Object report/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "report/"
+  :tables
+  (list
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 30])
+            ("weasyprint" include nil nil [32 59])
+            ("celery" include nil nil [60 90])
+            ("GChartWrapper" include nil nil [91 122])
+            ("django.template.loader" include nil nil [124 175])
+            ("django.conf" include nil nil [176 208])
+            ("mycroft.core.enums" include nil nil [210 249])
+            ("mycroft.core.storage" include nil nil [250 291])
+            ("mycroft.core.base_task" include nil nil [292 338])
+            ("mycroft.core.dbapi" include nil nil [339 407])
+            ("mycroft.core.notify" include nil nil [408 509])
+            ("compute_chart" function (:arguments 
+              ( ("audit_summary" variable nil (reparse-symbol function_parameters) [530 543]))              ) nil [512 1133])
+            ("get_audit_summary" function (:arguments 
+              ( ("analyses" variable nil (reparse-symbol function_parameters) [1157 1165]))              ) nil [1135 1870])
+            ("" code nil nil [1884 1902])
+            ("generate_report" function (:arguments 
+              ( ("file_id" variable nil (reparse-symbol function_parameters) [1923 1930]))              ) nil [1903 3179]))          
+      :file "tasks.py"
+      :pointmax 3179
+      :fsize 3178
+      :lastmodtime '(22507 22045 216263 884000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!report!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

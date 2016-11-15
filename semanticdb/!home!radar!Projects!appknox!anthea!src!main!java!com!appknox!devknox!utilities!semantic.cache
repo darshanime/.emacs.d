@@ -1,0 +1,103 @@
+;; Object utilities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "utilities/"
+  :tables
+  (list
+    (semanticdb-table "DevknoxUserMessageMap.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.utilities" package nil nil [1 39])
+            ("com.appknox.devknox.beans.Message" include nil nil [41 82])
+            ("com.appknox.devknox.beans.UserMessages" include nil nil [83 129])
+            ("org.jetbrains.annotations.NotNull" include nil nil [130 171])
+            ("java.util.HashMap" include nil nil [173 198])
+            ("java.util.Map" include nil nil [199 220])
+            ("DevknoxUserMessageMap" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("usrMessages" variable
+                       (:typemodifiers ("private" "static")
+                        :type "UserMessages")
+                        (reparse-symbol class_member_declaration) [391 438])
+                    ("populateMap" function
+                       (:typemodifiers ("private" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [670 1001])
+                    ("getMessageWithId" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [1185 1187]))                          
+                        :type "Message")
+                        (reparse-symbol class_member_declaration) [1130 1347])
+                    ("readUserMessageFromJson" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1440 1816]))                  
+                :type "class")
+                nil [279 1818]))          
+      :file "DevknoxUserMessageMap.java"
+      :pointmax 1819
+      :fsize 1818
+      :lastmodtime '(22560 11773 885956 115000)
+      :unmatched-syntax '((SEMICOLON 1001 . 1002) (SEMICOLON 385 . 386) (NEW 372 . 375) (EQ 370 . 371) (GT 353 . 354) (COMMA 345 . 346) (PRIVATE 320 . 327) (LT 338 . 339)))
+    (semanticdb-table "DevknoxConstants.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.utilities" package nil nil [1 39])
+            ("DevknoxConstants" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("LOADING_IMG_PATH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [135 202])
+                    ("LOGIN_URL" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [207 291])
+                    ("LOGIN_USERNAME_ATTR_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [296 361])
+                    ("LOGIN_PASSWORD_ATTR_NAME" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [366 431])
+                    ("LOG_OUT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [436 482])
+                    ("LOGIN" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [487 530])
+                    ("USER_MSG_JSON_PATH" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [535 604])
+                    ("MSG_DEFAULT_ERROR_TITLE" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [609 705])
+                    ("ONLINE_HELP_URI" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [710 790])
+                    ("FEEDBACK_ENDPOINT" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [795 889])
+                    ("MSG_DEFAULT_ERROR_MSG" variable
+                       (:typemodifiers ("public" "static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [894 1035]))                  
+                :type "class")
+                nil [98 1037]))          
+      :file "DevknoxConstants.java"
+      :pointmax 1038
+      :fsize 1037
+      :lastmodtime '(22560 11773 885956 115000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!main!java!com!appknox!devknox!utilities!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

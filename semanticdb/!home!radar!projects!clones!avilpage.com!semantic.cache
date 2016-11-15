@@ -1,0 +1,71 @@
+;; Object avilpage.com/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "avilpage.com/"
+  :tables
+  (list
+    (semanticdb-table "conf.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [26 65])
+            ("time" include nil nil [66 77])
+            ("BLOG_AUTHOR" variable nil nil [613 642])
+            ("BLOG_TITLE" variable nil nil [661 685])
+            ("SITE_URL" variable nil nil [821 857])
+            ("BASE_URL" variable nil nil [951 988])
+            ("BLOG_EMAIL" variable nil nil [989 1004])
+            ("BLOG_DESCRIPTION" variable nil nil [1005 1026])
+            ("DEFAULT_LANG" variable nil nil [2424 2443])
+            ("TRANSLATIONS" variable nil nil [2611 2707])
+            ("TRANSLATIONS_PATTERN" variable nil nil [3026 3070])
+            ("NAVIGATION_LINKS" variable nil nil [4006 4232])
+            ("THEME" variable nil nil [4262 4280])
+            ("INDEX_PATH" variable nil nil [4310 4329])
+            ("ARCHIVE_PATH" variable nil nil [4330 4347])
+            ("ARCHIVE_FILENAME" variable nil nil [4348 4379])
+            ("THEME_COLOR" variable nil nil [4536 4559])
+            ("POSTS" variable nil nil [5652 5770])
+            ("PAGES" variable nil nil [5772 5951])
+            ("TIMEZONE" variable nil nil [6395 6411])
+            ("DATE_FORMAT" variable nil nil [6700 6721])
+            ("JS_DATE_FORMAT" variable nil nil [6831 6860])
+            ("COMPILERS" variable nil nil [8613 8743])
+            ("WRITE_TAG_CLOUD" variable nil nil [9679 9701])
+            ("POSTS_SECTIONS" variable nil nil [9853 9874])
+            ("HIDDEN_TAGS" variable nil nil [13259 13284])
+            ("CATEGORY_ALLOW_HIERARCHIES" variable nil nil [14366 14400])
+            ("CATEGORY_OUTPUT_FLAT_HIERARCHY" variable nil nil [14552 14590])
+            ("HIDDEN_CATEGORIES" variable nil nil [15689 15711])
+            ("HIDDEN_AUTHORS" variable nil nil [16875 16901])
+            ("FRONT_INDEX_HEADER" variable nil nil [17159 17204])
+            ("CREATE_SINGLE_ARCHIVE" variable nil nil [17333 17361])
+            ("GITHUB_SOURCE_BRANCH" variable nil nil [20502 20533])
+            ("GITHUB_DEPLOY_BRANCH" variable nil nil [20534 20567])
+            ("GITHUB_REMOTE_NAME" variable nil nil [20642 20671])
+            ("GITHUB_COMMIT_SOURCE" variable nil nil [20773 20800])
+            ("IMAGE_FOLDERS" variable nil nil [25363 25399])
+            ("INDEX_READ_MORE_LINK" variable nil nil [29721 29799])
+            ("FEED_READ_MORE_LINK" variable nil nil [29871 29958])
+            ("FEED_LINKS_APPEND_QUERY" variable nil nil [30463 30494])
+            ("LICENSE" variable nil nil [30572 30584])
+            ("CONTENT_FOOTER" variable nil nil [31007 31191])
+            ("CONTENT_FOOTER_FORMATS" variable nil nil [31856 32084])
+            ("COMMENT_SYSTEM" variable nil nil [32350 32371])
+            ("COMMENT_SYSTEM_ID" variable nil nil [32573 32605])
+            ("STRIP_INDEXES" variable nil nil [33747 33767])
+            ("PRETTY_URLS" variable nil nil [34736 34755])
+            ("FUTURE_IS_NOW" variable nil nil [34855 34876])
+            ("DEPLOY_FUTURE" variable nil nil [35090 35111])
+            ("DEPLOY_DRAFTS" variable nil nil [35157 35178])
+            ("MARKDOWN_EXTENSIONS" variable nil nil [36992 37052])
+            ("UNSLUGIFY_TITLES" variable nil nil [43087 43110])
+            ("USE_BUNDLES" variable nil nil [44529 44548])
+            ("GLOBAL_CONTEXT" variable nil nil [46078 46097])
+            ("GLOBAL_CONTEXT_FILLER" variable nil nil [46232 46258]))          
+      :file "conf.py"
+      :pointmax 46259
+      :fsize 46297
+      :lastmodtime '(22547 8372 334608 834000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!clones!avilpage.com!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

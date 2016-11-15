@@ -1,0 +1,71 @@
+;; Object actions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "actions/"
+  :tables
+  (list
+    (semanticdb-table "About.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.anthea.actions" package nil nil [1 36])
+            ("com.appknox.anthea.common.logging.AntheaLogger" include nil nil [38 92])
+            ("com.appknox.anthea.constants.AntheaConstants" include nil nil [93 145])
+            ("com.appknox.anthea.gui.generals.AntheaMessageDialog" include nil nil [146 205])
+            ("com.appknox.anthea.info.AntheaUserMessageMap" include nil nil [206 258])
+            ("com.appknox.anthea.info.beans.Message" include nil nil [259 304])
+            ("com.intellij.codeInspection.InspectionToolProvider" include nil nil [305 363])
+            ("com.intellij.openapi.actionSystem.AnActionEvent" include nil nil [364 419])
+            ("com.intellij.profile.Profile" include nil nil [420 456])
+            ("com.intellij.profile.codeInspection.InspectionProfileManager" include nil nil [457 525])
+            ("java.util.ArrayList" include nil nil [527 554])
+            ("java.util.List" include nil nil [555 577])
+            ("About" type
+               (:typemodifiers ("public")
+                :superclasses "com.intellij.openapi.actionSystem.AnAction"
+                :members 
+                  ( ("actionPerformed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AnActionEvent") (reparse-symbol formal_parameters) [814 829]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [786 1294]))                  
+                :type "class")
+                nil [695 1296]))          
+      :file "About.java"
+      :pointmax 1297
+      :fsize 1296
+      :lastmodtime '(22560 11773 877956 132000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Feedback.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.anthea.actions" package nil nil [1 36])
+            ("com.appknox.anthea.common.logging.AntheaLogger" include nil nil [38 92])
+            ("com.appknox.anthea.config.AntheaPluginConfig" include nil nil [93 145])
+            ("com.appknox.anthea.constants.AntheaConstants" include nil nil [146 198])
+            ("com.appknox.anthea.gui.feedback.AntheaFeedbackDialog" include nil nil [199 259])
+            ("com.appknox.anthea.gui.generals.AntheaMessageDialog" include nil nil [260 319])
+            ("com.appknox.anthea.info.AntheaUserMessageMap" include nil nil [320 372])
+            ("com.appknox.anthea.info.beans.Message" include nil nil [373 418])
+            ("com.intellij.openapi.actionSystem.AnActionEvent" include nil nil [419 474])
+            ("com.intellij.openapi.actionSystem.CommonDataKeys" include nil nil [475 531])
+            ("com.intellij.openapi.project.Project" include nil nil [532 576])
+            ("Feedback" type
+               (:typemodifiers ("public")
+                :superclasses "com.intellij.openapi.actionSystem.AnAction"
+                :members 
+                  ( ("actionPerformed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AnActionEvent") (reparse-symbol formal_parameters) [814 829]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [786 1867]))                  
+                :type "class")
+                nil [692 1869]))          
+      :file "Feedback.java"
+      :pointmax 1870
+      :fsize 1869
+      :lastmodtime '(22550 57834 984988 123000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!com!appknox!anthea!actions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

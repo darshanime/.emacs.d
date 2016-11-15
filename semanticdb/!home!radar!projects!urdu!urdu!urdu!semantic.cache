@@ -1,0 +1,52 @@
+;; Object urdu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "urdu/"
+  :tables
+  (list
+    (semanticdb-table "items.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [1 14])
+            ("UrduItem" type
+               (:superclasses ("scrapy.Item")
+                :members 
+                  ( ("word" variable nil (reparse-symbol indented_block_body) [50 71])
+                    ("meaning" variable nil (reparse-symbol indented_block_body) [76 100]))                  
+                :type "class")
+                nil [17 101]))          
+      :file "items.py"
+      :pointmax 101
+      :fsize 100
+      :lastmodtime '(22555 4027 526326 934000)
+      :unmatched-syntax '(($EOI 75 . 75)))
+    (semanticdb-table "settings.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("BOT_NAME" variable nil nil [430 447])
+            ("SPIDER_MODULES" variable nil nil [449 482])
+            ("NEWSPIDER_MODULE" variable nil nil [483 516])
+            ("ROBOTSTXT_OBEY" variable nil nil [675 696]))          
+      :file "settings.py"
+      :pointmax 3113
+      :fsize 3112
+      :lastmodtime '(22554 52653 153421 923000)
+      :unmatched-syntax nil)
+    (semanticdb-table "urdu.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [70 80])
+            ("fuzzywuzzy" include nil nil [81 111])
+            ("pickle" include nil nil [112 125])
+            ("pkl_file" variable nil nil [127 164])
+            ("words" variable nil nil [165 194])
+            ("pkl_file" code nil nil [195 211])
+            ("query" variable nil nil [213 232])
+            ("for" code nil nil [233 320]))          
+      :file "urdu.py"
+      :pointmax 320
+      :fsize 319
+      :lastmodtime '(22556 8557 822818 878000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!urdu!urdu!urdu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

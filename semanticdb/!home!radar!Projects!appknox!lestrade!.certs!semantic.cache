@@ -1,0 +1,16 @@
+;; Object .certs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".certs/"
+  :tables
+  (list
+    (semanticdb-table "config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 2941
+      :fsize 2940
+      :lastmodtime '(22548 34168 0 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!lestrade!.certs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

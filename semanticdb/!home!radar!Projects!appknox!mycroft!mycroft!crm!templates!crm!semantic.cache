@@ -1,0 +1,146 @@
+;; Object crm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "crm/"
+  :tables
+  (list
+    (semanticdb-table "base.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Appknox CRM" section nil nil [190 286])
+            ("Appknox CRM" section nil nil [286 487])
+            ("Appknox CRM" section nil nil [487 565])
+            ("Users" section (:members 
+              ( ("Add User" anchor nil nil [793 796])
+                ("Add Namespace" anchor nil nil [865 868])
+                ("Update User" anchor nil nil [999 1002])
+                ("Delete User" anchor nil nil [1126 1129])
+                ("Delete Namespace" anchor nil nil [1253 1256])
+                ("Add Pricing" anchor nil nil [1508 1511])
+                ("Update Pricing" anchor nil nil [1583 1586])
+                ("Remove Pricing" anchor nil nil [1719 1722])
+                ("Add Coupon" anchor nil nil [1855 1858])
+                ("Update Coupon" anchor nil nil [1928 1931])
+                ("Remove Coupon" anchor nil nil [2061 2064])
+                ("Update Analysis" anchor nil nil [2311 2314])
+                ("Add Analysis" anchor nil nil [2456 2459])
+                ("Generate Report" anchor nil nil [2597 2600])
+                ("Search and Generate Report" anchor nil nil [2680 2683])
+                ("Upload Report" anchor nil nil [2838 2841])
+                ("Search and Upload Report" anchor nil nil [2917 2920])
+                ("Download Report" anchor nil nil [3071 3074])
+                ("Search and Download Report" anchor nil nil [3154 3157])
+                ("Devices, Active Scans" anchor nil nil [3434 3437])
+                ("Add Collaboration" anchor nil nil [3644 3647])
+                ("Update Collaboration" anchor nil nil [3791 3794])
+                ("Delete Collaboration" anchor nil nil [3949 3952])
+                ("App download" anchor nil nil [4228 4231])
+                ("Search and download App" anchor nil nil [4305 4308])
+                ("App Upload" anchor nil nil [4445 4448])
+                ("Search and upload App" anchor nil nil [4518 4521])
+                ("App delete" anchor nil nil [4654 4657])
+                ("Search and delete App" anchor nil nil [4727 4730])
+                ("Add Subscription" anchor nil nil [4999 5002])
+                ("Update Subscription" anchor nil nil [5144 5147])
+                ("Remove Subscription" anchor nil nil [5287 5290])
+                ("Welcome {{ user.username }}" section nil nil [5575 5899]))              ) nil [565 5899]))          
+      :file "base.html"
+      :pointmax 5899
+      :fsize 5898
+      :lastmodtime '(22571 1142 23593 161000)
+      :unmatched-syntax nil)
+    (semanticdb-table "get_search_query.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Search for {{ get_data.current_type }}" section (:members 
+              ( ("{{ result }}" anchor nil nil [1297 1300]))              ) nil [174 1522])
+            ("No {{ get_data.current_type }} found" section nil nil [1522 1727]))          
+      :file "get_search_query.html"
+      :pointmax 1727
+      :fsize 1726
+      :lastmodtime '(22571 1530 931923 39000)
+      :unmatched-syntax nil)
+    (semanticdb-table "form_render.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{{ form_title }}" section (:members 
+              ( ("{{ extra_text }}" section nil nil [155 776]))              ) nil [123 776]))          
+      :file "form_render.html"
+      :pointmax 776
+      :fsize 775
+      :lastmodtime '(22571 1403 127808 907000)
+      :unmatched-syntax nil)
+    (semanticdb-table "upload_form_render.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{{ form_title }}" section (:members 
+              ( ("{{ extra_text }}" section nil nil [155 779]))              ) nil [123 779]))          
+      :file "upload_form_render.html"
+      :pointmax 779
+      :fsize 778
+      :lastmodtime '(22533 55201 425303 311000)
+      :unmatched-syntax nil)
+    (semanticdb-table "dynamic_scan.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Active Dynamic Scans" section (:members 
+              ( ("No active scans" section nil nil [1193 1296]))              ) nil [123 1296])
+            ("Available Devices" section (:members 
+              ( ("Cannot connect to device farm" section nil nil [2000 2135]))              ) nil [1296 2135]))          
+      :file "dynamic_scan.html"
+      :pointmax 2135
+      :fsize 2694
+      :lastmodtime '(22569 49372 3494 509000)
+      :unmatched-syntax nil)
+    (semanticdb-table "update_analysis.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Update Analysis" section nil nil [128 1180])
+            ("var None = null; // Python sometimes throws `None`
+    var ANALYSIS_DESCS = {{analysis.description | safe}};
+var removeDesc = function(that){
+    that.parentElement.parentElement.remove()
+};
+$(function() {
+    $(\"#add_desc\").click(function() {
+        $(\"[name=form-TOTAL_FORMS]\").val(1);
+        html = $(\"#form_template\").clone().html();
+        $(\"#forms\").append(html);
+    })
+    var desc_pair, html, i, len;
+
+    for (i = 0, len = ANALYSIS_DESCS.length; i < len; i++) {
+        desc_pair = ANALYSIS_DESCS[i];
+        html = $(\"#form_template\").clone().html();
+        $html = $(html)
+        $($html.find(\".description\")).val(desc_pair.description);
+        $($html.find(\".extra_description\")).val(desc_pair.extra_description);
+        $(\"#forms\").append($html);
+    }
+});" section nil nil [1180 1997]))          
+      :file "update_analysis.html"
+      :pointmax 1997
+      :fsize 1996
+      :lastmodtime '(22533 55201 385303 958000)
+      :unmatched-syntax nil)
+    (semanticdb-table "confirm_delete.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "confirm_delete.html"
+      :pointmax 226
+      :fsize 225
+      :lastmodtime '(22571 1403 391809 138000)
+      :unmatched-syntax nil)
+    (semanticdb-table "search_view.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("List of {{ current_type }}" section (:members 
+              ( ("{{ result }}" anchor nil nil [817 820]))              ) nil [134 1042])
+            ("No {{ current_type }} found" section nil nil [1042 1174]))          
+      :file "search_view.html"
+      :pointmax 1174
+      :fsize 1173
+      :lastmodtime '(22571 1531 927923 945000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!crm!templates!crm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

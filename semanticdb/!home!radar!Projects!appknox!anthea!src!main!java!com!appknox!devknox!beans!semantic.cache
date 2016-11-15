@@ -1,0 +1,314 @@
+;; Object beans/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "beans/"
+  :tables
+  (list
+    (semanticdb-table "Feedback.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.beans" package nil nil [1 35])
+            ("Feedback" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("devknoxUseful" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [122 151])
+                    ("devknoxRecommend" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [156 188])
+                    ("suggestionText" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [193 223])
+                    ("token" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [228 249])
+                    ("user" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [254 274])
+                    ("getUserId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [280 334])
+                    ("setUserId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [362 375]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [340 412])
+                    ("getToken" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [418 472])
+                    ("setToken" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("token" variable (:type "String") (reparse-symbol formal_parameters) [499 511]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [478 548])
+                    ("getDevknoxUseful" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [554 624])
+                    ("setDevknoxUseful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("devknoxUseful" variable (:type "String") (reparse-symbol formal_parameters) [659 679]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [630 732])
+                    ("getDevknoxRecommend" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [738 814])
+                    ("setDevknoxRecommend" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("devknoxRecommend" variable (:type "String") (reparse-symbol formal_parameters) [852 875]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [820 934])
+                    ("getSuggestionText" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [940 1012])
+                    ("setSuggestionText" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("suggestionText" variable (:type "String") (reparse-symbol formal_parameters) [1048 1069]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1018 1124]))                  
+                :type "class")
+                nil [94 1126]))          
+      :file "Feedback.java"
+      :pointmax 1127
+      :fsize 1126
+      :lastmodtime '(22560 11773 881956 124000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Message.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.beans" package nil nil [1 35])
+            ("com.appknox.devknox.utilities.DevknoxConstants" include nil nil [37 91])
+            ("Message" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("messageIdSuffix" variable
+                       (:typemodifiers ("static" "final")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [177 220])
+                    ("id" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [225 243])
+                    ("title" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [248 269])
+                    ("message" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [274 297])
+                    ("Message" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [303 327])
+                    ("Message" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("id" variable (:type "String") (reparse-symbol formal_parameters) [348 357])
+                            ("title" variable (:type "String") (reparse-symbol formal_parameters) [359 371])
+                            ("message" variable (:type "String") (reparse-symbol formal_parameters) [373 387]))                          )
+                        (reparse-symbol class_member_declaration) [333 477])
+                    ("getId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [483 531])
+                    ("getMessageIdSuffix" function
+                       (:typemodifiers ("public" "static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [537 618])
+                    ("getTitle" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [624 678])
+                    ("getMessage" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [684 742])
+                    ("getDefaultErrorMsg" function
+                       (:typemodifiers ("public" "static")
+                        :type "Message")
+                        (reparse-symbol class_member_declaration) [899 1151])
+                    ("toString" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1171 1318]))                  
+                :type "class")
+                nil [150 1320]))          
+      :file "Message.java"
+      :pointmax 1321
+      :fsize 1320
+      :lastmodtime '(22560 13645 506550 916000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Meta.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.beans" package nil nil [1 35])
+            ("Meta" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("description" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [118 145])
+                    ("types" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [150 173])
+                    ("Meta" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [179 200])
+                    ("getDescription" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [206 271])
+                    ("getTypes" function
+                       (:typemodifiers ("public")
+                        :type "String[]")
+                        (reparse-symbol class_member_declaration) [277 332])
+                    ("Meta" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("description" variable (:type "String") (reparse-symbol formal_parameters) [350 368])
+                            ("types" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [370 384]))                          )
+                        (reparse-symbol class_member_declaration) [338 460]))                  
+                :type "class")
+                nil [94 463]))          
+      :file "Meta.java"
+      :pointmax 464
+      :fsize 463
+      :lastmodtime '(22560 20513 223054 875000)
+      :unmatched-syntax nil)
+    (semanticdb-table "UserLogin.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.beans" package nil nil [1 35])
+            ("UserLogin" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("username" variable (:type "String") (reparse-symbol class_member_declaration) [123 139])
+                    ("success" variable (:type "boolean") (reparse-symbol class_member_declaration) [144 160])
+                    ("token" variable (:type "String") (reparse-symbol class_member_declaration) [165 178])
+                    ("user" variable (:type "int") (reparse-symbol class_member_declaration) [183 192])
+                    ("errors" variable (:type "String") (reparse-symbol class_member_declaration) [197 211])
+                    ("UserLogin" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [217 238])
+                    ("UserLogin" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("username" variable (:type "String") (reparse-symbol formal_parameters) [261 276])
+                            ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [278 293])
+                            ("token" variable (:type "String") (reparse-symbol formal_parameters) [295 307])
+                            ("user" variable (:type "int") (reparse-symbol formal_parameters) [309 317])
+                            ("errors" variable (:type "String") (reparse-symbol formal_parameters) [319 332]))                          )
+                        (reparse-symbol class_member_declaration) [244 490])
+                    ("getUsername" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [496 555])
+                    ("getSuccess" function
+                       (:typemodifiers ("public")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [561 620])
+                    ("setSuccess" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("success" variable (:type "boolean") (reparse-symbol formal_parameters) [649 664]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [626 704])
+                    ("getToken" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [710 764])
+                    ("getUser" function
+                       (:typemodifiers ("public")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [770 819])
+                    ("getErrors" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [825 881])
+                    ("setUsername" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("username" variable (:type "String") (reparse-symbol formal_parameters) [911 926]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [887 969]))                  
+                :type "class")
+                nil [94 971]))          
+      :file "UserLogin.java"
+      :pointmax 972
+      :fsize 971
+      :lastmodtime '(22560 11773 881956 124000)
+      :unmatched-syntax nil)
+    (semanticdb-table "UserMessages.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.beans" package nil nil [1 35])
+            ("UserMessages" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("meta" variable
+                       (:typemodifiers ("private")
+                        :type "Meta")
+                        (reparse-symbol class_member_declaration) [127 145])
+                    ("messages" variable
+                       (:dereference 1
+                        :typemodifiers ("private")
+                        :type "Message")
+                        (reparse-symbol class_member_declaration) [150 177])
+                    ("UserMessages" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [183 213])
+                    ("getMeta" function
+                       (:typemodifiers ("public")
+                        :type "Meta")
+                        (reparse-symbol class_member_declaration) [219 273])
+                    ("getMessages" function
+                       (:typemodifiers ("public")
+                        :type "Message[]")
+                        (reparse-symbol class_member_declaration) [280 347])
+                    ("UserMessages" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("meta" variable (:type "Meta") (reparse-symbol formal_parameters) [373 382])
+                            ("messages" variable
+                               (:dereference 1
+                                :type "Message")
+                                (reparse-symbol formal_parameters) [384 402]))                          )
+                        (reparse-symbol class_member_declaration) [353 470]))                  
+                :type "class")
+                nil [95 472]))          
+      :file "UserMessages.java"
+      :pointmax 473
+      :fsize 472
+      :lastmodtime '(22560 11773 881956 124000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!main!java!com!appknox!devknox!beans!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

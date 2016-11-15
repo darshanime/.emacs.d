@@ -1,0 +1,31 @@
+;; Object web/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "web/"
+  :tables
+  (list
+
+    (semanticdb-table "app.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [16 31])
+            ("flask" include nil nil [32 55])
+            ("flask" include nil nil [56 81])
+            ("app" variable nil nil [83 104])
+            ("" code nil nil [117 170])
+            ("" code nil nil [181 222])
+            ("proxy" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [233 238])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [240 248]))              ) nil [223 880])
+            ("t" code nil nil [880 881])
+            ("return" code nil nil [882 898])
+            ("if" code nil nil [900 964]))          
+      :file "app.py"
+      :pointmax 964
+      :fsize 965
+      :lastmodtime '(22562 61700 769431 37000)
+      :unmatched-syntax nil)
+
+)
+  :file "!home!radar!Projects!appknox!sholto!web!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,25 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "env_converter.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: env_converter.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2016-03-23
+'''" code nil nil [127 229])
+            ("a" variable nil nil [231 263])
+            ("full_str" variable nil nil [264 277])
+            ("for" code nil nil [278 435])
+            ("print" code nil nil [436 451]))          
+      :file "env_converter.py"
+      :pointmax 452
+      :fsize 451
+      :lastmodtime '(22507 22045 328262 171000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,19 @@
+;; Object 11/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "11/"
+  :tables
+  (list
+    (semanticdb-table "zen-story-announcement.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Tanzan wrote sixty postal cards on the last day of his life, and asked an attendant to mail them. Then he passed away.<br><div dir=\"ltr\" style=\"text-align: left;\" trbidi=\"on\"><br>The cards read:<br><dl style=\"background-color: white; font-family: 'Lucida Grande', Arial, sans-serif; font-size: 16px; margin-bottom: 15px;\"><dd style=\"line-height: 20.7999992370605px; margin-bottom: 10px; margin-left: 30px; margin-top: 3px; text-align: justify;\"><div style=\"background-color: #eeffcc;\"><pre style=\"border-bottom-left-radius: 3px; border-bottom-right-radius: 3px; border-top-left-radius: 3px; border-top-right-radius: 3px; border: 1px solid rgb(170, 204, 153); font-family: monospace, sans-serif; font-size: 15px; line-height: 18.5279998779297px; overflow-x: auto; overflow-y: hidden; padding: 5px;\">I am departing from this world.<br><br>This is my last announcement.<br><br><br>Tanzan<br>July 27, 1892" section (:members 
+              ( ("Wikipedia" anchor nil nil [1066 1069])
+                ("More Zen Stories" anchor nil nil [1153 1156]))              ) nil [7 1225]))          
+      :file "zen-story-announcement.html"
+      :pointmax 1225
+      :fsize 1224
+      :lastmodtime '(22547 8457 406128 806000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!clones!avilpage.com!posts!2014!11!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object trialOne/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "trialOne/"
+  :tables
+  (list
+    (semanticdb-table "config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 3433
+      :fsize 3432
+      :lastmodtime '(22541 43578 668353 508000)
+      :unmatched-syntax nil))
+  :file "!home!radar!.docker!machine!machines!trialOne!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

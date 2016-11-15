@@ -1,0 +1,32 @@
+;; Object fluentd/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fluentd/"
+  :tables
+  (list
+    (semanticdb-table "Makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("versioning.mk" include nil nil [131 153])
+            ("build" function (:arguments ("docker-build")) nil [154 174])
+            ("push" function (:arguments ("docker-push")) nil [174 192])
+            ("install" function (:arguments ("kube-install")) nil [192 214])
+            ("uninstall" function (:arguments ("kube-delete")) nil [214 237])
+            ("upgrade" function (:arguments ("kube-update")) nil [237 258])
+            ("docker-build" function nil nil [259 344])
+            ("kube-delete" function nil nil [345 424])
+            ("kube-install" function (:arguments ("update-manifests")) nil [425 521])
+            ("kube-update" function (:arguments ("update-manifests")) nil [522 682])
+            ("update-manifests" function nil nil [683 827])
+            ("test" function (:arguments ("docker-build")) nil [828 924]))          
+      :file "Makefile"
+      :pointmax 924
+      :fsize 923
+      :lastmodtime '(22523 26710 543674 273000)
+      :unmatched-syntax '((shell-command 848 . 923) (bol 847 . 847) (symbol 125 . 129) (punctuation 123 . 124) (punctuation 122 . 123) (symbol 109 . 121) (bol 109 . 109) (semantic-list 94 . 108) (punctuation 93 . 94) (punctuation 91 . 92) (punctuation 90 . 91) (symbol 76 . 89) (bol 76 . 76) (semantic-list 41 . 75) (punctuation 40 . 41) (symbol 36 . 40) (punctuation 34 . 35) (punctuation 33 . 34) (symbol 23 . 32) (bol 23 . 23) (symbol 15 . 22) (punctuation 13 . 14) (punctuation 12 . 13) (symbol 1 . 11) (bol 1 . 1)))
+    (semanticdb-table "versioning.mk"
+      :file "versioning.mk"
+      :fsize 622
+      :lastmodtime '(22523 26710 659674 850000)))
+  :file "!home!radar!projects!clones!fluentd!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

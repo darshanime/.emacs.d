@@ -1,0 +1,40 @@
+;; Object Downloads/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Downloads/"
+  :tables
+  (list
+    (semanticdb-table "sample.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "sample.json"
+      :pointmax 278
+      :fsize 288
+      :lastmodtime '(22527 35583 114280 229000)
+      :unmatched-syntax nil)
+    (semanticdb-table "json.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "json.json"
+      :pointmax 145023
+      :fsize 145022
+      :lastmodtime '(22527 30955 361859 273000)
+      :unmatched-syntax nil)
+    (semanticdb-table "zips.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "zips.json"
+      :pointmax 3194355
+      :fsize 3194354
+      :lastmodtime '(21245 36388 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "companies.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "companies.json"
+      :pointmax 78186139
+      :fsize 78231204
+      :lastmodtime '(21245 36494 0 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!Downloads!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

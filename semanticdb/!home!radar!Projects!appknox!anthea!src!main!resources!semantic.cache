@@ -1,0 +1,16 @@
+;; Object resources/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "resources/"
+  :tables
+  (list
+    (semanticdb-table "UserMessages.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "UserMessages.json"
+      :pointmax 2171
+      :fsize 2170
+      :lastmodtime '(22560 10104 679376 293000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!main!resources!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

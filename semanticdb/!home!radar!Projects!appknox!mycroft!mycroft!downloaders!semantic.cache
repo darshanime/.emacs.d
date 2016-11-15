@@ -1,0 +1,43 @@
+;; Object downloaders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "downloaders/"
+  :tables
+  (list
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+    File name: tasks.py
+    Version: 0.1
+    Author: Subho Halder
+    Python Version: 2.7
+'''" code nil nil [101 198])
+            ("celery" include nil nil [231 274])
+            ("django.conf" include nil nil [276 308])
+            ("mycroft.core.storage" include nil nil [310 351])
+            ("mycroft.core.base_task" include nil nil [352 398])
+            ("mycroft.core.notify" include nil nil [399 478])
+            ("mycroft.core.dbapi" include nil nil [479 530])
+            ("mycroft.downloaders.google_play" include nil nil [532 589])
+            ("mycroft.downloaders.exceptions" include nil nil [590 707])
+            ("__author__" variable nil nil [709 736])
+            ("__status__" variable nil nil [737 763])
+            ("" code nil nil [778 796])
+            ("googleplay" function (:arguments 
+              ( ("submission_id" variable nil (reparse-symbol function_parameters) [812 825]))              ) nil [797 2567]))          
+      :file "tasks.py"
+      :pointmax 2567
+      :fsize 2566
+      :lastmodtime '(22507 22045 192264 250000)
+      :unmatched-syntax nil)
+    (semanticdb-table "google_play.py"
+      :file "google_play.py"
+      :fsize 12111
+      :lastmodtime '(22507 22045 180264 434000))
+    (semanticdb-table "exceptions.py"
+      :file "exceptions.py"
+      :fsize 758
+      :lastmodtime '(22507 22045 180264 434000)))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!downloaders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

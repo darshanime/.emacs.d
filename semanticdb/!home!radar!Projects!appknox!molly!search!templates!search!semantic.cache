@@ -1,0 +1,29 @@
+;; Object search/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search/"
+  :tables
+  (list
+    (semanticdb-table "base.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Google Play Searcher" section nil nil [722 1039])
+            ("Google Play Searcher" section nil nil [1039 1092])
+            ("{% block navbar %}
+      <!-- Navigation -->
+      <nav class=\"navbar navbar-default\">
+
+      <div class=\"container-fluid\">
+        <div class=\"navbar-header\">
+          <a class=\"navbar-brand\" href=\"{% url 'home' %}\"><strong>Home" section (:members 
+              ( ("Logout" anchor nil nil [1518 1521]))              ) nil [1092 1776])
+            ("Bootstrap Core JavaScript -->
+        <script src=\"{% static \"search/js/bootstrap.min.js\" %}\">" section nil nil [1776 1887])
+            ("" section nil nil [1887 1980]))          
+      :file "base.html"
+      :pointmax 1980
+      :fsize 1979
+      :lastmodtime '(22507 62607 505253 862000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!molly!search!templates!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

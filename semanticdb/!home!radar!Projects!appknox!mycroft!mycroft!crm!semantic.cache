@@ -1,0 +1,889 @@
+;; Object crm/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "crm/"
+  :tables
+  (list
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("uuid" include nil nil [1 23])
+            ("gc" include nil nil [24 33])
+            ("urllib.parse" include nil nil [34 53])
+            ("itertools" include nil nil [54 87])
+            ("celery" include nil nil [89 119])
+            ("django.views" include nil nil [120 152])
+            ("django.core.urlresolvers" include nil nil [153 202])
+            ("django.http" include nil nil [203 247])
+            ("django.contrib" include nil nil [248 283])
+            ("datetime" include nil nil [284 324])
+            ("django.contrib.auth.mixins" include nil nil [325 387])
+            ("django.conf" include nil nil [388 420])
+            ("django.shortcuts" include nil nil [421 458])
+            ("django.apps" include nil nil [459 487])
+            ("django.utils.timezone" include nil nil [488 525])
+            ("django.contrib.admin.views.decorators" include nil nil [526 597])
+            ("django.http" include nil nil [598 634])
+            ("django.views.decorators.csrf" include nil nil [635 687])
+            ("formtools.wizard.views" include nil nil [689 740])
+            ("actstream" include nil nil [741 769])
+            ("mycroft.core.dbapi" include nil nil [771 1262])
+            ("mycroft.core.models" include nil nil [1263 1361])
+            ("mycroft.core.utils" include nil nil [1362 1407])
+            ("mycroft.core.notify" include nil nil [1408 1461])
+            ("mycroft.core.mails" include nil nil [1462 1578])
+            ("mycroft.core.storage" include nil nil [1579 1671])
+            ("mycroft.crm.utils" include nil nil [1672 1745])
+            ("ak_vendor.enums" include nil nil [1746 1836])
+            ("mycroft.core.devices" include nil nil [1837 1882])
+            ("mycroft.crm.forms" include nil nil [1883 2170])
+            ("UserCreate" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [2240 2252])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [2257 2295])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [2300 2375])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [2380 2418])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [2423 2464])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [2469 2508])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2530 2534]))                          )
+                        (reparse-symbol indented_block_body) [2514 2616])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2642 2646])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2648 2656]))                          )
+                        (reparse-symbol indented_block_body) [2621 2839])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2859 2863])
+                            ("form" variable nil (reparse-symbol function_parameters) [2865 2869]))                          )
+                        (reparse-symbol indented_block_body) [2844 3899]))                  
+                :type "class")
+                nil [2173 3899])
+            ("FileAnalysis" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DetailView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3970 4010])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [4015 4056])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [4061 4100])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4121 4125]))                          )
+                        (reparse-symbol indented_block_body) [4106 4182]))                  
+                :type "class")
+                nil [3901 4182])
+            ("CreateAnalysis" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [4255 4271])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [4276 4314])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [4319 4347])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [4352 4399])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [4404 4445])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [4450 4489])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4516 4520])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4522 4530]))                          )
+                        (reparse-symbol indented_block_body) [4495 4721])
+                    ("get_success_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4746 4750])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4752 4760]))                          )
+                        (reparse-symbol indented_block_body) [4726 4884])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4904 4908])
+                            ("form" variable nil (reparse-symbol function_parameters) [4910 4914]))                          )
+                        (reparse-symbol indented_block_body) [4889 5520]))                  
+                :type "class")
+                nil [4184 5520])
+            ("UpdateAnalysis" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [5591 5633])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [5638 5663])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [5668 5717])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [5722 5750])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [5755 5796])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [5801 5840])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5863 5867]))                          )
+                        (reparse-symbol indented_block_body) [5846 5940])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5961 5965]))                          )
+                        (reparse-symbol indented_block_body) [5945 6201])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6227 6231])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6233 6241]))                          )
+                        (reparse-symbol indented_block_body) [6206 6521])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6541 6545])
+                            ("form" variable nil (reparse-symbol function_parameters) [6547 6551]))                          )
+                        (reparse-symbol indented_block_body) [6526 7371])
+                    ("get_success_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7396 7400])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7402 7410]))                          )
+                        (reparse-symbol indented_block_body) [7376 7703]))                  
+                :type "class")
+                nil [5522 7703])
+            ("UploadReport" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [7772 7817])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [7822 7863])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [7868 7907])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [7912 7941])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7968 7972])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7974 7982]))                          )
+                        (reparse-symbol indented_block_body) [7947 8595])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8616 8620]))                          )
+                        (reparse-symbol indented_block_body) [8600 8974])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8994 8998])
+                            ("form" variable nil (reparse-symbol function_parameters) [9000 9004])
+                            ("args" variable nil (reparse-symbol function_parameters) [9006 9011])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9013 9021]))                          )
+                        (reparse-symbol indented_block_body) [8979 10108]))                  
+                :type "class")
+                nil [7705 10108])
+            ("DownloadReport" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [10179 10217])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [10222 10263])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [10268 10307])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [10312 10343])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10365 10369]))                          )
+                        (reparse-symbol indented_block_body) [10349 10515])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10541 10545])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10547 10555]))                          )
+                        (reparse-symbol indented_block_body) [10520 10748])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10768 10772])
+                            ("form" variable nil (reparse-symbol function_parameters) [10774 10778])
+                            ("args" variable nil (reparse-symbol function_parameters) [10780 10785])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10787 10795]))                          )
+                        (reparse-symbol indented_block_body) [10753 11511]))                  
+                :type "class")
+                nil [10110 11511])
+            ("GenerateReport" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [11582 11620])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [11625 11666])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [11671 11710])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [11715 11746])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11768 11772]))                          )
+                        (reparse-symbol indented_block_body) [11752 12294])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12320 12324])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12326 12334]))                          )
+                        (reparse-symbol indented_block_body) [12299 12649])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12669 12673])
+                            ("form" variable nil (reparse-symbol function_parameters) [12675 12679]))                          )
+                        (reparse-symbol indented_block_body) [12654 13690]))                  
+                :type "class")
+                nil [11513 13690])
+            ("DynamicScan" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [13762 13801])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [13806 13847])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [13852 13891])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13918 13922])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13924 13932]))                          )
+                        (reparse-symbol indented_block_body) [13897 14260])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14274 14278])
+                            ("request" variable nil (reparse-symbol function_parameters) [14280 14287])
+                            ("args" variable nil (reparse-symbol function_parameters) [14289 14294])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [14296 14304]))                          )
+                        (reparse-symbol indented_block_body) [14265 14636]))                  
+                :type "class")
+                nil [13692 14636])
+            ("HomeView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [14705 14736])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [14741 14782])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [14787 14826]))                  
+                :type "class")
+                nil [14638 14827])
+            ("UpdateNamespace" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [14901 14939])
+                    ("model" variable nil (reparse-symbol indented_block_body) [14944 14956])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [14961 14986])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [14991 15015])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [15020 15061])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [15066 15105])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15132 15136])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15138 15146]))                          )
+                        (reparse-symbol indented_block_body) [15111 15339])
+                    ("get_success_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15364 15368])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15370 15378]))                          )
+                        (reparse-symbol indented_block_body) [15344 15481]))                  
+                :type "class")
+                nil [14829 15481])
+            ("UpdateCollaboration" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [15559 15597])
+                    ("model" variable nil (reparse-symbol indented_block_body) [15602 15623])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [15628 15647])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [15652 15676])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [15681 15722])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [15727 15766])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15793 15797])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [15799 15807]))                          )
+                        (reparse-symbol indented_block_body) [15772 16008])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16028 16032]))                          )
+                        (reparse-symbol indented_block_body) [16013 16107])
+                    ("get_success_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16132 16136])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16138 16146]))                          )
+                        (reparse-symbol indented_block_body) [16112 16189]))                  
+                :type "class")
+                nil [15483 16189])
+            ("UpdateSubscription" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [16266 16312])
+                    ("model" variable nil (reparse-symbol indented_block_body) [16317 16337])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [16342 16382])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [16387 16428])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [16433 16472])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16486 16490])
+                            ("request" variable nil (reparse-symbol function_parameters) [16492 16499])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [16501 16508]))                          )
+                        (reparse-symbol indented_block_body) [16478 16846])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16866 16870]))                          )
+                        (reparse-symbol indented_block_body) [16851 16966])
+                    ("get_success_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16991 16995])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [16997 17005]))                          )
+                        (reparse-symbol indented_block_body) [16971 17048])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17074 17078])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17080 17088]))                          )
+                        (reparse-symbol indented_block_body) [17053 17399]))                  
+                :type "class")
+                nil [16191 17399])
+            ("UpdateUser" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [17468 17506])
+                    ("model" variable nil (reparse-symbol indented_block_body) [17511 17523])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [17528 17644])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [17649 17673])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [17678 17716])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [17721 17762])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [17767 17806])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17833 17837])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17839 17847]))                          )
+                        (reparse-symbol indented_block_body) [17812 18030]))                  
+                :type "class")
+                nil [17401 18030])
+            ("UpdatePricing" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [18102 18140])
+                    ("model" variable nil (reparse-symbol indented_block_body) [18145 18160])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [18165 18208])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [18213 18240])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [18245 18283])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [18288 18329])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [18334 18373])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18400 18404])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [18406 18414]))                          )
+                        (reparse-symbol indented_block_body) [18379 18603]))                  
+                :type "class")
+                nil [18032 18603])
+            ("DeleteUser" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [18672 18712])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [18717 18741])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [18746 18787])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [18792 18830])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [18835 18876])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [18881 18920])
+                    ("model" variable nil (reparse-symbol indented_block_body) [18925 18937]))                  
+                :type "class")
+                nil [18605 18938])
+            ("DeleteCollaboration" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [19016 19056])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [19061 19094])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [19099 19140])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [19145 19183])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [19188 19229])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [19234 19273])
+                    ("model" variable nil (reparse-symbol indented_block_body) [19278 19299]))                  
+                :type "class")
+                nil [18940 19300])
+            ("DeleteSubscription" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [19377 19417])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [19422 19463])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [19468 19506])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [19511 19552])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [19557 19596])
+                    ("model" variable nil (reparse-symbol indented_block_body) [19601 19621])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19642 19646]))                          )
+                        (reparse-symbol indented_block_body) [19627 19769]))                  
+                :type "class")
+                nil [19302 19769])
+            ("DeletePricing" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [19841 19881])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [19886 19913])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [19918 19959])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [19964 20002])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [20007 20048])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [20053 20092])
+                    ("model" variable nil (reparse-symbol indented_block_body) [20097 20112]))                  
+                :type "class")
+                nil [19771 20113])
+            ("CreateCollaboration" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [20191 20212])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [20217 20255])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [20260 20279])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [20284 20322])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [20327 20368])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [20373 20412])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20434 20438]))                          )
+                        (reparse-symbol indented_block_body) [20418 20633])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20659 20663])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [20665 20673]))                          )
+                        (reparse-symbol indented_block_body) [20638 21007])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21027 21031])
+                            ("form" variable nil (reparse-symbol function_parameters) [21033 21037]))                          )
+                        (reparse-symbol indented_block_body) [21012 21587]))                  
+                :type "class")
+                nil [20115 21587])
+            ("CreateCoupon" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [21658 21672])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [21677 21715])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [21720 21751])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [21756 21794])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [21799 21840])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [21845 21884])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21911 21915])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [21917 21925]))                          )
+                        (reparse-symbol indented_block_body) [21890 22112]))                  
+                :type "class")
+                nil [21589 22112])
+            ("UpdateCoupon" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [22183 22221])
+                    ("model" variable nil (reparse-symbol indented_block_body) [22226 22240])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [22245 22276])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [22281 22307])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [22312 22350])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [22355 22396])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [22401 22440])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22467 22471])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [22473 22481]))                          )
+                        (reparse-symbol indented_block_body) [22446 22668]))                  
+                :type "class")
+                nil [22114 22668])
+            ("DeleteCoupon" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [22739 22779])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [22784 22810])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [22815 22856])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [22861 22899])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [22904 22945])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [22950 22989])
+                    ("model" variable nil (reparse-symbol indented_block_body) [22994 23008]))                  
+                :type "class")
+                nil [22670 23009])
+            ("CreatePricing" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [23081 23096])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [23101 23139])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [23144 23187])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [23192 23230])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [23235 23276])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [23281 23320])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23347 23351])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [23353 23361]))                          )
+                        (reparse-symbol indented_block_body) [23326 23550]))                  
+                :type "class")
+                nil [23011 23550])
+            ("DownloadApp" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [23618 23656])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [23661 23702])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [23707 23746])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [23751 23779])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23806 23810])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [23812 23820]))                          )
+                        (reparse-symbol indented_block_body) [23785 24007])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24028 24032]))                          )
+                        (reparse-symbol indented_block_body) [24012 24175])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24195 24199])
+                            ("form" variable nil (reparse-symbol function_parameters) [24201 24205])
+                            ("args" variable nil (reparse-symbol function_parameters) [24207 24212])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [24214 24222]))                          )
+                        (reparse-symbol indented_block_body) [24180 24908]))                  
+                :type "class")
+                nil [23552 24908])
+            ("UploadApp" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [24974 25012])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [25017 25058])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [25063 25102])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [25107 25133])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25160 25164])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [25166 25174]))                          )
+                        (reparse-symbol indented_block_body) [25139 25487])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25508 25512]))                          )
+                        (reparse-symbol indented_block_body) [25492 25653])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25673 25677])
+                            ("form" variable nil (reparse-symbol function_parameters) [25679 25683])
+                            ("args" variable nil (reparse-symbol function_parameters) [25685 25690])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [25692 25700]))                          )
+                        (reparse-symbol indented_block_body) [25658 26799]))                  
+                :type "class")
+                nil [24910 26799])
+            ("DeleteApp" type
+               (:superclasses ("PermissionRequiredMixin" "generic.FormView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [26865 26903])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [26908 26949])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [26954 26993])
+                    ("form_class" variable nil (reparse-symbol indented_block_body) [26998 27024])
+                    ("get_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27046 27050]))                          )
+                        (reparse-symbol indented_block_body) [27030 27191])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27217 27221])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27223 27231]))                          )
+                        (reparse-symbol indented_block_body) [27196 27412])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27432 27436])
+                            ("form" variable nil (reparse-symbol function_parameters) [27438 27442])
+                            ("args" variable nil (reparse-symbol function_parameters) [27444 27449])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27451 27459]))                          )
+                        (reparse-symbol indented_block_body) [27417 28304]))                  
+                :type "class")
+                nil [26801 28304])
+            ("SubscriptionLogic" type
+               (:members 
+                  ( ("user_paid" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("wizard" variable nil (reparse-symbol function_parameters) [28368 28374]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [28336 28564])
+                    ("user_regular" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("wizard" variable nil (reparse-symbol function_parameters) [28604 28610]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [28569 28803])
+                    ("show_duration_source_of_payment_form" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("wizard" variable nil (reparse-symbol function_parameters) [28867 28873]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [28808 28927])
+                    ("show_expiry_form" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("wizard" variable nil (reparse-symbol function_parameters) [28971 28977]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [28932 29129])
+                    ("show_scans_left_form" function
+                       (:typemodifiers ("static")
+                        :arguments 
+                          ( ("wizard" variable nil (reparse-symbol function_parameters) [29177 29183]))                          
+                        :decorators 
+                          ( ("staticmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [29134 29339]))                  
+                :type "class")
+                nil [28306 29339])
+            ("SubscriptionWizard" type
+               (:superclasses ("CookieWizardView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [29389 29435])
+                    ("form_list" variable nil (reparse-symbol indented_block_body) [29440 29564])
+                    ("condition_dict" variable nil (reparse-symbol indented_block_body) [29569 29755])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29769 29773])
+                            ("request" variable nil (reparse-symbol function_parameters) [29775 29782])
+                            ("user_id" variable nil (reparse-symbol function_parameters) [29784 29791])
+                            ("pricing_id" variable nil (reparse-symbol function_parameters) [29793 29803]))                          )
+                        (reparse-symbol indented_block_body) [29761 30324])
+                    ("done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30527 30531])
+                            ("form_list" variable nil (reparse-symbol function_parameters) [30533 30542])
+                            ("form_dict" variable nil (reparse-symbol function_parameters) [30544 30553])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [30555 30563]))                          )
+                        (reparse-symbol indented_block_body) [30518 31772]))                  
+                :type "class")
+                nil [29341 31772])
+            ("SubscriptionAdded" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DetailView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [31848 31893])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [31898 31939])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [31944 31983])
+                    ("get_object" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32004 32008]))                          )
+                        (reparse-symbol indented_block_body) [31989 32081]))                  
+                :type "class")
+                nil [31774 32081])
+            ("RedirectView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("permission_required" variable nil (reparse-symbol indented_block_body) [32154 32195])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [32200 32239])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32253 32257])
+                            ("request" variable nil (reparse-symbol function_parameters) [32259 32266])
+                            ("args" variable nil (reparse-symbol function_parameters) [32268 32273])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [32275 32283]))                          )
+                        (reparse-symbol indented_block_body) [32245 32967]))                  
+                :type "class")
+                nil [32083 32967])
+            ("GetSearchQueryView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [33046 33089])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [33094 33135])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [33140 33179])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33193 33197])
+                            ("request" variable nil (reparse-symbol function_parameters) [33199 33206])
+                            ("args" variable nil (reparse-symbol function_parameters) [33208 33213])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [33215 33223]))                          )
+                        (reparse-symbol indented_block_body) [33185 33667])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33693 33697])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [33699 33707]))                          )
+                        (reparse-symbol indented_block_body) [33672 35108]))                  
+                :type "class")
+                nil [32969 35108])
+            ("SearchView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [35179 35217])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [35222 35263])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [35268 35307])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35321 35325])
+                            ("request" variable nil (reparse-symbol function_parameters) [35327 35334])
+                            ("args" variable nil (reparse-symbol function_parameters) [35336 35341])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [35343 35351]))                          )
+                        (reparse-symbol indented_block_body) [35313 35827])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35853 35857])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [35859 35867]))                          )
+                        (reparse-symbol indented_block_body) [35832 36918]))                  
+                :type "class")
+                nil [35110 36918])
+            ("uploaded_file" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("staff_member_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [36974 36981]))                  )
+                nil [36920 37713]))          
+      :file "views.py"
+      :pointmax 37713
+      :fsize 37712
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "apps.py"
+      :file "apps.py"
+      :fsize 81
+      :lastmodtime '(22507 22045 132265 169000))
+    (semanticdb-table "models.py"
+      :file "models.py"
+      :fsize 0
+      :lastmodtime '(22507 22045 132265 169000))
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 1638
+      :lastmodtime '(22533 55201 441303 51000))
+    (semanticdb-table "forms.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django" include nil nil [1 25])
+            ("django.forms" include nil nil [26 66])
+            ("mycroft.core.models" include nil nil [68 108])
+            ("desc_attrs" variable nil nil [110 182])
+            ("extra_desc_attrs" variable nil nil [183 277])
+            ("AnalysisForm" type
+               (:superclasses ("forms.ModelForm")
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("model" variable nil (reparse-symbol indented_block_body) [342 358])
+                            ("fields" variable nil (reparse-symbol indented_block_body) [367 396]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [322 397]))                  
+                :type "class")
+                nil [280 397])
+            ("GenerateReportForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("file_id" variable nil (reparse-symbol indented_block_body) [441 497])
+                    ("email_ids" variable nil (reparse-symbol indented_block_body) [502 574]))                  
+                :type "class")
+                nil [399 575])
+            ("DownloadReportForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("file_id" variable nil (reparse-symbol indented_block_body) [619 675]))                  
+                :type "class")
+                nil [577 676])
+            ("UploadReportForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("file_id" variable nil (reparse-symbol indented_block_body) [718 774])
+                    ("report_file" variable nil (reparse-symbol indented_block_body) [856 908]))                  
+                :type "class")
+                nil [678 909])
+            ("DownloadAppForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("file_id" variable nil (reparse-symbol indented_block_body) [950 1006]))                  
+                :type "class")
+                nil [911 1007])
+            ("UploadAppForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("user_id" variable nil (reparse-symbol indented_block_body) [1046 1098])
+                    ("app_file" variable nil (reparse-symbol indented_block_body) [1103 1152]))                  
+                :type "class")
+                nil [1009 1153])
+            ("DeleteAppForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("file_id" variable nil (reparse-symbol indented_block_body) [1192 1248]))                  
+                :type "class")
+                nil [1155 1249])
+            ("AnalysisDescForm" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("new_desc" variable nil (reparse-symbol indented_block_body) [1291 1393])
+                    ("new_extra_desc" variable nil (reparse-symbol indented_block_body) [1398 1512]))                  
+                :type "class")
+                nil [1251 1513])
+            ("AnalysisDescFormSet" variable nil nil [1514 1569])
+            ("USER_TYPE_CHOICE" variable nil nil [1607 1690])
+            ("PAID_BOOLEAN" variable nil nil [1692 1777])
+            ("PAYMENT_METHOD" variable nil nil [1779 1890])
+            ("PAYMENT_DURATION" variable nil nil [1892 2006])
+            ("SubscriptionForm0" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("regular" variable nil (reparse-symbol indented_block_body) [2050 2174]))                  
+                :type "class")
+                nil [2009 2175])
+            ("SubscriptionForm1" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("paid" variable nil (reparse-symbol indented_block_body) [2218 2348]))                  
+                :type "class")
+                nil [2177 2349])
+            ("SubscriptionForm2" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("duration" variable nil (reparse-symbol indented_block_body) [2392 2519])
+                    ("source" variable nil (reparse-symbol indented_block_body) [2525 2611]))                  
+                :type "class")
+                nil [2351 2612])
+            ("SubscriptionForm3" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("expiry" variable nil (reparse-symbol indented_block_body) [2655 2783]))                  
+                :type "class")
+                nil [2614 2784])
+            ("SubscriptionForm4" type
+               (:superclasses ("forms.Form")
+                :members 
+                  ( ("scans_left" variable nil (reparse-symbol indented_block_body) [2827 2878]))                  
+                :type "class")
+                nil [2786 2879]))          
+      :file "forms.py"
+      :pointmax 2879
+      :fsize 2878
+      :lastmodtime '(22533 55200 961310 823000)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 42])
+            ("mycroft.crm" include nil nil [43 72])
+            ("django.conf" include nil nil [74 106])
+            ("urlpatterns" variable nil nil [109 4528])
+            ("if" code nil nil [4530 4659]))          
+      :file "urls.py"
+      :pointmax 4659
+      :fsize 4658
+      :lastmodtime '(22533 55201 425303 311000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!crm!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

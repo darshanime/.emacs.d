@@ -1,0 +1,77 @@
+;; Object lestrade/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lestrade/"
+  :tables
+  (list
+    (semanticdb-table "fabfile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [1 12])
+            ("boto.ec2" include nil nil [13 28])
+            ("fabric.api" include nil nil [30 67])
+            ("fabric.colors" include nil nil [68 107])
+            ("constants" include nil nil [108 137])
+            ("commands" include nil nil [138 183])
+            ("env" variable nil nil [185 222])
+            ("env" variable nil nil [223 273])
+            ("instance_up" function (:documentation "
+    This creates an instance in ec2
+    ") nil [723 1061])
+            ("install_docker" function (:documentation "
+    install docker on the instance
+    ") nil [1063 1270])
+            ("setup_elk" function (:documentation "
+    installs docker compose,
+    copies conf files to server
+    ") nil [1272 1487])
+            ("_create_ec2_instance" function (:documentation "
+    helper function to create EC2 Instance
+    ") nil [1489 2410]))          
+      :file "fabfile.py"
+      :pointmax 2410
+      :fsize 2147
+      :lastmodtime '(22536 40351 969693 787000)
+      :unmatched-syntax nil)
+    (semanticdb-table "constants.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os.path" include nil nil [1 15])
+            ("_env" function (:arguments 
+              ( ("var" variable nil (reparse-symbol function_parameters) [27 30])
+                ("default" variable nil (reparse-symbol function_parameters) [32 39]))              ) nil [18 125])
+            ("PROJECT_NAME" variable nil nil [126 161])
+            ("SERVER_USERNAME" variable nil nil [162 203])
+            ("SSH_PATH" variable nil nil [204 231])
+            ("EC2_KEY_NAME" variable nil nil [232 267])
+            ("ADMIN_EMAIL" variable nil nil [268 301])
+            ("GIT_USERNAME" variable nil nil [302 337])
+            ("INSTANCE_NAME_TAG" variable nil nil [338 383])
+            ("AWS_ACCESS_KEY" variable nil nil [384 423])
+            ("AWS_SECRET_KEY" variable nil nil [424 463])
+            ("EC2_REGION" variable nil nil [464 495])
+            ("EC2_AMIS" variable nil nil [496 523])
+            ("EC2_KEYPAIR" variable nil nil [524 557])
+            ("EC2_SECGROUPS" variable nil nil [558 595])
+            ("EC2_INSTANCETYPE" variable nil nil [596 639])
+            ("EC2_INSTANCES" variable nil nil [640 677])
+            ("SYSLOG_INPUT_PORT" variable nil nil [678 723])
+            ("SHERLOCK_INPUT_PORT" variable nil nil [724 773])
+            ("MORIARTY_INPUT_PORT" variable nil nil [774 823]))          
+      :file "constants.py"
+      :pointmax 824
+      :fsize 823
+      :lastmodtime '(22536 46478 298896 475000)
+      :unmatched-syntax '(($EOI 839 . 839) (NAME 268 . 279) ($EOI 692 . 692) ($EOI 692 . 692) ($EOI 691 . 691) ($EOI 683 . 683) ($EOI 411 . 411) ($EOI 411 . 411)))
+    (semanticdb-table "commands.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("constants" include nil nil [15 44])
+            ("get_docker" variable nil nil [46 710]))          
+      :file "commands.py"
+      :pointmax 961
+      :fsize 960
+      :lastmodtime '(22536 40352 445691 613000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!lestrade!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,78 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("base64" include nil nil [1 14])
+            ("django.http" include nil nil [16 47])
+            ("django.test" include nil nil [48 88])
+            ("django.core.urlresolvers" include nil nil [90 134])
+            ("mycroft.core.status" include nil nil [136 199])
+            ("tests.factories" include nil nil [200 254])
+            ("TestViews" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("setUp" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [298 302]))                          )
+                        (reparse-symbol indented_block_body) [288 455])
+                    ("login" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [470 474]))                          )
+                        (reparse-symbol indented_block_body) [460 1137])
+                    ("assert_ok" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1156 1160])
+                            ("name" variable nil (reparse-symbol function_parameters) [1162 1166]))                          )
+                        (reparse-symbol indented_block_body) [1142 1297])
+                    ("assert_redirect_ok" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1325 1329])
+                            ("name" variable nil (reparse-symbol function_parameters) [1331 1335]))                          )
+                        (reparse-symbol indented_block_body) [1302 1610])
+                    ("test_views" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1630 1634]))                          )
+                        (reparse-symbol indented_block_body) [1615 1769])
+                    ("test_apply_coupon" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1796 1800]))                          )
+                        (reparse-symbol indented_block_body) [1774 1827]))                  
+                :type "class")
+                nil [257 1827]))          
+      :file "test_views.py"
+      :pointmax 2051
+      :fsize 2050
+      :lastmodtime '(22533 55201 653299 621000)
+      :unmatched-syntax nil)
+    (semanticdb-table "factories.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 37])
+            ("model_mommy" include nil nil [38 67])
+            ("pytest" include nil nil [68 81])
+            ("ak_vendor.enums" include nil nil [82 122])
+            ("mycroft.core.models" include nil nil [124 180])
+            ("pytestmark" variable nil nil [183 217])
+            ("create_user" function (:arguments 
+              ( ("password" variable nil (reparse-symbol function_parameters) [236 244]))              ) nil [220 675])
+            ("create_submission" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [699 703]))              ) nil [677 885])
+            ("create_coupon" function nil nil [887 988]))          
+      :file "factories.py"
+      :pointmax 988
+      :fsize 987
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

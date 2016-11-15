@@ -35,6 +35,11 @@
 (require 'simpleclip)
 (simpleclip-mode 1)
 
+;; activate dockerfile-mode
+;; github.com/spotify/dockerfile-mode
+(require 'dockerfile-mode)
+(add-to-list 'auto-mode-alist '("Dockerfile\\'" . dockerfile-mode))
+
 (require 'smart-tab)
 (global-smart-tab-mode 1)
 
@@ -252,6 +257,12 @@
 ;; GROUP: Faces -> Number Font Lock   ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; PACKAGE: enable word wrapping      ;;
+;;          in text mode              ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+(add-hook 'text-mode-hook 'toggle-mode)
 
 ;; config for highlight-symbol
 (require 'highlight-symbol)
@@ -505,7 +516,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(flycheck-checker-error-threshold 1000))
+ '(flycheck-checker-error-threshold 1000)
+ '(send-mail-function (quote smtpmail-send-it))
+ '(smtpmail-smtp-server "smtp.googlemail.com")
+ '(smtpmail-smtp-service 25))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

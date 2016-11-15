@@ -1,0 +1,47 @@
+;; Object sis/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sis/"
+  :tables
+  (list
+    (semanticdb-table "items.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy.item" include nil nil [128 163])
+            ("SisItem" type
+               (:superclasses ("Item")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [190 205])
+                    ("link" variable nil (reparse-symbol indented_block_body) [210 224])
+                    ("imgs" variable nil (reparse-symbol indented_block_body) [229 243])
+                    ("torrents" variable nil (reparse-symbol indented_block_body) [248 266])
+                    ("sharetitle" variable nil (reparse-symbol indented_block_body) [271 292])
+                    ("bottomline" variable nil (reparse-symbol indented_block_body) [297 317])
+                    ("duty" variable nil (reparse-symbol indented_block_body) [322 336])
+                    ("xxx" variable nil (reparse-symbol indented_block_body) [341 354]))                  
+                :type "class")
+                nil [165 355])
+            ("SisForumListItem" type
+               (:superclasses ("Item")
+                :members 
+                  ( ("content" variable nil (reparse-symbol indented_block_body) [390 407])
+                    ("title" variable nil (reparse-symbol indented_block_body) [440 455])
+                    ("thread_type" variable nil (reparse-symbol indented_block_body) [460 481])
+                    ("author" variable nil (reparse-symbol indented_block_body) [486 502])
+                    ("post_time" variable nil (reparse-symbol indented_block_body) [507 526])
+                    ("link" variable nil (reparse-symbol indented_block_body) [531 545])
+                    ("star" variable nil (reparse-symbol indented_block_body) [550 564])
+                    ("comment" variable nil (reparse-symbol indented_block_body) [569 586])
+                    ("view" variable nil (reparse-symbol indented_block_body) [591 605])
+                    ("size" variable nil (reparse-symbol indented_block_body) [610 624])
+                    ("video_type" variable nil (reparse-symbol indented_block_body) [629 649])
+                    ("last_post_time" variable nil (reparse-symbol indented_block_body) [654 678]))                  
+                :type "class")
+                nil [356 679]))          
+      :file "items.py"
+      :pointmax 679
+      :fsize 678
+      :lastmodtime '(22021 10333 445039 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!scrapycodes!scrapy-examples!sis!sis!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,16 @@
+;; Object elk-appknox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elk-appknox/"
+  :tables
+  (list
+    (semanticdb-table "config.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "config.json"
+      :pointmax 2932
+      :fsize 2931
+      :lastmodtime '(22552 12316 150696 576000)
+      :unmatched-syntax nil))
+  :file "!home!radar!.docker!machine!machines!elk-appknox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

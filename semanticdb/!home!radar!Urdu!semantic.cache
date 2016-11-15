@@ -1,0 +1,24 @@
+;; Object Urdu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Urdu/"
+  :tables
+  (list
+    (semanticdb-table "urdu.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [71 81])
+            ("fuzzywuzzy" include nil nil [82 112])
+            ("pickle" include nil nil [113 126])
+            ("pkl_file" variable nil nil [128 180])
+            ("words" variable nil nil [181 210])
+            ("pkl_file" code nil nil [211 227])
+            ("query" variable nil nil [229 248])
+            ("for" code nil nil [249 336]))          
+      :file "urdu.py"
+      :pointmax 336
+      :fsize 335
+      :lastmodtime '(22556 8844 820968 234000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Urdu!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

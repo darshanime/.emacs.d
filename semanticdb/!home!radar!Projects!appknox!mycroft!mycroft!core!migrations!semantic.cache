@@ -1,0 +1,35 @@
+;; Object migrations/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "migrations/"
+  :tables
+  (list
+    (semanticdb-table "0001_initial.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [73 112])
+            ("django.conf" include nil nil [114 146])
+            ("django.contrib.auth.models" include nil nil [147 180])
+            ("django.contrib.postgres.fields" include nil nil [181 218])
+            ("django.contrib.postgres.fields.jsonb" include nil nil [219 262])
+            ("django.core.validators" include nil nil [263 292])
+            ("django.db" include nil nil [293 333])
+            ("django.db.models.deletion" include nil nil [334 366])
+            ("django.utils.timezone" include nil nil [367 395])
+            ("mycroft.core.models" include nil nil [396 422])
+            ("uuid" include nil nil [423 434])
+            ("Migration" type
+               (:superclasses ("migrations.Migration")
+                :members 
+                  ( ("initial" variable nil (reparse-symbol indented_block_body) [481 495])
+                    ("dependencies" variable nil (reparse-symbol indented_block_body) [501 585])
+                    ("operations" variable nil (reparse-symbol indented_block_body) [591 19035]))                  
+                :type "class")
+                nil [437 19036]))          
+      :file "0001_initial.py"
+      :pointmax 19036
+      :fsize 19035
+      :lastmodtime '(22507 22044 984267 431000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!core!migrations!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

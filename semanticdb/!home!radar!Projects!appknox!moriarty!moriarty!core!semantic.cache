@@ -1,0 +1,322 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("io" include nil nil [1 10])
+            ("os" include nil nil [11 20])
+            ("subprocess" include nil nil [21 38])
+            ("sys" include nil nil [39 49])
+            ("uuid" include nil nil [50 61])
+            ("contextlib" include nil nil [62 99])
+            ("try" code nil nil [102 176])
+            ("django.conf" include nil nil [176 208])
+            ("moriarty.core.enums" include nil nil [210 270])
+            ("moriarty.core.logger" include nil nil [271 314])
+            ("logger" variable nil nil [317 346])
+            ("e_logger" variable nil nil [347 377])
+            ("ASSIGNED_SERIALS" variable nil nil [380 769])
+            ("get_mux_devices" function (:documentation "
+    docstring for get_mux_devices
+    ") nil [772 1042])
+            ("delete_log_file" function nil nil [1044 1107])
+            ("run_shell_command" function (:arguments 
+              ( ("command" variable nil (reparse-symbol function_parameters) [1131 1138])
+                ("shell" variable nil (reparse-symbol function_parameters) [1140 1145])
+                ("env" variable nil (reparse-symbol function_parameters) [1153 1156]))              ) nil [1109 1518])
+            ("get_device_label_from_serial" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [1553 1566]))              ) nil [1520 1699])
+            ("device_type" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [1717 1730]))              ) nil [1701 1944])
+            ("device_label" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [1963 1976]))              ) nil [1946 2064])
+            ("is_valid_uuid" function (:arguments 
+              ( ("uuid_str" variable nil (reparse-symbol function_parameters) [2084 2092]))              ) nil [2066 2207])
+            ("get_device_info_from_serial" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [2241 2254])
+                ("prop" variable nil (reparse-symbol function_parameters) [2256 2260]))              ) nil [2209 2570])
+            ("no_stdout" function (:decorators 
+              ( ("contextmanager" function (:type "decorator") nil nil))              ) nil [2572 2736])
+            ("check_android_services" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [2765 2778]))              ) nil [2738 3085])
+            ("check_services" function (:arguments 
+              ( ("device" variable nil (reparse-symbol function_parameters) [3106 3112]))              ) nil [3087 3216]))          
+      :file "utils.py"
+      :pointmax 3216
+      :fsize 3215
+      :lastmodtime '(22508 42062 957731 633000)
+      :unmatched-syntax nil)
+    (semanticdb-table "enums.py"
+      :file "enums.py"
+      :fsize 751
+      :lastmodtime '(22507 62916 816653 41000))
+    (semanticdb-table "logger.py"
+      :file "logger.py"
+      :fsize 801
+      :lastmodtime '(22507 62916 816653 41000))
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [1 23])
+            ("django.conf" include nil nil [25 57])
+            ("django.http" include nil nil [58 94])
+            ("redis" include nil nil [95 124])
+            ("moriarty.core.auth" include nil nil [126 171])
+            ("moriarty.core.dbapi" include nil nil [172 371])
+            ("moriarty.core.enums" include nil nil [372 416])
+            ("redis" variable nil nil [419 517])
+            ("init" function
+               (:documentation "
+    An endpoint to test / ping api.
+    "
+                :arguments 
+                  ( ("req" variable nil (reparse-symbol function_parameters) [545 548]))                  
+                :decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  )
+                nil [520 664])
+            ("device" function
+               (:documentation "
+    POST: Request a device
+        - param `platform`: Platform device
+    GET: Get device info
+    DELETE: Release a device
+    "
+                :arguments 
+                  ( ("req" variable nil (reparse-symbol function_parameters) [693 696])
+                    ("token" variable nil (reparse-symbol function_parameters) [698 703]))                  
+                :decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  )
+                nil [666 2963])
+            ("scan" function
+               (:documentation "
+    Scan the given app on allocated device
+
+    `requests` example:
+    with open('data','rb') as payload:
+        headers = {'content-type': 'application/x-www-form-urlencoded'}
+        r = requests.post(
+            'https://IP_ADDRESS/rest/rest/2',
+            auth=('userid', 'password'),
+            data=payload, verify=False, headers=headers)
+    "
+                :arguments 
+                  ( ("req" variable nil (reparse-symbol function_parameters) [2990 2993])
+                    ("token" variable nil (reparse-symbol function_parameters) [2995 3000]))                  
+                :decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  )
+                nil [2965 3793])
+            ("data" function
+               (:documentation "
+    Get data collected from scan
+    "
+                :arguments 
+                  ( ("req" variable nil (reparse-symbol function_parameters) [3820 3823])
+                    ("token" variable nil (reparse-symbol function_parameters) [3825 3830]))                  
+                :decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  )
+                nil [3795 4213])
+            ("miniports" function
+               (:documentation "
+    Get data collected from scan
+    "
+                :arguments 
+                  ( ("req" variable nil (reparse-symbol function_parameters) [4229 4232]))                  )
+                nil [4215 4854])
+            ("devices" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [4884 4891]))                  )
+                nil [4856 5097]))          
+      :file "views.py"
+      :pointmax 5097
+      :fsize 5096
+      :lastmodtime '(22502 30544 446446 612000)
+      :unmatched-syntax nil)
+    (semanticdb-table "auth.py"
+      :file "auth.py"
+      :fsize 1582
+      :lastmodtime '(22470 44613 130282 952000))
+    (semanticdb-table "dbapi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+File name: dbapi.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2016-03-24
+\"\"\"" code nil nil [127 221])
+            ("pyudev" include nil nil [223 236])
+            ("os" include nil nil [238 259])
+            ("tempfile" include nil nil [260 288])
+            ("redis" include nil nil [290 319])
+            ("django.db.models" include nil nil [320 350])
+            ("django.conf" include nil nil [351 383])
+            ("moriarty.core.logger" include nil nil [385 428])
+            ("moriarty.core.enums" include nil nil [429 473])
+            ("moriarty.core.models" include nil nil [474 527])
+            ("logger" variable nil nil [529 558])
+            ("redis" variable nil nil [559 657])
+            ("get_user_by_uuid_and_token" function
+               (:documentation "
+    docstring for get_user_by_uuid_and_token
+    "
+                :arguments 
+                  ( ("uuid" variable nil (reparse-symbol function_parameters) [691 695])
+                    ("token" variable nil (reparse-symbol function_parameters) [697 702]))                  )
+                nil [660 881])
+            ("get_device_by_uuid" function
+               (:documentation "
+    docstring for get_device_by_uuid
+    "
+                :arguments 
+                  ( ("uuid" variable nil (reparse-symbol function_parameters) [906 910]))                  )
+                nil [883 1072])
+            ("get_device_by_uuid_and_user" function
+               (:documentation "
+    docstring for get_device_by_uuid
+    "
+                :arguments 
+                  ( ("uuid" variable nil (reparse-symbol function_parameters) [1106 1110])
+                    ("user" variable nil (reparse-symbol function_parameters) [1112 1116]))                  )
+                nil [1074 1289])
+            ("create_device" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [1309 1322]))              ) nil [1291 2003])
+            ("get_device_by_serial_number" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [2037 2050]))              ) nil [2005 2170])
+            ("get_or_create_device" function
+               (:documentation "
+    docstring for get_or_create_device
+    "
+                :arguments 
+                  ( ("serial_number" variable nil (reparse-symbol function_parameters) [2197 2210]))                  )
+                nil [2172 2407])
+            ("get_device_available" function
+               (:documentation "
+    docstring for get_device_available
+    "
+                :arguments 
+                  ( ("platform" variable nil (reparse-symbol function_parameters) [2434 2442]))                  )
+                nil [2409 2599])
+            ("update_device_user" function
+               (:documentation "
+    Update the device's current user
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [2624 2630])
+                    ("user" variable nil (reparse-symbol function_parameters) [2632 2636]))                  )
+                nil [2601 3082])
+            ("update_device_url" function
+               (:documentation "
+    Update the device's current user
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [3106 3112])
+                    ("url" variable nil (reparse-symbol function_parameters) [3114 3117]))                  )
+                nil [3084 3230])
+            ("update_device_process_id" function
+               (:documentation "
+    Update the device's current user
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [3261 3267])
+                    ("process_id" variable nil (reparse-symbol function_parameters) [3269 3279]))                  )
+                nil [3232 3406])
+            ("update_devices_connected" function
+               (:documentation "
+    Update the devices that are connected.
+    "
+                :arguments 
+                  ( ("serial_numbers" variable nil (reparse-symbol function_parameters) [3437 3451]))                  )
+                nil [3408 3775])
+            ("set_device_as_connected" function
+               (:documentation "
+    Set the device as connected
+    "
+                :arguments 
+                  ( ("serial_number" variable nil (reparse-symbol function_parameters) [3805 3818]))                  )
+                nil [3777 3974])
+            ("set_device_as_disconnected" function
+               (:documentation "
+    Set the device as disconnected
+    "
+                :arguments 
+                  ( ("serial_number" variable nil (reparse-symbol function_parameters) [4007 4020]))                  )
+                nil [3976 4180])
+            ("get_script_by_name_and_platform" function
+               (:documentation "
+    docstring for get_script_by_name_and_platform
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4218 4222])
+                    ("platform" variable nil (reparse-symbol function_parameters) [4224 4232]))                  )
+                nil [4182 4426])
+            ("create_script" function
+               (:documentation "docstring for create_script"
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [4446 4450])
+                    ("text" variable nil (reparse-symbol function_parameters) [4452 4456])
+                    ("platform" variable nil (reparse-symbol function_parameters) [4458 4466]))                  )
+                nil [4428 4604])
+            ("update_script_text" function (:arguments 
+              ( ("script" variable nil (reparse-symbol function_parameters) [4629 4635])
+                ("text" variable nil (reparse-symbol function_parameters) [4637 4641]))              ) nil [4606 4703])
+            ("get_scripts_for_platform" function
+               (:documentation "
+    Get all scripts of a platform
+    "
+                :arguments 
+                  ( ("platform" variable nil (reparse-symbol function_parameters) [4734 4742]))                  )
+                nil [4705 4847])
+            ("delete_all_scripts_except_ids" function
+               (:documentation "
+    Delete all the scripts except given IDs
+    "
+                :arguments 
+                  ( ("script_ids" variable nil (reparse-symbol function_parameters) [4883 4893]))                  )
+                nil [4849 5021])
+            ("get_user_by_email" function
+               (:documentation "
+    docstring for get_user_by_email
+    "
+                :arguments 
+                  ( ("email" variable nil (reparse-symbol function_parameters) [5045 5050]))                  )
+                nil [5023 5209])
+            ("create_appknox_user" function
+               (:documentation "
+    docstring for create_user
+    "
+                :arguments 
+                  ( ("email" variable nil (reparse-symbol function_parameters) [5235 5240])
+                    ("username" variable nil (reparse-symbol function_parameters) [5242 5250])
+                    ("password" variable nil (reparse-symbol function_parameters) [5252 5260]))                  )
+                nil [5211 5464])
+            ("update_device_data" function
+               (:documentation "
+    Update the device's current user
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [5489 5495])
+                    ("data" variable nil (reparse-symbol function_parameters) [5497 5501]))                  )
+                nil [5466 5616])
+            ("get_all_connected_devices" function (:documentation "
+    List all iOS/Android devices connected to farm.
+    ") nil [5618 5771])
+            ("get_all_devices" function (:documentation "
+    List all device objects
+    ") nil [5773 5872])
+            ("delete_all_devices" function nil nil [5874 5941]))          
+      :file "dbapi.py"
+      :pointmax 5941
+      :fsize 5940
+      :lastmodtime '(22507 62916 816653 41000)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :file "models.py"
+      :fsize 4179
+      :lastmodtime '(22507 62916 820653 197000)))
+  :file "!home!radar!Projects!appknox!moriarty!moriarty!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

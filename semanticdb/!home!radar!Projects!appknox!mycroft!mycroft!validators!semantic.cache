@@ -1,0 +1,69 @@
+;; Object validators/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "validators/"
+  :tables
+  (list
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+    File name: tasks.py
+    Version: 0.1
+    Author: Subho Halder
+    Python Version: 2.7
+'''" code nil nil [102 199])
+            ("json" include nil nil [200 211])
+            ("zipfile" include nil nil [212 242])
+            ("requests" include nil nil [244 259])
+            ("celery" include nil nil [260 303])
+            ("django.conf" include nil nil [304 336])
+            ("androguard.core.bytecodes" include nil nil [338 379])
+            ("mycroft.core.enums" include nil nil [381 424])
+            ("mycroft.core.utils" include nil nil [425 468])
+            ("mycroft.core.base_task" include nil nil [469 515])
+            ("mycroft.core.errors" include nil nil [516 563])
+            ("mycroft.core.storage" include nil nil [564 628])
+            ("mycroft.core.utils" include nil nil [629 695])
+            ("mycroft.core.mails" include nil nil [696 756])
+            ("mycroft.core.permissions" include nil nil [757 855])
+            ("mycroft.core.dbapi" include nil nil [856 1073])
+            ("mycroft.core.notify" include nil nil [1074 1292])
+            ("mycroft.validators.android" include nil nil [1294 1349])
+            ("mycroft.validators.ios" include nil nil [1350 1436])
+            ("_get_valid_owner" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1460 1464])
+                ("package_name" variable nil (reparse-symbol function_parameters) [1466 1478])
+                ("platform" variable nil (reparse-symbol function_parameters) [1480 1488]))              ) nil [1439 1810])
+            ("_process_app" function (:arguments 
+              ( ("submission" variable nil (reparse-symbol function_parameters) [1838 1848])
+                ("platform" variable nil (reparse-symbol function_parameters) [1850 1858])
+                ("package_name" variable nil (reparse-symbol function_parameters) [1860 1872])
+                ("app" variable nil (reparse-symbol function_parameters) [1874 1877])
+                ("md5hash" variable nil (reparse-symbol function_parameters) [1879 1886])
+                ("sha1hash" variable nil (reparse-symbol function_parameters) [1888 1896])
+                ("validator" variable nil (reparse-symbol function_parameters) [1898 1907]))              ) nil [1812 5576])
+            ("_process_content" function (:arguments 
+              ( ("file_contents" variable nil (reparse-symbol function_parameters) [5599 5612]))              ) nil [5578 6143])
+            ("" code nil nil [6157 6175])
+            ("validate" function (:arguments 
+              ( ("submission_id" variable nil (reparse-symbol function_parameters) [6189 6202]))              ) nil [6176 7466]))          
+      :file "tasks.py"
+      :pointmax 7466
+      :fsize 7465
+      :lastmodtime '(22507 22045 288262 783000)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 412
+      :lastmodtime '(22507 22045 288262 783000))
+    (semanticdb-table "android.py"
+      :file "android.py"
+      :fsize 2440
+      :lastmodtime '(22507 22045 268263 89000))
+    (semanticdb-table "ios.py"
+      :file "ios.py"
+      :fsize 3287
+      :lastmodtime '(22507 22045 288262 783000)))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!validators!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

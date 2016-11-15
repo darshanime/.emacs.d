@@ -1,0 +1,92 @@
+;; Object beans/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "beans/"
+  :tables
+  (list
+    (semanticdb-table "Feedback.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.anthea.info.beans" package nil nil [1 39])
+            ("Feedback" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("devknoxUseful" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [125 154])
+                    ("devknoxRecommend" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [159 191])
+                    ("suggestionText" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [196 226])
+                    ("token" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [231 252])
+                    ("user" variable
+                       (:typemodifiers ("private")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [257 277])
+                    ("getUserId" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [283 337])
+                    ("setUserId" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("userId" variable (:type "String") (reparse-symbol formal_parameters) [365 378]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [343 415])
+                    ("getToken" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [421 475])
+                    ("setToken" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("token" variable (:type "String") (reparse-symbol formal_parameters) [502 514]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [481 551])
+                    ("getDevknoxUseful" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [557 627])
+                    ("setDevknoxUseful" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("devknoxUseful" variable (:type "String") (reparse-symbol formal_parameters) [662 682]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [633 735])
+                    ("getDevknoxRecommend" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [741 817])
+                    ("setDevknoxRecommend" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("devknoxRecommend" variable (:type "String") (reparse-symbol formal_parameters) [855 878]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [823 937])
+                    ("getSuggestionText" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [943 1015])
+                    ("setSuggestionText" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("suggestionText" variable (:type "String") (reparse-symbol formal_parameters) [1051 1072]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1021 1127]))                  
+                :type "class")
+                nil [97 1129]))          
+      :file "Feedback.java"
+      :pointmax 1130
+      :fsize 1129
+      :lastmodtime '(22550 57834 988988 127000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!com!appknox!anthea!info!beans!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

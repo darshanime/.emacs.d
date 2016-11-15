@@ -1,0 +1,18 @@
+;; Object formtools/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "formtools/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__version__" variable nil nil [1 20])
+            ("default_app_config" variable nil nil [22 75]))          
+      :file "__init__.py"
+      :pointmax 76
+      :fsize 75
+      :lastmodtime '(22513 60962 698185 419000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!clones!django-formtools!formtools!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

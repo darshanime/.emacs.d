@@ -1,0 +1,39 @@
+;; Object spiders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spiders/"
+  :tables
+  (list
+    (semanticdb-table "car_one_spider.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("cardekho_one.items" include nil nil [1 47])
+            ("scrapy" include nil nil [48 73])
+            ("scrapy.http.request" include nil nil [74 113])
+            ("CardekhoSpider" type
+               (:superclasses ("Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [149 170])
+                    ("allowed_domains" variable nil (reparse-symbol indented_block_body) [175 220])
+                    ("start_urls" variable nil (reparse-symbol indented_block_body) [225 290])
+                    ("custom_settings" variable nil (reparse-symbol indented_block_body) [295 453])
+                    ("start_requests" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [482 486]))                          )
+                        (reparse-symbol indented_block_body) [463 617])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [632 636])
+                            ("response" variable nil (reparse-symbol function_parameters) [638 646]))                          )
+                        (reparse-symbol indented_block_body) [622 1086]))                  
+                :type "class")
+                nil [115 1086]))          
+      :file "car_one_spider.py"
+      :pointmax 1086
+      :fsize 1085
+      :lastmodtime '(22024 11789 457423 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!scrapycodes!cardekho final!cardekho_one!spiders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

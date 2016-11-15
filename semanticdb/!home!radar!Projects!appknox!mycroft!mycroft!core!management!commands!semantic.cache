@@ -1,0 +1,68 @@
+;; Object commands/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "commands/"
+  :tables
+  (list
+    (semanticdb-table "seed_db.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf" include nil nil [1 33])
+            ("django.core.management.base" include nil nil [34 85])
+            ("mycroft.core.data.vulnerabilities" include nil nil [87 161])
+            ("mycroft.core.dbapi" include nil nil [162 297])
+            ("ak_vendor.enums" include nil nil [298 338])
+            ("create_admins" function nil nil [341 991])
+            ("create_vulnerabilities" function nil nil [993 2082])
+            ("create_sites" function nil nil [2084 2177])
+            ("Command" type
+               (:superclasses ("BaseCommand")
+                :members 
+                  ( ("help" variable nil (reparse-symbol indented_block_body) [2211 2227])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2244 2248])
+                            ("args" variable nil (reparse-symbol function_parameters) [2250 2255])
+                            ("options" variable nil (reparse-symbol function_parameters) [2257 2266]))                          )
+                        (reparse-symbol indented_block_body) [2233 2504]))                  
+                :type "class")
+                nil [2179 2504]))          
+      :file "seed_db.py"
+      :pointmax 2504
+      :fsize 2503
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "seed_db_dev.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 31])
+            ("django.contrib.sites.models" include nil nil [33 77])
+            ("django.core.management" include nil nil [78 125])
+            ("django.core.management.base" include nil nil [126 177])
+            ("django.utils.timezone" include nil nil [178 215])
+            ("mycroft.core.dbapi" include nil nil [217 357])
+            ("ak_vendor.enums" include nil nil [358 424])
+            ("create_extra_users" function nil nil [427 624])
+            ("create_pricings" function nil nil [626 1059])
+            ("create_sites" function nil nil [1061 1150])
+            ("Command" type
+               (:superclasses ("BaseCommand")
+                :members 
+                  ( ("help" variable nil (reparse-symbol indented_block_body) [1184 1201])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1218 1222])
+                            ("args" variable nil (reparse-symbol function_parameters) [1224 1229])
+                            ("options" variable nil (reparse-symbol function_parameters) [1231 1240]))                          )
+                        (reparse-symbol indented_block_body) [1207 1523]))                  
+                :type "class")
+                nil [1152 1523]))          
+      :file "seed_db_dev.py"
+      :pointmax 1523
+      :fsize 1522
+      :lastmodtime '(22570 55319 895344 413000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!core!management!commands!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

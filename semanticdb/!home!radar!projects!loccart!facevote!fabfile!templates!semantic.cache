@@ -1,0 +1,19 @@
+;; Object templates/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "templates/"
+  :tables
+  (list
+    (semanticdb-table "gunicorn.conf.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [1 10])
+            ("numCPUs" function nil nil [12 158])
+            ("bind" variable nil nil [159 182]))          
+      :file "gunicorn.conf.py"
+      :pointmax 210
+      :fsize 209
+      :lastmodtime '(22074 16855 0 0)
+      :unmatched-syntax '((NAME 183 . 190) ($EOI 210 . 210))))
+  :file "!home!radar!projects!loccart!facevote!fabfile!templates!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

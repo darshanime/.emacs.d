@@ -1,0 +1,47 @@
+;; Object spiders/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "spiders/"
+  :tables
+  (list
+    (semanticdb-table "one.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("urdu.items" include nil nil [1 32])
+            ("scrapy" include nil nil [33 58])
+            ("scrapy.http.request" include nil nil [59 98])
+            ("string" include nil nil [99 112])
+            ("UrduSpider" type
+               (:superclasses ("Spider")
+                :members 
+                  ( ("name" variable nil (reparse-symbol indented_block_body) [145 165])
+                    ("custom_settings" variable nil (reparse-symbol indented_block_body) [170 346])
+                    ("start_requests" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [371 375]))                          )
+                        (reparse-symbol indented_block_body) [352 565])
+                    ("parse" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [580 584])
+                            ("response" variable nil (reparse-symbol function_parameters) [586 594]))                          )
+                        (reparse-symbol indented_block_body) [570 901]))                  
+                :type "class")
+                nil [115 901]))          
+      :file "one.py"
+      :pointmax 901
+      :fsize 900
+      :lastmodtime '(22555 4901 196297 971000)
+      :unmatched-syntax nil)
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 162
+      :fsize 161
+      :lastmodtime '(22441 32378 301386 0)
+      :unmatched-syntax nil)
+)
+  :file "!home!radar!projects!urdu!urdu!urdu!spiders!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

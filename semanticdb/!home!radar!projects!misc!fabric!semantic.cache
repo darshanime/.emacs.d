@@ -1,0 +1,19 @@
+;; Object fabric/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fabric/"
+  :tables
+  (list
+    (semanticdb-table "fabfile.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("fabric.api" include nil nil [1 32])
+            ("env" variable nil nil [109 157])
+            ("mytask" function nil nil [160 206]))          
+      :file "fabfile.py"
+      :pointmax 206
+      :fsize 205
+      :lastmodtime '(22535 9567 815803 615000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!misc!fabric!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

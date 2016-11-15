@@ -1,0 +1,20 @@
+;; Object music/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "music/"
+  :tables
+  (list
+    (semanticdb-table "songcreate.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Add a Song<br>
+                    <small>Greedygame demo excercise" section (:members 
+              ( ("Back to all Tracks" section (:members 
+                  ( ("Back to all Tracks" anchor nil nil [883 886]))                  ) nil [879 990]))              ) nil [142 990]))          
+      :file "songcreate.html"
+      :pointmax 990
+      :fsize 989
+      :lastmodtime '(22313 52120 521683 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!loccart!greedy!music!templates!music!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

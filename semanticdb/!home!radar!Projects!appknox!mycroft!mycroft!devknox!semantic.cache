@@ -1,0 +1,212 @@
+;; Object devknox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "devknox/"
+  :tables
+  (list
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("mycroft.devknox" include nil nil [35 68]))          
+      :file "urls.py"
+      :pointmax 796
+      :fsize 795
+      :lastmodtime '(22570 64886 891065 420000)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("socket" include nil nil [13 26])
+            ("urllib.parse" include nil nil [27 46])
+            ("django.contrib.auth.mixins" include nil nil [48 110])
+            ("django.views" include nil nil [111 143])
+            ("django.core.urlresolvers" include nil nil [144 193])
+            ("django.contrib" include nil nil [194 229])
+            ("django.http" include nil nil [230 274])
+            ("django.apps" include nil nil [275 303])
+            ("ak_vendor.enums" include nil nil [306 346])
+            ("tokenapi.decorators" include nil nil [347 393])
+            ("django.conf" include nil nil [395 427])
+            ("django.views.decorators.csrf" include nil nil [428 480])
+            ("django.http" include nil nil [481 517])
+            ("ak_vendor.enums" include nil nil [519 567])
+            ("mycroft.core.views" include nil nil [569 615])
+            ("mycroft.core.models" include nil nil [616 652])
+            ("mycroft.core.dbapi" include nil nil [653 714])
+            ("mycroft.core.utils" include nil nil [715 760])
+            ("mycroft.core.mails" include nil nil [761 816])
+            ("mycroft.crm.utils" include nil nil [817 890])
+            ("log_entry" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [936 943]))                  )
+                nil [893 1806])
+            ("uploaded_file" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [1855 1862]))                  )
+                nil [1808 2236])
+            ("UserCreate" type
+               (:superclasses ("PermissionRequiredMixin" "generic.CreateView")
+                :members 
+                  ( ("model" variable nil (reparse-symbol indented_block_body) [2305 2317])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [2322 2364])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [2369 2413])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [2418 2460])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [2465 2506])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [2511 2550])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2577 2581])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2583 2591]))                          )
+                        (reparse-symbol indented_block_body) [2556 2782])
+                    ("form_valid" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2802 2806])
+                            ("form" variable nil (reparse-symbol function_parameters) [2808 2812]))                          )
+                        (reparse-symbol indented_block_body) [2787 3705]))                  
+                :type "class")
+                nil [2238 3705])
+            ("RedirectView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("permission_required" variable nil (reparse-symbol indented_block_body) [3778 3819])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [3824 3863])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3877 3881])
+                            ("request" variable nil (reparse-symbol function_parameters) [3883 3890])
+                            ("args" variable nil (reparse-symbol function_parameters) [3892 3897])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3899 3907]))                          )
+                        (reparse-symbol indented_block_body) [3869 4599]))                  
+                :type "class")
+                nil [3707 4599])
+            ("GetSearchQueryView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [4678 4725])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [4730 4771])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [4776 4815])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4829 4833])
+                            ("request" variable nil (reparse-symbol function_parameters) [4835 4842])
+                            ("args" variable nil (reparse-symbol function_parameters) [4844 4849])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [4851 4859]))                          )
+                        (reparse-symbol indented_block_body) [4821 5307])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5333 5337])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [5339 5347]))                          )
+                        (reparse-symbol indented_block_body) [5312 5784]))                  
+                :type "class")
+                nil [4601 5784])
+            ("SearchView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [5855 5897])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [5902 5943])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [5948 5987])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6001 6005])
+                            ("request" variable nil (reparse-symbol function_parameters) [6007 6014])
+                            ("args" variable nil (reparse-symbol function_parameters) [6016 6021])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6023 6031]))                          )
+                        (reparse-symbol indented_block_body) [5993 6511])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6537 6541])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [6543 6551]))                          )
+                        (reparse-symbol indented_block_body) [6516 7381]))                  
+                :type "class")
+                nil [5786 7381])
+            ("UpdateUser" type
+               (:superclasses ("PermissionRequiredMixin" "generic.UpdateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [7450 7492])
+                    ("model" variable nil (reparse-symbol indented_block_body) [7497 7509])
+                    ("fields" variable nil (reparse-symbol indented_block_body) [7514 7573])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [7578 7602])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [7607 7649])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [7654 7695])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [7700 7739])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7766 7770])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7772 7780]))                          )
+                        (reparse-symbol indented_block_body) [7745 7963]))                  
+                :type "class")
+                nil [7383 7963])
+            ("DeleteUser" type
+               (:superclasses ("PermissionRequiredMixin" "generic.DeleteView")
+                :members 
+                  ( ("success_message" variable nil (reparse-symbol indented_block_body) [8032 8072])
+                    ("pk_url_kwarg" variable nil (reparse-symbol indented_block_body) [8077 8101])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [8106 8151])
+                    ("success_url" variable nil (reparse-symbol indented_block_body) [8156 8198])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [8203 8244])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [8249 8288])
+                    ("model" variable nil (reparse-symbol indented_block_body) [8293 8305]))                  
+                :type "class")
+                nil [7965 8306])
+            ("HomeView" type
+               (:superclasses ("PermissionRequiredMixin" "generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [8375 8410])
+                    ("permission_required" variable nil (reparse-symbol indented_block_body) [8415 8456])
+                    ("login_url" variable nil (reparse-symbol indented_block_body) [8461 8500]))                  
+                :type "class")
+                nil [8308 8501]))          
+      :file "views.py"
+      :pointmax 8501
+      :fsize 8500
+      :lastmodtime '(22571 376 283039 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "admin.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.contrib" include nil nil [1 33]))          
+      :file "admin.py"
+      :pointmax 72
+      :fsize 71
+      :lastmodtime '(22560 27472 576376 908000)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.db" include nil nil [1 29]))          
+      :file "models.py"
+      :pointmax 66
+      :fsize 65
+      :lastmodtime '(22560 27472 576376 908000)
+      :unmatched-syntax nil)
+    (semanticdb-table "tests.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.test" include nil nil [1 33]))          
+      :file "tests.py"
+      :pointmax 69
+      :fsize 68
+      :lastmodtime '(22560 27472 576376 908000)
+      :unmatched-syntax nil)
+    (semanticdb-table "apps.py"
+      :file "apps.py"
+      :fsize 89
+      :lastmodtime '(22560 27472 576376 908000)))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!devknox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,72 @@
+;; Object python-101/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "python-101/"
+  :tables
+  (list
+    (semanticdb-table "python-101.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("print" code nil nil [1 30]))          
+      :file "python-101.py"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(22547 6406 179951 522000)
+      :unmatched-syntax nil)
+    (semanticdb-table "foo.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("print" code nil nil [25 52]))          
+      :file "foo.py"
+      :pointmax 53
+      :fsize 52
+      :lastmodtime '(22547 6406 179951 522000)
+      :unmatched-syntax nil)
+    (semanticdb-table "formatExamples.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("print" code nil nil [1 45])
+            ("print" code nil nil [58 99])
+            ("print" code nil nil [125 169])
+            ("print" code nil nil [182 219])
+            ("print" code nil nil [267 307])
+            ("print" code nil nil [385 478])
+            ("coord" variable nil nil [514 569])
+            ("print" code nil nil [570 631]))          
+      :file "formatExamples.py"
+      :pointmax 766
+      :fsize 765
+      :lastmodtime '(22547 6406 179951 522000)
+      :unmatched-syntax nil)
+    (semanticdb-table "numbers-basic.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("3" code nil nil [71 72])
+            ("1" code nil nil [84 85])
+            ("3" code nil nil [97 98])
+            ("2.0" code nil nil [114 117])
+            ("num_string" variable nil nil [164 184])
+            ("nums" variable nil nil [274 315])
+            ("print" code nil nil [317 345])
+            ("print" code nil nil [346 374])
+            ("print" code nil nil [375 417]))          
+      :file "numbers-basic.py"
+      :pointmax 418
+      :fsize 417
+      :lastmodtime '(22547 7099 566596 903000)
+      :unmatched-syntax nil)
+    (semanticdb-table "inputFromCommandline.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("sys" include nil nil [20 30])
+            ("print" code nil nil [32 90])
+            ("print" code nil nil [91 129])
+            ("args" variable nil nil [131 159])
+            ("for" code nil nil [160 192]))          
+      :file "inputFromCommandline.py"
+      :pointmax 261
+      :fsize 260
+      :lastmodtime '(22547 6406 179951 522000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!clones!python-101!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

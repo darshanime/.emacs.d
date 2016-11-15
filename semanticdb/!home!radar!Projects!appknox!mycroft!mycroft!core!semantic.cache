@@ -1,0 +1,1907 @@
+;; Object core/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "core/"
+  :tables
+  (list
+    (semanticdb-table "dbapi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: dbapi.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2015-11-26
+'''" code nil nil [127 221])
+            ("uuid" include nil nil [222 244])
+            ("datetime" include nil nil [245 275])
+            ("django.conf" include nil nil [277 309])
+            ("django.db.models" include nil nil [310 342])
+            ("django.utils.timezone" include nil nil [343 380])
+            ("django.contrib.sites.models" include nil nil [381 425])
+            ("ak_vendor.enums" include nil nil [427 585])
+            ("mycroft.core.models" include nil nil [586 765])
+            ("get_all_vulnerabilities" function nil nil [768 886])
+            ("get_user_by_username" function (:arguments 
+              ( ("username" variable nil (reparse-symbol function_parameters) [913 921]))              ) nil [888 1116])
+            ("get_user_by_email" function (:arguments 
+              ( ("email" variable nil (reparse-symbol function_parameters) [1140 1145]))              ) nil [1118 1318])
+            ("create_user" function (:arguments 
+              ( ("username" variable nil (reparse-symbol function_parameters) [1345 1353])
+                ("email" variable nil (reparse-symbol function_parameters) [1355 1360])
+                ("password" variable nil (reparse-symbol function_parameters) [1362 1370])
+                ("namespaces" variable nil (reparse-symbol function_parameters) [1372 1382])
+                ("mobile" variable nil (reparse-symbol function_parameters) [1389 1395])
+                ("company" variable nil (reparse-symbol function_parameters) [1402 1409])
+                ("first_name" variable nil (reparse-symbol function_parameters) [1424 1434])
+                ("last_name" variable nil (reparse-symbol function_parameters) [1439 1448])
+                ("any_namespace" variable nil (reparse-symbol function_parameters) [1453 1466])
+                ("types" variable nil (reparse-symbol function_parameters) [1474 1479]))              ) nil [1320 1957])
+            ("get_or_create_user" function (:arguments 
+              ( ("username" variable nil (reparse-symbol function_parameters) [1982 1990])
+                ("email" variable nil (reparse-symbol function_parameters) [1992 1997])
+                ("password" variable nil (reparse-symbol function_parameters) [1999 2007])
+                ("namespaces" variable nil (reparse-symbol function_parameters) [2009 2019])
+                ("types" variable nil (reparse-symbol function_parameters) [2026 2031]))              ) nil [1959 2354])
+            ("get_user_by_id" function (:arguments 
+              ( ("user_id" variable nil (reparse-symbol function_parameters) [2375 2382]))              ) nil [2356 2537])
+            ("get_users_by_ids" function (:arguments 
+              ( ("user_ids" variable nil (reparse-symbol function_parameters) [2560 2568]))              ) nil [2539 2668])
+            ("get_user_by_uuid" function (:arguments 
+              ( ("uuid" variable nil (reparse-symbol function_parameters) [2691 2695]))              ) nil [2670 2849])
+            ("set_password" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2868 2872])
+                ("password" variable nil (reparse-symbol function_parameters) [2874 2882]))              ) nil [2851 2986])
+            ("set_appknox_staff" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3010 3014]))              ) nil [2988 3140])
+            ("get_all_users" function nil nil [3142 3236])
+            ("get_collaborations_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3270 3274]))              ) nil [3238 3380])
+            ("get_all_projects" function nil nil [3382 3489])
+            ("get_all_files" function nil nil [3491 3596])
+            ("get_projects_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3624 3628]))              ) nil [3598 3795])
+            ("get_project_by_id" function (:arguments 
+              ( ("project_id" variable nil (reparse-symbol function_parameters) [3819 3829]))              ) nil [3797 3988])
+            ("get_project_by_uuid" function (:arguments 
+              ( ("project_uuid" variable nil (reparse-symbol function_parameters) [4014 4026]))              ) nil [3990 4189])
+            ("get_file_by_id" function (:arguments 
+              ( ("file_id" variable nil (reparse-symbol function_parameters) [4210 4217]))              ) nil [4191 4365])
+            ("get_submission_by_id" function (:arguments 
+              ( ("submission_id" variable nil (reparse-symbol function_parameters) [4392 4405]))              ) nil [4367 4574])
+            ("get_submission_by_uuid" function (:arguments 
+              ( ("uuid" variable nil (reparse-symbol function_parameters) [4603 4607]))              ) nil [4576 4771])
+            ("get_file_by_uuid" function (:arguments 
+              ( ("file_uuid" variable nil (reparse-symbol function_parameters) [4794 4803]))              ) nil [4773 4955])
+            ("get_last_file_for_project" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [4987 4994]))              ) nil [4957 5077])
+            ("get_last_files_for_projects" function (:arguments 
+              ( ("projects" variable nil (reparse-symbol function_parameters) [5111 5119]))              ) nil [5079 5287])
+            ("get_max_version_code" function (:arguments 
+              ( ("files" variable nil (reparse-symbol function_parameters) [5314 5319]))              ) nil [5289 5462])
+            ("get_files_for_project" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [5490 5497]))              ) nil [5464 5579])
+            ("get_files_for_projects" function (:arguments 
+              ( ("projects" variable nil (reparse-symbol function_parameters) [5608 5616]))              ) nil [5581 5720])
+            ("get_analyses_for_file" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [5748 5752]))              ) nil [5722 5838])
+            ("get_analysis_by_id" function (:arguments 
+              ( ("analysis_id" variable nil (reparse-symbol function_parameters) [5863 5874]))              ) nil [5840 6044])
+            ("get_analyses_for_files" function (:arguments 
+              ( ("files" variable nil (reparse-symbol function_parameters) [6073 6078]))              ) nil [6046 6184])
+            ("get_vulnerability_by_id" function (:arguments 
+              ( ("vulnerability_id" variable nil (reparse-symbol function_parameters) [6214 6230]))              ) nil [6186 6411])
+            ("create_vulnerability" function (:arguments 
+              ( ("vulnerability_id" variable nil (reparse-symbol function_parameters) [6447 6463])
+                ("name" variable nil (reparse-symbol function_parameters) [6465 6469])
+                ("description" variable nil (reparse-symbol function_parameters) [6471 6482])
+                ("question" variable nil (reparse-symbol function_parameters) [6484 6492])
+                ("success_message" variable nil (reparse-symbol function_parameters) [6494 6509])
+                ("heading" variable nil (reparse-symbol function_parameters) [6519 6526])
+                ("business_implication" variable nil (reparse-symbol function_parameters) [6528 6548])
+                ("intro" variable nil (reparse-symbol function_parameters) [6550 6555])
+                ("compliant" variable nil (reparse-symbol function_parameters) [6557 6566])
+                ("non_compliant" variable nil (reparse-symbol function_parameters) [6568 6581])
+                ("related_to" variable nil (reparse-symbol function_parameters) [6591 6601])
+                ("platform" variable nil (reparse-symbol function_parameters) [6603 6611])
+                ("is_active" variable nil (reparse-symbol function_parameters) [6613 6622])
+                ("types" variable nil (reparse-symbol function_parameters) [6624 6629]))              ) nil [6413 7120])
+            ("create_subheading" function (:arguments 
+              ( ("subheading_id" variable nil (reparse-symbol function_parameters) [7144 7157])
+                ("heading" variable nil (reparse-symbol function_parameters) [7159 7166])
+                ("content" variable nil (reparse-symbol function_parameters) [7168 7175])
+                ("vulnerability_id" variable nil (reparse-symbol function_parameters) [7177 7193]))              ) nil [7122 7416])
+            ("get_project_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [7443 7447])
+                ("package_name" variable nil (reparse-symbol function_parameters) [7449 7461])
+                ("platform" variable nil (reparse-symbol function_parameters) [7463 7471]))              ) nil [7418 7683])
+            ("create_project_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [7713 7717])
+                ("package_name" variable nil (reparse-symbol function_parameters) [7719 7731])
+                ("platform" variable nil (reparse-symbol function_parameters) [7733 7741])
+                ("name" variable nil (reparse-symbol function_parameters) [7743 7747]))              ) nil [7685 8070])
+            ("get_or_create_project_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [8107 8111])
+                ("package_name" variable nil (reparse-symbol function_parameters) [8113 8125])
+                ("platform" variable nil (reparse-symbol function_parameters) [8127 8135])
+                ("name" variable nil (reparse-symbol function_parameters) [8137 8141]))              ) nil [8072 8426])
+            ("create_analysis_with_vulnerability" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [8467 8471])
+                ("vulnerability" variable nil (reparse-symbol function_parameters) [8473 8486]))              ) nil [8428 8710])
+            ("create_analyses_for_file" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [8741 8745]))              ) nil [8712 9108])
+            ("update_analyses_payment" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [9138 9142]))              ) nil [9110 9238])
+            ("create_file_for_project" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [9277 9284])
+                ("package_name" variable nil (reparse-symbol function_parameters) [9286 9298])
+                ("version" variable nil (reparse-symbol function_parameters) [9300 9307])
+                ("md5hash" variable nil (reparse-symbol function_parameters) [9309 9316])
+                ("sha1hash" variable nil (reparse-symbol function_parameters) [9318 9326])
+                ("submission" variable nil (reparse-symbol function_parameters) [9328 9338]))              ) nil [9240 9715])
+            ("update_analysis_status" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [9744 9752])
+                ("status" variable nil (reparse-symbol function_parameters) [9754 9760]))              ) nil [9717 9879])
+            ("update_analyses_status" function (:arguments 
+              ( ("analyses" variable nil (reparse-symbol function_parameters) [9908 9916])
+                ("status" variable nil (reparse-symbol function_parameters) [9918 9924]))              ) nil [9881 10083])
+            ("get_analysis" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [10102 10106])
+                ("vulnerability_id" variable nil (reparse-symbol function_parameters) [10108 10124]))              ) nil [10085 10539])
+            ("update_analysis" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [10570 10578])
+                ("description" variable nil (reparse-symbol function_parameters) [10580 10591])
+                ("risk" variable nil (reparse-symbol function_parameters) [10593 10597])
+                ("analiser_version" variable nil (reparse-symbol function_parameters) [10599 10615])
+                ("status" variable nil (reparse-symbol function_parameters) [10625 10631]))              ) nil [10541 10875])
+            ("get_file_by_project_and_md5hash" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [10913 10920])
+                ("md5hash" variable nil (reparse-symbol function_parameters) [10922 10929]))              ) nil [10877 11060])
+            ("get_project_count" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [11084 11088]))              ) nil [11062 11197])
+            ("get_all_files_dynamic" function nil nil [11199 11449])
+            ("get_files_under_dynamic_scan" function nil nil [11451 11764])
+            ("update_analysis_dynamic_description" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [11806 11814])
+                ("description" variable nil (reparse-symbol function_parameters) [11816 11827]))              ) nil [11766 12040])
+            ("update_project_credentials" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [12073 12080])
+                ("test_user" variable nil (reparse-symbol function_parameters) [12082 12091])
+                ("test_password" variable nil (reparse-symbol function_parameters) [12093 12106]))              ) nil [12042 12281])
+            ("get_collaboration" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [12305 12309])
+                ("project" variable nil (reparse-symbol function_parameters) [12311 12318]))              ) nil [12283 12507])
+            ("get_collaboration_by_id" function (:arguments 
+              ( ("collaboration_id" variable nil (reparse-symbol function_parameters) [12537 12553]))              ) nil [12509 12735])
+            ("get_collaborations_by_roles" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [12769 12773])
+                ("roles" variable nil (reparse-symbol function_parameters) [12775 12780])
+                ("package_name" variable nil (reparse-symbol function_parameters) [12782 12794])
+                ("platform" variable nil (reparse-symbol function_parameters) [12796 12804]))              ) nil [12737 12992])
+            ("get_collaborations_for_projects" function (:arguments 
+              ( ("projects" variable nil (reparse-symbol function_parameters) [13030 13038]))              ) nil [12994 13187])
+            ("create_collaboration" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13214 13218])
+                ("project" variable nil (reparse-symbol function_parameters) [13220 13227])
+                ("role" variable nil (reparse-symbol function_parameters) [13229 13233])
+                ("action_user" variable nil (reparse-symbol function_parameters) [13235 13246]))              ) nil [13189 13431])
+            ("create_submission" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13455 13459])
+                ("source" variable nil (reparse-symbol function_parameters) [13461 13467])
+                ("status" variable nil (reparse-symbol function_parameters) [13469 13475])
+                ("package_name" variable nil (reparse-symbol function_parameters) [13477 13489])
+                ("uuid" variable nil (reparse-symbol function_parameters) [13494 13498]))              ) nil [13433 13765])
+            ("get_invitation_by_email_and_project" function (:arguments 
+              ( ("email" variable nil (reparse-symbol function_parameters) [13807 13812])
+                ("project" variable nil (reparse-symbol function_parameters) [13814 13821]))              ) nil [13767 13999])
+            ("create_invitation" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [14023 14027])
+                ("project" variable nil (reparse-symbol function_parameters) [14029 14036])
+                ("role" variable nil (reparse-symbol function_parameters) [14038 14042])
+                ("email" variable nil (reparse-symbol function_parameters) [14044 14049]))              ) nil [14001 14217])
+            ("get_invitation_by_uuid" function (:arguments 
+              ( ("uuid" variable nil (reparse-symbol function_parameters) [14246 14250]))              ) nil [14219 14396])
+            ("get_invitations_by_email" function (:arguments 
+              ( ("email" variable nil (reparse-symbol function_parameters) [14427 14432]))              ) nil [14398 14544])
+            ("get_all_active_submissions" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [14577 14581]))              ) nil [14546 14667])
+            ("update_analysis_risk" function (:arguments 
+              ( ("analysis" variable nil (reparse-symbol function_parameters) [14694 14702])
+                ("risk" variable nil (reparse-symbol function_parameters) [14704 14708]))              ) nil [14669 14841])
+            ("create_subscription" function
+               (:documentation "
+    use this to create a new subscription
+    "
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [14876 14880])
+                    ("pricing" variable nil (reparse-symbol function_parameters) [14882 14889])
+                    ("expiry_date" variable nil (reparse-symbol function_parameters) [14891 14902])
+                    ("limited_scans" variable nil (reparse-symbol function_parameters) [14904 14917])
+                    ("scans_left" variable nil (reparse-symbol function_parameters) [14919 14929])
+                    ("duration" variable nil (reparse-symbol function_parameters) [14939 14947])
+                    ("source" variable nil (reparse-symbol function_parameters) [14949 14955])
+                    ("is_active" variable nil (reparse-symbol function_parameters) [14957 14966]))                  )
+                nil [14843 15283])
+            ("update_subscription" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [15309 15313])
+                ("pricing" variable nil (reparse-symbol function_parameters) [15315 15322])
+                ("duration" variable nil (reparse-symbol function_parameters) [15324 15332])
+                ("source" variable nil (reparse-symbol function_parameters) [15334 15340]))              ) nil [15285 16047])
+            ("get_subscription_by_id" function (:arguments 
+              ( ("pk" variable nil (reparse-symbol function_parameters) [16076 16078]))              ) nil [16049 16241])
+            ("get_or_create_pricing" function (:arguments 
+              ( ("name" variable nil (reparse-symbol function_parameters) [16269 16273])
+                ("price" variable nil (reparse-symbol function_parameters) [16275 16280]))              ) nil [16243 16348])
+            ("get_pricing_by_id" function (:arguments 
+              ( ("pk" variable nil (reparse-symbol function_parameters) [16372 16374]))              ) nil [16350 16522])
+            ("get_pricings_for_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [16550 16554]))              ) nil [16524 16632])
+            ("get_all_coupons" function nil nil [16634 16729])
+            ("create_invoice" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [16759 16763])
+                ("amount" variable nil (reparse-symbol function_parameters) [16765 16771])
+                ("source" variable nil (reparse-symbol function_parameters) [16773 16779])
+                ("source_id" variable nil (reparse-symbol function_parameters) [16781 16790])
+                ("customer_id" variable nil (reparse-symbol function_parameters) [16792 16803])
+                ("coupon" variable nil (reparse-symbol function_parameters) [16805 16811])
+                ("pricing" variable nil (reparse-symbol function_parameters) [16813 16820]))              ) nil [16731 17021])
+            ("get_subscription_by_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [17052 17056]))              ) nil [17023 17142])
+            ("get_user_by_subscription" function (:arguments 
+              ( ("subscription" variable nil (reparse-symbol function_parameters) [17173 17185]))              ) nil [17144 17389])
+            ("get_invoice_last_for_stripe" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [17423 17427]))              ) nil [17391 17622])
+            ("get_subscriptions" function (:arguments 
+              ( ("days" variable nil (reparse-symbol function_parameters) [17646 17650]))              ) nil [17624 17918])
+            ("get_subscriptions_for_notification" function (:documentation "
+    Notify users that payments are about to happen
+    ") nil [17920 18090])
+            ("get_subscriptions_for_payment" function (:documentation "
+    Get user's who we charge again for now.
+    ") nil [18092 18251])
+            ("get_all_unknown_analyses" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [18282 18286])
+                ("vulnerability_type" variable nil (reparse-symbol function_parameters) [18288 18306]))              ) nil [18253 18489])
+            ("get_coupon_by_code" function (:arguments 
+              ( ("code" variable nil (reparse-symbol function_parameters) [18514 18518]))              ) nil [18491 18679])
+            ("get_invoice_by_user_and_coupon" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [18716 18720])
+                ("coupon" variable nil (reparse-symbol function_parameters) [18722 18728]))              ) nil [18681 18854])
+            ("get_or_create_site" function (:arguments 
+              ( ("domain" variable nil (reparse-symbol function_parameters) [18879 18885]))              ) nil [18856 19037])
+            ("mgt_get_or_create_project" function (:arguments 
+              ( ("owner" variable nil (reparse-symbol function_parameters) [19148 19153])
+                ("package_name" variable nil (reparse-symbol function_parameters) [19155 19167])
+                ("platform" variable nil (reparse-symbol function_parameters) [19169 19177])
+                ("name" variable nil (reparse-symbol function_parameters) [19179 19183])
+                ("created_on" variable nil (reparse-symbol function_parameters) [19185 19195])
+                ("updated_on" variable nil (reparse-symbol function_parameters) [19197 19207]))              ) nil [19109 19587])
+            ("mgt_get_or_create_collaboration" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [19634 19641])
+                ("user" variable nil (reparse-symbol function_parameters) [19643 19647])
+                ("role" variable nil (reparse-symbol function_parameters) [19649 19653])
+                ("created_on" variable nil (reparse-symbol function_parameters) [19655 19665])
+                ("updated_on" variable nil (reparse-symbol function_parameters) [19667 19677]))              ) nil [19589 20018])
+            ("mgt_get_or_create_file" function (:arguments 
+              ( ("project" variable nil (reparse-symbol function_parameters) [20056 20063])
+                ("name" variable nil (reparse-symbol function_parameters) [20065 20069])
+                ("version" variable nil (reparse-symbol function_parameters) [20071 20078])
+                ("md5hash" variable nil (reparse-symbol function_parameters) [20080 20087])
+                ("sha1hash" variable nil (reparse-symbol function_parameters) [20089 20097])
+                ("created_on" variable nil (reparse-symbol function_parameters) [20099 20109])
+                ("updated_on" variable nil (reparse-symbol function_parameters) [20111 20121])
+                ("source" variable nil (reparse-symbol function_parameters) [20131 20137])
+                ("user" variable nil (reparse-symbol function_parameters) [20139 20143])
+                ("uuid" variable nil (reparse-symbol function_parameters) [20145 20149])
+                ("status" variable nil (reparse-symbol function_parameters) [20151 20157]))              ) nil [20020 20904])
+            ("mgt_get_or_create_analysis" function (:arguments 
+              ( ("file" variable nil (reparse-symbol function_parameters) [20946 20950])
+                ("vulnerability" variable nil (reparse-symbol function_parameters) [20952 20965])
+                ("status" variable nil (reparse-symbol function_parameters) [20967 20973])
+                ("risk" variable nil (reparse-symbol function_parameters) [20975 20979])
+                ("created_on" variable nil (reparse-symbol function_parameters) [20981 20991])
+                ("updated_on" variable nil (reparse-symbol function_parameters) [20993 21003]))              ) nil [20906 21346]))          
+      :file "dbapi.py"
+      :pointmax 21346
+      :fsize 21345
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+    File name: models.py
+    Version: 0.1
+    Author: dhilipsiva <dhilipsiva@gmail.com>
+    Date created: 2015-03-02
+'''" code nil nil [149 273])
+            ("uuid" include nil nil [291 313])
+            ("hashlib" include nil nil [314 337])
+            ("django.db.models" include nil nil [356 386])
+            ("django.conf" include nil nil [387 419])
+            ("django.utils.timezone" include nil nil [420 457])
+            ("django.core.urlresolvers" include nil nil [458 502])
+            ("django.contrib.auth.models" include nil nil [503 554])
+            ("django.core.exceptions" include nil nil [555 608])
+            ("django.contrib.postgres.fields" include nil nil [609 673])
+            ("django.db.models" include nil nil [674 898])
+            ("mycroft.core.storage" include nil nil [915 962])
+            ("mycroft.core.utils" include nil nil [963 1027])
+            ("ak_vendor.enums" include nil nil [1028 1285])
+            ("default_user_types" function nil nil [1288 1403])
+            ("User" type
+               (:superclasses ("AbstractUser")
+                :members 
+                  ( ("'''
+    A custom user so that we can add permissions easily
+    '''" code nil (reparse-symbol indented_block_body) [1435 1502])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [1507 1582])
+                    ("socket_id" variable nil (reparse-symbol indented_block_body) [1587 1676])
+                    ("namespaces" variable nil (reparse-symbol indented_block_body) [1681 1754])
+                    ("any_namespace" variable nil (reparse-symbol indented_block_body) [1759 1802])
+                    ("mobile" variable nil (reparse-symbol indented_block_body) [1807 1863])
+                    ("company" variable nil (reparse-symbol indented_block_body) [1868 1925])
+                    ("lang" variable nil (reparse-symbol indented_block_body) [1930 1975])
+                    ("types" variable nil (reparse-symbol indented_block_body) [1980 2096])
+                    ("devknox_expiry" variable nil (reparse-symbol indented_block_body) [2101 2144])
+                    ("Meta" type
+                       (:superclasses ("AbstractUser.Meta")
+                        :members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [2189 2205]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2150 2206])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2220 2224])
+                            ("args" variable nil (reparse-symbol function_parameters) [2226 2231])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2233 2241]))                          )
+                        (reparse-symbol indented_block_body) [2211 2472])
+                    ("github_redirect" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2511 2515]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2477 2564])
+                    ("affected_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2602 2606]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2569 2822])
+                    ("unaffected_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2862 2866]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2827 3079])
+                    ("has_github_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3119 3123]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3084 3413])
+                    ("has_jira_token" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3451 3455]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3418 3743])
+                    ("namespace_add" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3766 3770])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [3772 3781]))                          )
+                        (reparse-symbol indented_block_body) [3748 4022])
+                    ("namespace_remove" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4048 4052])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [4054 4063]))                          )
+                        (reparse-symbol indented_block_body) [4027 4299])
+                    ("namespace_check" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4324 4328])
+                            ("namespace" variable nil (reparse-symbol function_parameters) [4330 4339]))                          )
+                        (reparse-symbol indented_block_body) [4304 4555])
+                    ("email_md5" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4574 4578]))                          )
+                        (reparse-symbol indented_block_body) [4560 4713])
+                    ("get_subscription" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [4739 4743]))                          )
+                        (reparse-symbol indented_block_body) [4718 4998])
+                    ("set_lang" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5016 5020])
+                            ("lang" variable nil (reparse-symbol function_parameters) [5022 5026]))                          
+                        :documentation "
+        docstring for set_lang
+        ")
+                        (reparse-symbol indented_block_body) [5003 5149])
+                    ("active_projects_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5194 5198]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5154 5267])
+                    ("deactivate_projects" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5296 5300]))                          )
+                        (reparse-symbol indented_block_body) [5272 5362])
+                    ("get_active_project" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5390 5394])
+                            ("package_name" variable nil (reparse-symbol function_parameters) [5396 5408])
+                            ("platform" variable nil (reparse-symbol function_parameters) [5410 5418]))                          )
+                        (reparse-symbol indented_block_body) [5367 5617])
+                    ("all_collaborations" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5659 5663]))                          
+                        :documentation "
+        docstring for all_collaborations
+        ")
+                        (reparse-symbol indented_block_body) [5622 5808])
+                    ("all_projects" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [5844 5848]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [5813 5994])
+                    ("all_submissions" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6033 6037]))                          
+                        :documentation "
+        docstring for all_submissions
+        ")
+                        (reparse-symbol indented_block_body) [5999 6303])
+                    ("all_pricings" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6339 6343]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [6308 6693])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [6710 6714])
+                            ("with_sensitive_data" variable nil (reparse-symbol function_parameters) [6716 6735]))                          )
+                        (reparse-symbol indented_block_body) [6698 7778])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7798 7802])
+                            ("with_sensitive_data" variable nil (reparse-symbol function_parameters) [7804 7823]))                          )
+                        (reparse-symbol indented_block_body) [7783 9864])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9881 9885]))                          )
+                        (reparse-symbol indented_block_body) [9869 9940])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9958 9962]))                          )
+                        (reparse-symbol indented_block_body) [9945 10010]))                  
+                :type "class")
+                nil [1405 10010])
+            ("BaseManager" type
+               (:superclasses ("Manager")
+                :members 
+                  ( ("'''
+    BaseManager - Overrides for default Model manager
+    '''" code nil (reparse-symbol indented_block_body) [10044 10109])
+                    ("all_undeleted" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10132 10136]))                          )
+                        (reparse-symbol indented_block_body) [10114 10184]))                  
+                :type "class")
+                nil [10012 10184])
+            ("BaseModel" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("'''
+    This shoud be inherited by all the classes whose objects are created due
+    to user interaction.
+    '''" code nil (reparse-symbol indented_block_body) [10214 10327])
+                    ("is_deleted" variable nil (reparse-symbol indented_block_body) [10332 10372])
+                    ("created_on" variable nil (reparse-symbol indented_block_body) [10377 10422])
+                    ("updated_on" variable nil (reparse-symbol indented_block_body) [10427 10468])
+                    ("deleted_on" variable nil (reparse-symbol indented_block_body) [10473 10537])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [10542 10617])
+                    ("objects" variable nil (reparse-symbol indented_block_body) [10622 10645])
+                    ("Meta" type
+                       (:members 
+                          ( ("abstract" variable nil (reparse-symbol indented_block_body) [10671 10686]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [10651 10687])
+                    ("undelete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10705 10709]))                          )
+                        (reparse-symbol indented_block_body) [10692 10866])
+                    ("delete" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10882 10886]))                          )
+                        (reparse-symbol indented_block_body) [10871 11042])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11059 11063]))                          )
+                        (reparse-symbol indented_block_body) [11047 11303])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11323 11327]))                          )
+                        (reparse-symbol indented_block_body) [11308 11542]))                  
+                :type "class")
+                nil [10186 11542])
+            ("Project" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("'''
+    Project Model
+    '''" code nil (reparse-symbol indented_block_body) [11574 11603])
+                    ("owner" variable nil (reparse-symbol indented_block_body) [11608 11663])
+                    ("name" variable nil (reparse-symbol indented_block_body) [11668 11700])
+                    ("package_name" variable nil (reparse-symbol indented_block_body) [11705 11745])
+                    ("platform" variable nil (reparse-symbol indented_block_body) [11750 11847])
+                    ("url" variable nil (reparse-symbol indented_block_body) [11852 11894])
+                    ("test_user" variable nil (reparse-symbol indented_block_body) [11899 11947])
+                    ("test_password" variable nil (reparse-symbol indented_block_body) [11952 12004])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [12009 12047])
+                    ("last_file_created_on" variable nil (reparse-symbol indented_block_body) [12052 12101])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [12127 12182]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [12107 12183])
+                    ("can_create_issue" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12209 12213]))                          )
+                        (reparse-symbol indented_block_body) [12188 12280])
+                    ("github_repo" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12315 12319]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12285 12594])
+                    ("activate" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12612 12616]))                          
+                        :documentation "
+        docstring for make_active
+        ")
+                        (reparse-symbol indented_block_body) [12599 12747])
+                    ("jira_project" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12783 12787]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [12752 13011])
+                    ("socket_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13045 13049]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [13016 13214])
+                    ("file_count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13248 13252]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [13219 13282])
+                    ("set_platform" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13304 13308])
+                            ("value" variable nil (reparse-symbol function_parameters) [13310 13315])
+                            ("user" variable nil (reparse-symbol function_parameters) [13317 13321]))                          )
+                        (reparse-symbol indented_block_body) [13287 13403])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13420 13424]))                          )
+                        (reparse-symbol indented_block_body) [13408 13998])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14018 14022]))                          )
+                        (reparse-symbol indented_block_body) [14003 14933])
+                    ("to_dict_humanized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14960 14964]))                          )
+                        (reparse-symbol indented_block_body) [14938 15155])
+                    ("platform_text" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15178 15182]))                          )
+                        (reparse-symbol indented_block_body) [15160 15273])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15290 15294]))                          )
+                        (reparse-symbol indented_block_body) [15278 15412])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15430 15434]))                          )
+                        (reparse-symbol indented_block_body) [15417 15485]))                  
+                :type "class")
+                nil [11544 15485])
+            ("Invitation" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [15516 15567])
+                    ("project" variable nil (reparse-symbol indented_block_body) [15572 15629])
+                    ("role" variable nil (reparse-symbol indented_block_body) [15634 15753])
+                    ("email" variable nil (reparse-symbol indented_block_body) [15758 15790])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [15795 15870])
+                    ("is_blacklisted" variable nil (reparse-symbol indented_block_body) [15875 15919])
+                    ("is_accepted" variable nil (reparse-symbol indented_block_body) [15924 15965])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [15991 16029]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [15971 16030])
+                    ("url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16043 16047]))                          )
+                        (reparse-symbol indented_block_body) [16035 16220])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16237 16241]))                          )
+                        (reparse-symbol indented_block_body) [16225 16405])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16423 16427]))                          )
+                        (reparse-symbol indented_block_body) [16410 16481]))                  
+                :type "class")
+                nil [15487 16481])
+            ("Collaboration" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [16519 16573])
+                    ("project" variable nil (reparse-symbol indented_block_body) [16578 16638])
+                    ("role" variable nil (reparse-symbol indented_block_body) [16643 16762])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [16788 16825]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [16768 16826])
+                    ("socket_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16860 16864]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [16831 16989])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17006 17010]))                          )
+                        (reparse-symbol indented_block_body) [16994 17305])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17322 17326]))                          )
+                        (reparse-symbol indented_block_body) [17310 17402])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17420 17424]))                          )
+                        (reparse-symbol indented_block_body) [17407 17481]))                  
+                :type "class")
+                nil [16483 17481])
+            ("Submission" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("'''
+    The model to show the Submission status of:
+    user submitted url/user uploaded apk
+    '''" code nil (reparse-symbol indented_block_body) [17516 17616])
+                    ("status" variable nil (reparse-symbol indented_block_body) [17621 17740])
+                    ("reason" variable nil (reparse-symbol indented_block_body) [17745 17791])
+                    ("source" variable nil (reparse-symbol indented_block_body) [17796 17915])
+                    ("user" variable nil (reparse-symbol indented_block_body) [17920 17971])
+                    ("package_name" variable nil (reparse-symbol indented_block_body) [17976 18016])
+                    ("meta_data" variable nil (reparse-symbol indented_block_body) [18021 18058])
+                    ("socket_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18130 18134]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [18101 18259])
+                    ("update_status_reason" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18289 18293])
+                            ("status" variable nil (reparse-symbol function_parameters) [18295 18301])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18303 18309]))                          )
+                        (reparse-symbol indented_block_body) [18264 18405])
+                    ("download_prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18431 18435])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18437 18443]))                          )
+                        (reparse-symbol indented_block_body) [18410 18543])
+                    ("downloading" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18564 18568])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18570 18576]))                          )
+                        (reparse-symbol indented_block_body) [18548 18658])
+                    ("download_failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18683 18687])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18689 18695]))                          )
+                        (reparse-symbol indented_block_body) [18663 18781])
+                    ("validate_prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18807 18811])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18813 18819]))                          )
+                        (reparse-symbol indented_block_body) [18786 18919])
+                    ("validating" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18939 18943])
+                            ("reason" variable nil (reparse-symbol function_parameters) [18945 18951]))                          )
+                        (reparse-symbol indented_block_body) [18924 19032])
+                    ("validate_failed" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19057 19061])
+                            ("reason" variable nil (reparse-symbol function_parameters) [19063 19069]))                          )
+                        (reparse-symbol indented_block_body) [19037 19155])
+                    ("analyze_prepare" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19180 19184])
+                            ("reason" variable nil (reparse-symbol function_parameters) [19186 19192]))                          )
+                        (reparse-symbol indented_block_body) [19160 19278])
+                    ("analyzing" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19297 19301])
+                            ("reason" variable nil (reparse-symbol function_parameters) [19303 19309]))                          )
+                        (reparse-symbol indented_block_body) [19283 19389])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19406 19410]))                          )
+                        (reparse-symbol indented_block_body) [19394 19874])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19894 19898]))                          )
+                        (reparse-symbol indented_block_body) [19879 20433])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20450 20454]))                          )
+                        (reparse-symbol indented_block_body) [20438 20526])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20544 20548]))                          )
+                        (reparse-symbol indented_block_body) [20531 20602]))                  
+                :type "class")
+                nil [17483 20602])
+            ("File" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("'''
+    The binary to hold apps
+    '''" code nil (reparse-symbol indented_block_body) [20631 20670])
+                    ("project" variable nil (reparse-symbol indented_block_body) [20675 20726])
+                    ("submission" variable nil (reparse-symbol indented_block_body) [20731 20790])
+                    ("name" variable nil (reparse-symbol indented_block_body) [20795 20827])
+                    ("version" variable nil (reparse-symbol indented_block_body) [20832 20877])
+                    ("md5hash" variable nil (reparse-symbol indented_block_body) [20882 20916])
+                    ("sha1hash" variable nil (reparse-symbol indented_block_body) [20921 20956])
+                    ("dynamic_status" variable nil (reparse-symbol indented_block_body) [20961 21071])
+                    ("device_token" variable nil (reparse-symbol indented_block_body) [21076 21123])
+                    ("manual" variable nil (reparse-symbol indented_block_body) [21128 21216])
+                    ("dynamic_data" variable nil (reparse-symbol indented_block_body) [21221 21271])
+                    ("dynamic_date" variable nil (reparse-symbol indented_block_body) [21276 21317])
+                    ("is_static_done" variable nil (reparse-symbol indented_block_body) [21322 21366])
+                    ("is_dynamic_done" variable nil (reparse-symbol indented_block_body) [21371 21416])
+                    ("isign_version" variable nil (reparse-symbol indented_block_body) [21421 21465])
+                    ("file_key" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21498 21502]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [21471 21535])
+                    ("report" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21565 21569]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [21540 21652])
+                    ("icon_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21684 21688]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [21657 21730])
+                    ("set_isign_version" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21757 21761])
+                            ("version" variable nil (reparse-symbol function_parameters) [21763 21770]))                          )
+                        (reparse-symbol indented_block_body) [21735 21850])
+                    ("device_allocated" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [21876 21880])
+                            ("device_token" variable nil (reparse-symbol function_parameters) [21882 21894]))                          )
+                        (reparse-symbol indented_block_body) [21855 22012])
+                    ("set_status" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22032 22036])
+                            ("status" variable nil (reparse-symbol function_parameters) [22038 22044]))                          )
+                        (reparse-symbol indented_block_body) [22017 22124])
+                    ("device_released" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22149 22153])
+                            ("dynamic_data" variable nil (reparse-symbol function_parameters) [22155 22167]))                          )
+                        (reparse-symbol indented_block_body) [22129 22337])
+                    ("is_ok_to_boot" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22360 22364]))                          )
+                        (reparse-symbol indented_block_body) [22342 22428])
+                    ("is_ok_to_shutdown" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22455 22459]))                          )
+                        (reparse-symbol indented_block_body) [22433 22524])
+                    ("manual_requested" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22550 22554]))                          )
+                        (reparse-symbol indented_block_body) [22529 22703])
+                    ("socket_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22737 22741]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [22708 22866])
+                    ("full_icon_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22903 22907]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [22871 22997])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23014 23018]))                          )
+                        (reparse-symbol indented_block_body) [23002 23634])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [23654 23658]))                          )
+                        (reparse-symbol indented_block_body) [23639 24757])
+                    ("to_dict_humanized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24784 24788]))                          )
+                        (reparse-symbol indented_block_body) [24762 25004])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25021 25025]))                          )
+                        (reparse-symbol indented_block_body) [25009 25098])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [25116 25120]))                          )
+                        (reparse-symbol indented_block_body) [25103 25168]))                  
+                :type "class")
+                nil [20604 25168])
+            ("default_vulnerability_types" function nil nil [25170 25303])
+            ("Vulnerability" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("'''
+    List of known vulnerabilities that the app will be scanned for
+    '''" code nil (reparse-symbol indented_block_body) [25337 25415])
+                    ("name" variable nil (reparse-symbol indented_block_body) [25420 25452])
+                    ("description" variable nil (reparse-symbol indented_block_body) [25457 25497])
+                    ("question" variable nil (reparse-symbol indented_block_body) [25502 25538])
+                    ("success_message" variable nil (reparse-symbol indented_block_body) [25543 25587])
+                    ("business_implication" variable nil (reparse-symbol indented_block_body) [25592 25652])
+                    ("heading" variable nil (reparse-symbol indented_block_body) [25657 25693])
+                    ("intro" variable nil (reparse-symbol indented_block_body) [25698 25717])
+                    ("compliant" variable nil (reparse-symbol indented_block_body) [25722 25745])
+                    ("non_compliant" variable nil (reparse-symbol indented_block_body) [25750 25777])
+                    ("related_to" variable nil (reparse-symbol indented_block_body) [25782 25806])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [25811 25886])
+                    ("platform" variable nil (reparse-symbol indented_block_body) [25891 25988])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [25993 26032])
+                    ("types" variable nil (reparse-symbol indented_block_body) [26037 26171])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26189 26193]))                          )
+                        (reparse-symbol indented_block_body) [26177 26841])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26861 26865]))                          )
+                        (reparse-symbol indented_block_body) [26846 27549])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27566 27570]))                          )
+                        (reparse-symbol indented_block_body) [27554 27621])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27639 27643]))                          )
+                        (reparse-symbol indented_block_body) [27626 27700])
+                    ("Meta" type
+                       (:members 
+                          ( ("verbose_name_plural" variable nil (reparse-symbol indented_block_body) [27725 27764]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [27705 27765]))                  
+                :type "class")
+                nil [25305 27765])
+            ("SubHeading" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("'''
+    The report text that is associated with the Vulnerability
+    '''" code nil (reparse-symbol indented_block_body) [27796 27869])
+                    ("vulnerability" variable nil (reparse-symbol indented_block_body) [27874 27944])
+                    ("heading" variable nil (reparse-symbol indented_block_body) [27949 27985])
+                    ("content" variable nil (reparse-symbol indented_block_body) [27990 28011])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28029 28033]))                          )
+                        (reparse-symbol indented_block_body) [28017 28115])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28133 28137]))                          )
+                        (reparse-symbol indented_block_body) [28120 28191]))                  
+                :type "class")
+                nil [27767 28191])
+            ("Analysis" type
+               (:superclasses ("BaseModel")
+                :members 
+                  ( ("'''
+    The scan result
+    '''" code nil (reparse-symbol indented_block_body) [28224 28255])
+                    ("file" variable nil (reparse-symbol indented_block_body) [28260 28308])
+                    ("vulnerability" variable nil (reparse-symbol indented_block_body) [28313 28404])
+                    ("description" variable nil (reparse-symbol indented_block_body) [28409 28446])
+                    ("analiser_version" variable nil (reparse-symbol indented_block_body) [28451 28506])
+                    ("risk" variable nil (reparse-symbol indented_block_body) [28511 28596])
+                    ("status" variable nil (reparse-symbol indented_block_body) [28601 28696])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [28722 28765])
+                            ("verbose_name_plural" variable nil (reparse-symbol indented_block_body) [28774 28806]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [28702 28807])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28824 28828]))                          )
+                        (reparse-symbol indented_block_body) [28812 28910])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [28928 28932]))                          )
+                        (reparse-symbol indented_block_body) [28915 28984])
+                    ("socket_ids" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29018 29022]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [28989 29144])
+                    ("color" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29173 29177]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [29149 29286])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29303 29307]))                          )
+                        (reparse-symbol indented_block_body) [29291 29724])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [29744 29748]))                          )
+                        (reparse-symbol indented_block_body) [29729 30545])
+                    ("to_dict_humanized" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [30572 30576]))                          )
+                        (reparse-symbol indented_block_body) [30550 30883]))                  
+                :type "class")
+                nil [28193 30883])
+            ("Pricing" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [30911 30986])
+                    ("name" variable nil (reparse-symbol indented_block_body) [30991 31023])
+                    ("description" variable nil (reparse-symbol indented_block_body) [31028 31075])
+                    ("price" variable nil (reparse-symbol indented_block_body) [31080 31119])
+                    ("projects_limit" variable nil (reparse-symbol indented_block_body) [31124 31169])
+                    ("price_for_duration" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31198 31202])
+                            ("duration" variable nil (reparse-symbol function_parameters) [31204 31212]))                          
+                        :documentation "
+        Price for duration
+        ")
+                        (reparse-symbol indented_block_body) [31175 31303])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31320 31324]))                          )
+                        (reparse-symbol indented_block_body) [31308 31627])
+                    ("to_dict_v2" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [31647 31651]))                          )
+                        (reparse-symbol indented_block_body) [31632 32017])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32034 32038]))                          )
+                        (reparse-symbol indented_block_body) [32022 32106])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32124 32128]))                          )
+                        (reparse-symbol indented_block_body) [32111 32179]))                  
+                :type "class")
+                nil [30885 32179])
+            ("Coupon" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("uuid" variable nil (reparse-symbol indented_block_body) [32206 32281])
+                    ("code" variable nil (reparse-symbol indented_block_body) [32286 32346])
+                    ("discount" variable nil (reparse-symbol indented_block_body) [32351 32385])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32403 32407]))                          )
+                        (reparse-symbol indented_block_body) [32391 32478])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [32496 32500]))                          )
+                        (reparse-symbol indented_block_body) [32483 32550]))                  
+                :type "class")
+                nil [32181 32550])
+            ("Subscription" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("'''
+    Set of pricing plans
+    '''" code nil (reparse-symbol indented_block_body) [32583 32619])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [32624 32699])
+                    ("user" variable nil (reparse-symbol indented_block_body) [32704 32759])
+                    ("pricing" variable nil (reparse-symbol indented_block_body) [32764 32793])
+                    ("expiry_date" variable nil (reparse-symbol indented_block_body) [32798 32848])
+                    ("limited_scans" variable nil (reparse-symbol indented_block_body) [32853 32896])
+                    ("scans_left" variable nil (reparse-symbol indented_block_body) [32901 32950])
+                    ("duration" variable nil (reparse-symbol indented_block_body) [32955 33079])
+                    ("source" variable nil (reparse-symbol indented_block_body) [33084 33189])
+                    ("is_active" variable nil (reparse-symbol indented_block_body) [33194 33232])
+                    ("to_dict" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33250 33254]))                          )
+                        (reparse-symbol indented_block_body) [33238 33571])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33585 33589])
+                            ("args" variable nil (reparse-symbol function_parameters) [33591 33596])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [33598 33606]))                          
+                        :documentation "
+        Override Save
+        ")
+                        (reparse-symbol indented_block_body) [33576 33874])
+                    ("decrement_scans_left" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [33904 33908]))                          )
+                        (reparse-symbol indented_block_body) [33879 33991])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34008 34012]))                          )
+                        (reparse-symbol indented_block_body) [33996 34088])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34106 34110]))                          )
+                        (reparse-symbol indented_block_body) [34093 34166])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [34191 34228]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [34171 34229]))                  
+                :type "class")
+                nil [32552 34229])
+            ("Invoice" type
+               (:superclasses ("Model")
+                :members 
+                  ( ("'''
+    Store money paid by users.
+    '''" code nil (reparse-symbol indented_block_body) [34257 34299])
+                    ("uuid" variable nil (reparse-symbol indented_block_body) [34304 34379])
+                    ("user" variable nil (reparse-symbol indented_block_body) [34384 34432])
+                    ("amount" variable nil (reparse-symbol indented_block_body) [34437 34469])
+                    ("paid_on" variable nil (reparse-symbol indented_block_body) [34474 34508])
+                    ("source" variable nil (reparse-symbol indented_block_body) [34513 34618])
+                    ("source_id" variable nil (reparse-symbol indented_block_body) [34623 34683])
+                    ("customer_id" variable nil (reparse-symbol indented_block_body) [34688 34750])
+                    ("coupon" variable nil (reparse-symbol indented_block_body) [34755 34805])
+                    ("pricing" variable nil (reparse-symbol indented_block_body) [34810 34839])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [34857 34861]))                          )
+                        (reparse-symbol indented_block_body) [34845 34989])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [35007 35011]))                          )
+                        (reparse-symbol indented_block_body) [34994 35062])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [35087 35123]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [35067 35124]))                  
+                :type "class")
+                nil [34231 35124]))          
+      :file "models.py"
+      :pointmax 35124
+      :fsize 35684
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("django.http" include nil nil [13 72])
+            ("uuid" include nil nil [73 95])
+            ("celery" include nil nil [97 127])
+            ("dicttoxml" include nil nil [128 159])
+            ("django.conf" include nil nil [160 192])
+            ("django.contrib.auth" include nil nil [193 244])
+            ("django.core.exceptions" include nil nil [245 296])
+            ("django.views.decorators.csrf" include nil nil [297 349])
+            ("tokenapi.decorators" include nil nil [350 396])
+            ("validate_email" include nil nil [397 438])
+            ("actstream" include nil nil [440 468])
+            ("mycroft.core.dbapi" include nil nil [469 1221])
+            ("ak_vendor.enums" include nil nil [1222 1345])
+            ("mycroft.core.mails" include nil nil [1346 1636])
+            ("mycroft.core.notify" include nil nil [1637 1914])
+            ("mycroft.core.permissions" include nil nil [1915 2110])
+            ("mycroft.core.status" include nil nil [2111 2245])
+            ("mycroft.core.storage" include nil nil [2246 2321])
+            ("mycroft.core.stripe_apis" include nil nil [2322 2377])
+            ("mycroft.core.utils" include nil nil [2378 2629])
+            ("logger" variable nil nil [2632 2661])
+            ("logout" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [2688 2695]))                  )
+                nil [2664 2831])
+            ("recover" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [2858 2865]))                  )
+                nil [2833 3584])
+            ("user" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [3611 3618])
+                    ("user_id" variable nil (reparse-symbol function_parameters) [3620 3627]))                  )
+                nil [3586 3849])
+            ("reset" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [3874 3881]))                  )
+                nil [3851 4584])
+            ("change_password" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [4635 4642]))                  )
+                nil [4586 5267])
+            ("feedback" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [5311 5318]))                  )
+                nil [5269 5599])
+            ("namespace_add" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [5648 5655]))                  )
+                nil [5601 5979])
+            ("projects" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [6010 6017]))                  )
+                nil [5981 6202])
+            ("project" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_project" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [6250 6257])
+                    ("project_id" variable nil (reparse-symbol function_parameters) [6259 6269]))                  )
+                nil [6204 6616])
+            ("project_delete" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [6653 6660])
+                    ("project_id" variable nil (reparse-symbol function_parameters) [6662 6672]))                  )
+                nil [6618 7292])
+            ("file" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [7334 7341])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [7343 7350]))                  )
+                nil [7294 7710])
+            ("files" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_project" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [7756 7763])
+                    ("project_id" variable nil (reparse-symbol function_parameters) [7765 7775]))                  )
+                nil [7712 7979])
+            ("last_file" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_project" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [8029 8036])
+                    ("project_id" variable nil (reparse-symbol function_parameters) [8038 8048]))                  )
+                nil [7981 8306])
+            ("analyses" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [8352 8359])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [8361 8368]))                  )
+                nil [8308 8591])
+            ("signed_url" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [8624 8631]))                  )
+                nil [8593 8868])
+            ("signed_pdf_url" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [8920 8927])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [8929 8936]))                  )
+                nil [8870 9610])
+            ("_process_upload" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [9632 9636])
+                ("file_key" variable nil (reparse-symbol function_parameters) [9638 9646])
+                ("file_key_signed" variable nil (reparse-symbol function_parameters) [9648 9663])
+                ("submission_source" variable nil (reparse-symbol function_parameters) [9665 9682]))              ) nil [9612 10418])
+            ("uploaded_file" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [10467 10474]))                  )
+                nil [10420 10725])
+            ("dynamic" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_write_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [10771 10778])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [10780 10787]))                  )
+                nil [10727 11634])
+            ("dynamic_shutdown" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_write_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [11689 11696])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [11698 11705]))                  )
+                nil [11636 12294])
+            ("manual" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_write_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [12339 12346])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [12348 12355]))                  )
+                nil [12296 13130])
+            ("save_credentials" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_write_project" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [13188 13195])
+                    ("project_id" variable nil (reparse-symbol function_parameters) [13197 13207]))                  )
+                nil [13132 13681])
+            ("_add_collborator" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [13704 13708])
+                ("project" variable nil (reparse-symbol function_parameters) [13710 13717])
+                ("role" variable nil (reparse-symbol function_parameters) [13719 13723])
+                ("inviter" variable nil (reparse-symbol function_parameters) [13725 13732]))              ) nil [13683 15166])
+            ("collaboration" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [15215 15222]))                  )
+                nil [15168 17466])
+            ("collaboration_delete" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [17522 17529])
+                    ("collaboration_id" variable nil (reparse-symbol function_parameters) [17531 17547]))                  )
+                nil [17468 18484])
+            ("invitation" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [18501 18508])
+                ("invitation_uuid" variable nil (reparse-symbol function_parameters) [18510 18525]))              ) nil [18486 18991])
+            ("signup" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [19017 19024]))                  )
+                nil [18993 20403])
+            ("upload_callback" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [20454 20461]))                  )
+                nil [20405 20806])
+            ("init" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [20833 20840]))                  )
+                nil [20808 22380])
+            ("_coupon_check" function
+               (:documentation "
+    Check the user coupon
+    "
+                :arguments 
+                  ( ("user" variable nil (reparse-symbol function_parameters) [22400 22404])
+                    ("code" variable nil (reparse-symbol function_parameters) [22406 22410]))                  )
+                nil [22382 22727])
+            ("stripe_payment" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [22764 22771]))                  )
+                nil [22729 24696])
+            ("apply_coupon" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [24731 24738]))                  )
+                nil [24698 25257])
+            ("store_url" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil)
+                    ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [25302 25309]))                  )
+                nil [25259 27152])
+            ("report" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil)
+                    ("can_read_file" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [27196 27203])
+                    ("file_id" variable nil (reparse-symbol function_parameters) [27205 27212]))                  )
+                nil [27154 28733])
+            ("devknox_feedback" function
+               (:decorators 
+                  ( ("token_required" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [28772 28779]))                  )
+                nil [28735 29257])
+            ("devknox_register" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [29293 29300]))                  )
+                nil [29259 30770])
+            ("device_status" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [30803 30810]))                  )
+                nil [30772 31510]))          
+      :file "views.py"
+      :pointmax 31510
+      :fsize 31509
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "mails.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: mails.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2015-11-26
+'''" code nil nil [127 221])
+            ("celery" include nil nil [223 253])
+            ("django.conf" include nil nil [254 286])
+            ("django.core.urlresolvers" include nil nil [287 331])
+            ("send_mail_test" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [353 357]))              ) nil [334 797])
+            ("send_mail_reset_password" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [828 832])
+                ("reset_link" variable nil (reparse-symbol function_parameters) [834 844]))              ) nil [799 1321])
+            ("send_mail_reset_password_ack" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1356 1360]))              ) nil [1323 1783])
+            ("send_mail_namespace_requested" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1819 1823])
+                ("namespace" variable nil (reparse-symbol function_parameters) [1825 1834]))              ) nil [1785 2330])
+            ("send_mail_namespace_added" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2362 2366])
+                ("namespace" variable nil (reparse-symbol function_parameters) [2368 2377]))              ) nil [2332 2876])
+            ("mail_admins" function (:arguments 
+              ( ("subject" variable nil (reparse-symbol function_parameters) [2894 2901])
+                ("message" variable nil (reparse-symbol function_parameters) [2903 2910]))              ) nil [2878 3154])
+            ("send_mail_report_generated" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3187 3191])
+                ("file" variable nil (reparse-symbol function_parameters) [3193 3197])
+                ("emails" variable nil (reparse-symbol function_parameters) [3199 3205]))              ) nil [3156 3964])
+            ("send_mail_report_uploaded" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [3996 4000])
+                ("file" variable nil (reparse-symbol function_parameters) [4002 4006])
+                ("emails" variable nil (reparse-symbol function_parameters) [4008 4014]))              ) nil [3966 4770])
+            ("send_mail_feedback" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [4795 4799])
+                ("satisfied" variable nil (reparse-symbol function_parameters) [4801 4810])
+                ("message" variable nil (reparse-symbol function_parameters) [4812 4819]))              ) nil [4772 5351])
+            ("send_mail_invite_collaborator" function (:arguments 
+              ( ("inviter" variable nil (reparse-symbol function_parameters) [5387 5394])
+                ("invitation" variable nil (reparse-symbol function_parameters) [5396 5406])
+                ("to_username" variable nil (reparse-symbol function_parameters) [5408 5419]))              ) nil [5353 6344])
+            ("send_mail_add_collaborator" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [6377 6381])
+                ("inviter" variable nil (reparse-symbol function_parameters) [6383 6390])
+                ("project" variable nil (reparse-symbol function_parameters) [6392 6399]))              ) nil [6346 6909])
+            ("send_mail_payment_expiry_notification" function
+               (:documentation "
+    Send Payment is about to expire notitification
+    "
+                :arguments 
+                  ( ("user_pricing" variable nil (reparse-symbol function_parameters) [6953 6965]))                  )
+                nil [6911 7606])
+            ("send_mail_payment_ack" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [7634 7638])
+                ("amount" variable nil (reparse-symbol function_parameters) [7640 7646])
+                ("to_addrs" variable nil (reparse-symbol function_parameters) [7648 7656]))              ) nil [7608 8080])
+            ("send_mail_payment_failed" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [8111 8115])
+                ("amount" variable nil (reparse-symbol function_parameters) [8117 8123])
+                ("to_addrs" variable nil (reparse-symbol function_parameters) [8125 8133]))              ) nil [8082 8626])
+            ("send_mail_devicefarm_error" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [8659 8663])
+                ("message" variable nil (reparse-symbol function_parameters) [8665 8672]))              ) nil [8628 9107])
+            ("send_mail_suspicious_payment" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [9142 9146]))              ) nil [9109 9560]))          
+      :file "mails.py"
+      :pointmax 9560
+      :fsize 10208
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "notify.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+    File name: notify.py
+    Version: 0.1
+    Author: dhilipsiva <dhilipsiva@gmail.com>
+    Date created: 2015-03-02
+'''" code nil nil [149 273])
+            ("pusher" include nil nil [275 288])
+            ("requests.exceptions" include nil nil [290 337])
+            ("django.conf" include nil nil [339 371])
+            ("mycroft.core.enums" include nil nil [373 414])
+            ("client" variable nil nil [416 557])
+            ("notify" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [571 576])
+                ("event" variable nil (reparse-symbol function_parameters) [578 583])
+                ("data" variable nil (reparse-symbol function_parameters) [585 589]))              ) nil [560 1036])
+            ("notify_analysis_new" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1062 1067])
+                ("data" variable nil (reparse-symbol function_parameters) [1069 1073]))              ) nil [1038 1177])
+            ("notify_analysis_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1207 1212])
+                ("data" variable nil (reparse-symbol function_parameters) [1214 1218]))              ) nil [1179 1326])
+            ("notify_file_new" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1348 1353])
+                ("data" variable nil (reparse-symbol function_parameters) [1355 1359]))              ) nil [1328 1451])
+            ("notify_file_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1477 1482])
+                ("data" variable nil (reparse-symbol function_parameters) [1484 1488]))              ) nil [1453 1588])
+            ("notify_submission_new" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1616 1621])
+                ("data" variable nil (reparse-symbol function_parameters) [1623 1627]))              ) nil [1590 1735])
+            ("notify_submission_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1767 1772])
+                ("data" variable nil (reparse-symbol function_parameters) [1774 1778]))              ) nil [1737 1890])
+            ("notify_user_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [1916 1921])
+                ("data" variable nil (reparse-symbol function_parameters) [1923 1927]))              ) nil [1892 2027])
+            ("notify_project_new" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2052 2057])
+                ("data" variable nil (reparse-symbol function_parameters) [2059 2063]))              ) nil [2029 2161])
+            ("notify_project_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2190 2195])
+                ("data" variable nil (reparse-symbol function_parameters) [2197 2201]))              ) nil [2163 2307])
+            ("notify_project_deleted" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2336 2341])
+                ("data" variable nil (reparse-symbol function_parameters) [2343 2347]))              ) nil [2309 2453])
+            ("notify_collaboration_new" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2484 2489])
+                ("data" variable nil (reparse-symbol function_parameters) [2491 2495]))              ) nil [2455 2605])
+            ("notify_collaboration_updated" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2640 2645])
+                ("data" variable nil (reparse-symbol function_parameters) [2647 2651]))              ) nil [2607 2769])
+            ("notify_collaboration_deleted" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2804 2809])
+                ("data" variable nil (reparse-symbol function_parameters) [2811 2815]))              ) nil [2771 2933])
+            ("notify_show_feedback" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [2960 2965]))              ) nil [2935 3014])
+            ("notify_namespace_add" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3041 3046])
+                ("namespace" variable nil (reparse-symbol function_parameters) [3048 3057]))              ) nil [3016 3144])
+            ("notify_message" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3165 3170])
+                ("message" variable nil (reparse-symbol function_parameters) [3172 3179])
+                ("notify_type" variable nil (reparse-symbol function_parameters) [3181 3192]))              ) nil [3146 3381])
+            ("notify_message_info" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3407 3412])
+                ("message" variable nil (reparse-symbol function_parameters) [3414 3421]))              ) nil [3383 3483])
+            ("notify_message_success" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3512 3517])
+                ("message" variable nil (reparse-symbol function_parameters) [3519 3526]))              ) nil [3485 3591])
+            ("notify_message_warning" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3620 3625])
+                ("message" variable nil (reparse-symbol function_parameters) [3627 3634]))              ) nil [3593 3699])
+            ("notify_message_alert" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3726 3731])
+                ("message" variable nil (reparse-symbol function_parameters) [3733 3740]))              ) nil [3701 3803])
+            ("notify_message_error" function (:arguments 
+              ( ("rooms" variable nil (reparse-symbol function_parameters) [3830 3835])
+                ("message" variable nil (reparse-symbol function_parameters) [3837 3844]))              ) nil [3805 3907]))          
+      :file "notify.py"
+      :pointmax 3907
+      :fsize 4356
+      :lastmodtime '(22560 27605 282648 4000)
+      :unmatched-syntax nil)
+    (semanticdb-table "permissions.py"
+      :file "permissions.py"
+      :fsize 5550
+      :lastmodtime '(22570 61800 336290 20000))
+    (semanticdb-table "status.py"
+      :file "status.py"
+      :fsize 1923
+      :lastmodtime '(22507 22045 64266 208000))
+    (semanticdb-table "storage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("datetime" include nil nil [1 31])
+            ("tempfile" include nil nil [32 60])
+            ("django.conf" include nil nil [62 94])
+            ("minio" include nil nil [95 118])
+            ("minio.error" include nil nil [119 156])
+            ("get_client" function nil nil [159 501])
+            ("key_exists" function
+               (:documentation "
+    Checks if given key exists and return it
+    "
+                :arguments 
+                  ( ("file_key" variable nil (reparse-symbol function_parameters) [621 629]))                  )
+                nil [606 893])
+            ("get_data" function (:arguments 
+              ( ("file_key" variable nil (reparse-symbol function_parameters) [908 916]))              ) nil [895 1289])
+            ("put_data" function (:arguments 
+              ( ("file_key" variable nil (reparse-symbol function_parameters) [1313 1321])
+                ("content" variable nil (reparse-symbol function_parameters) [1323 1330])
+                ("content_type" variable nil (reparse-symbol function_parameters) [1332 1344])
+                ("public" variable nil (reparse-symbol function_parameters) [1381 1387]))              ) nil [1291 2011])
+            ("delete_data" function (:arguments 
+              ( ("file_key" variable nil (reparse-symbol function_parameters) [2029 2037]))              ) nil [2013 2377])
+            ("get_put_params" function (:arguments 
+              ( ("file_key" variable nil (reparse-symbol function_parameters) [2398 2406]))              ) nil [2379 2838])
+            ("get_get_params" function (:arguments 
+              ( ("file_key" variable nil (reparse-symbol function_parameters) [2859 2867]))              ) nil [2840 3299]))          
+      :file "storage.py"
+      :pointmax 3299
+      :fsize 3298
+      :lastmodtime '(22533 55200 873312 249000)
+      :unmatched-syntax nil)
+    (semanticdb-table "stripe_apis.py"
+      :file "stripe_apis.py"
+      :fsize 3048
+      :lastmodtime '(22560 27605 282648 4000))
+    (semanticdb-table "utils.py"
+      :file "utils.py"
+      :fsize 5837
+      :lastmodtime '(22560 27605 282648 4000))
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: tasks.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2015-11-26
+'''" code nil nil [127 221])
+            ("random" include nil nil [223 257])
+            ("time" include nil nil [258 280])
+            ("json" include nil nil [281 292])
+            ("celery" include nil nil [294 337])
+            ("django.conf" include nil nil [338 370])
+            ("django.core.mail" include nil nil [371 411])
+            ("django.utils.crypto" include nil nil [412 461])
+            ("sendgrid" include nil nil [462 503])
+            ("mycroft.core.base_task" include nil nil [505 551])
+            ("mycroft.core.dbapi" include nil nil [552 762])
+            ("mycroft.core.devices" include nil nil [763 840])
+            ("mycroft.core.enums" include nil nil [841 880])
+            ("mycroft.core.mails" include nil nil [881 1019])
+            ("mycroft.core.notify" include nil nil [1020 1151])
+            ("mycroft.core.storage" include nil nil [1152 1199])
+            ("mycroft.core.stripe_apis" include nil nil [1200 1260])
+            ("mycroft.core.utils" include nil nil [1261 1315])
+            ("sg" variable nil nil [1318 1364])
+            ("send_mail_admins" function
+               (:decorators 
+                  ( ("shared_task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("subject" variable nil (reparse-symbol function_parameters) [1401 1408])
+                    ("message" variable nil (reparse-symbol function_parameters) [1410 1417]))                  )
+                nil [1367 1505])
+            ("" code nil nil [1519 1537])
+            ("send_mail" function (:arguments 
+              ( ("to_addrs" variable nil (reparse-symbol function_parameters) [1565 1573])
+                ("template_name" variable nil (reparse-symbol function_parameters) [1575 1588])
+                ("context" variable nil (reparse-symbol function_parameters) [1590 1597])
+                ("subject" variable nil (reparse-symbol function_parameters) [1599 1606])
+                ("queue" variable nil (reparse-symbol function_parameters) [1625 1630]))              ) nil [1538 2602])
+            ("" code nil nil [2616 2634])
+            ("request_device" function (:arguments 
+              ( ("file_id" variable nil (reparse-symbol function_parameters) [2654 2661])
+                ("user_id" variable nil (reparse-symbol function_parameters) [2663 2670]))              ) nil [2635 3275])
+            ("" code nil nil [3289 3307])
+            ("release_device" function (:arguments 
+              ( ("file_id" variable nil (reparse-symbol function_parameters) [3327 3334])
+                ("user_id" variable nil (reparse-symbol function_parameters) [3336 3343]))              ) nil [3308 4230])
+            ("" code nil nil [4244 4262])
+            ("dummy" function (:arguments 
+              ( ("args" variable nil (reparse-symbol function_parameters) [4273 4278])
+                ("kwargs" variable nil (reparse-symbol function_parameters) [4280 4288]))              ) nil [4263 4525])
+            ("" code nil nil [4539 4557])
+            ("dummy_analysis" function (:arguments 
+              ( ("file_id" variable nil (reparse-symbol function_parameters) [4577 4584]))              ) nil [4558 5826])
+            ("" code nil nil [5840 5858])
+            ("terminate_delayed_dynamic_scans" function nil nil [5859 6225])
+            ("" code nil nil [6239 6257])
+            ("send_mail_recurring_payment" function nil nil [6258 6415])
+            ("" code nil nil [6429 6447])
+            ("recurring_payment" function nil nil [6448 6937]))          
+      :file "tasks.py"
+      :pointmax 6937
+      :fsize 8222
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax '((INDENT_BLOCK 6766 . 6937) (NEWLINE 6765 . 6766) (COLON 6764 . 6765) (TRY 6538 . 6541) (AS 6760 . 6762)))
+    (semanticdb-table "base_task.py"
+      :file "base_task.py"
+      :fsize 1273
+      :lastmodtime '(22570 61800 336290 20000))
+    (semanticdb-table "devices.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: compute.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2016-04-11
+'''" code nil nil [127 223])
+            ("requests" include nil nil [225 240])
+            ("requests.exceptions" include nil nil [241 288])
+            ("django.conf" include nil nil [290 322])
+            ("simplejson.scanner" include nil nil [323 369])
+            ("auth" variable nil nil [371 425])
+            ("_make_request" function (:arguments 
+              ( ("method" variable nil (reparse-symbol function_parameters) [446 452])
+                ("endpoint" variable nil (reparse-symbol function_parameters) [454 462])
+                ("params" variable nil (reparse-symbol function_parameters) [464 470]))              ) nil [428 966])
+            ("check_status" function (:documentation "
+    returns the devices attached to the device farm
+    ") nil [968 1106])
+            ("check_connectivity" function nil nil [1108 1181])
+            ("device_allocate" function (:arguments 
+              ( ("platform" variable nil (reparse-symbol function_parameters) [1203 1211]))              ) nil [1183 1438])
+            ("device_scan" function (:arguments 
+              ( ("device_token" variable nil (reparse-symbol function_parameters) [1456 1468])
+                ("url" variable nil (reparse-symbol function_parameters) [1470 1473]))              ) nil [1440 1633])
+            ("device_release" function (:arguments 
+              ( ("device_token" variable nil (reparse-symbol function_parameters) [1654 1666]))              ) nil [1635 1881]))          
+      :file "devices.py"
+      :pointmax 1881
+      :fsize 2192
+      :lastmodtime '(22570 61800 336290 20000)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: urls.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2015-11-26
+'''" code nil nil [127 220])
+            ("django.conf.urls" include nil nil [222 254])
+            ("mycroft.core.views" include nil nil [256 738])
+            ("urlpatterns" variable nil nil [740 3193]))          
+      :file "urls.py"
+      :pointmax 3194
+      :fsize 3193
+      :lastmodtime '(22569 49372 3494 509000)
+      :unmatched-syntax nil)
+    (semanticdb-table "constants.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("'''
+File name: constants.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2015-11-26
+'''" code nil nil [127 225])
+            ("os" include nil nil [226 235])
+            ("os" include nil nil [236 255])
+            ("MYCROFT_PATH" variable nil nil [257 353])
+            ("DATA_DIR" variable nil nil [355 410])
+            ("'''
+Vulnerabilities contants starts with `V_`
+'''" code nil nil [412 461])
+            ("V_ANDROID_UNPROTECTED_SERVICES" variable nil nil [462 496])
+            ("V_ANDROID_IMPROPER_CONTENT" variable nil nil [497 527])
+            ("V_ANDROID_DEBUG_ENABLED" variable nil nil [528 555])
+            ("V_ANDROID_IMPROPER_PERMISSION" variable nil nil [556 589])
+            ("V_ANDROID_BROKEN_TRUST_MANAGER" variable nil nil [590 624])
+            ("V_ANDROID_BROKEN_HOSTNAME_VERIFIER" variable nil nil [625 663])
+            ("V_ANDROID_INSECURE_SSL" variable nil nil [664 690])
+            ("V_ANDROID_ALLOW_VERIFIER_SSL" variable nil nil [691 723])
+            ("V_ANDROID_EXTENDS_WEB_VIEW_CLIENT" variable nil nil [724 761])
+            ("V_ANDROID_UNUSED_PERMISSIONS" variable nil nil [762 795])
+            ("V_ANDROID_REMOTE_CODE_EXECUTION" variable nil nil [796 832])
+            ("V_ANDROID_UNPROTECTED_ACTIVITIES" variable nil nil [833 870])
+            ("V_ANDROID_SQL_INJECTION" variable nil nil [871 899])
+            ("V_ANDROID_INFORMATION_SHARED" variable nil nil [900 933])
+            ("V_ANDROID_INSUFFICIENT_TRANSPORT_LAYER" variable nil nil [934 977])
+            ("V_ANDROID_DERIVED_CRYPTO_KEYS" variable nil nil [978 1012])
+            ("V_ANDROID_APPLICATION_LOGS" variable nil nil [1013 1044])
+            ("V_ANDROID_BUSINESS_LOGIC" variable nil nil [1045 1074])
+            ("V_IOS_BUSINESS_LOGIC" variable nil nil [1075 1100])
+            ("V_IOS_NSLOG" variable nil nil [1101 1117])
+            ("V_IOS_PLIST" variable nil nil [1118 1134])
+            ("V_IOS_NSUSERDEFAULTS" variable nil nil [1135 1160])
+            ("V_IOS_SQLITE3" variable nil nil [1161 1179])
+            ("V_IOS_COREDATA" variable nil nil [1180 1199])
+            ("V_IOS_COUCHDB" variable nil nil [1200 1218])
+            ("V_IOS_REALMDB" variable nil nil [1219 1237])
+            ("V_IOS_YAPDB" variable nil nil [1238 1254])
+            ("V_IOS_NSURLCONNECTION" variable nil nil [1255 1281])
+            ("V_ANDROID_PHONEGAP_JS_INJECTION" variable nil nil [1282 1318])
+            ("V_ANDROID_PHONEGAP_CVE_3500_URL" variable nil nil [1319 1355])
+            ("V_ANDROID_PHONEGAP_CVE_3500_ERRORURL" variable nil nil [1356 1397])
+            ("V_ANDROID_PHONEGAP_CVE_3501" variable nil nil [1398 1430])
+            ("V_ANDROID_PHONEGAP_WHITELIST_BYPASS_REGEX" variable nil nil [1431 1477])
+            ("V_ANDROID_PHONEGAP_CVE_3500_REMOTE" variable nil nil [1478 1517])
+            ("V_ANDROID_PHONEGAP_DEBUG_LOGGING" variable nil nil [1518 1555])
+            ("V_ANDROID_PHONEGAP_NO_WHITELIST" variable nil nil [1556 1592])
+            ("V_ANDROID_REDIS" variable nil nil [1593 1613])
+            ("V_ANDROID_UNPROTECTED_EXPORTED_ACTIVITY" variable nil nil [1614 1658])
+            ("V_ANDROID_UNPROTECTED_EXPORTED_RECEIVER" variable nil nil [1659 1703])
+            ("V_ANDROID_UNPROTECTED_EXPORTED_SERVICE" variable nil nil [1704 1747])
+            ("V_ANDROID_UNPROTECTED_EXPORTED_PROVIDER" variable nil nil [1748 1792])
+            ("V_ANDROID_NON_SIGNATURE_PROTECTED_EXPORTED_ACTIVITY" variable nil nil [1793 1849])
+            ("V_ANDROID_NON_SIGNATURE_PROTECTED_EXPORTED_RECEIVER" variable nil nil [1850 1906])
+            ("V_ANDROID_NON_SIGNATURE_PROTECTED_EXPORTED_SERVICE" variable nil nil [1907 1962])
+            ("V_ANDROID_NON_SIGNATURE_PROTECTED_EXPORTED_PROVIDER" variable nil nil [1963 2019])
+            ("V_ANDROID_CONTENTPROVIDER_PATH" variable nil nil [2020 2055])
+            ("V_IOS_CCCRYPTO" variable nil nil [2056 2075])
+            ("V_IOS_SECKEY_ENCRYPT" variable nil nil [2076 2101])
+            ("V_IOS_INSECURE_PEER" variable nil nil [2102 2126])
+            ("V_IOS_KEYCHAIN" variable nil nil [2127 2146])
+            ("V_IOS_PASTEBOARD" variable nil nil [2147 2168])
+            ("V_IOS_BUFFER_OVERFLOW" variable nil nil [2169 2195])
+            ("V_IOS_JAILBREAK" variable nil nil [2196 2216])
+            ("V_IOS_UIWEBVIEW" variable nil nil [2217 2237])
+            ("V_ANDROID_WEBVIEW" variable nil nil [2238 2260])
+            ("V_IOS_APP_TRANSPORT_SECURITY" variable nil nil [2261 2294])
+            ("MORIARTY_FILE_MAPPINGS" variable nil nil [2297 2997]))          
+      :file "constants.py"
+      :pointmax 2998
+      :fsize 2997
+      :lastmodtime '(22560 27605 274648 104000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

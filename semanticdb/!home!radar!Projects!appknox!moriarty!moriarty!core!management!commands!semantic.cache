@@ -1,0 +1,246 @@
+;; Object commands/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "commands/"
+  :tables
+  (list
+    (semanticdb-table "device.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("\"\"\"
+File name: devices.py
+Author: dhilipsiva <dhilipsiva@gmail.com>
+Date created: 2016-03-27
+\"\"\"" code nil nil [127 223])
+            ("gc" include nil nil [224 233])
+            ("os" include nil nil [234 243])
+            ("plistlib" include nil nil [244 259])
+            ("subprocess" include nil nil [260 277])
+            ("threading" include nil nil [278 294])
+            ("time" include nil nil [295 306])
+            ("datetime" include nil nil [307 336])
+            ("json" include nil nil [337 366])
+            ("socketserver" include nil nil [367 410])
+            ("zipfile" include nil nil [411 438])
+            ("frida" include nil nil [440 452])
+            ("requests" include nil nil [453 468])
+            ("ak_vendor.tcprelay" include nil nil [469 530])
+            ("ak_vendor.usbmux" include nil nil [531 578])
+            ("androguard.core.bytecodes" include nil nil [579 620])
+            ("django.conf" include nil nil [621 653])
+            ("django.core.management.base" include nil nil [654 705])
+            ("isign" include nil nil [706 729])
+            ("paramiko" include nil nil [730 764])
+            ("paramiko.client" include nil nil [765 802])
+            ("pymobiledevice.apis" include nil nil [803 872])
+            ("redis" include nil nil [873 902])
+            ("moriarty.core.dbapi" include nil nil [904 1037])
+            ("moriarty.core.enums" include nil nil [1038 1082])
+            ("moriarty.core.logger" include nil nil [1083 1126])
+            ("moriarty.core.utils" include nil nil [1127 1226])
+            ("logger" variable nil nil [1229 1258])
+            ("e_logger" variable nil nil [1259 1289])
+            ("environ" variable nil nil [1292 1318])
+            ("redis" variable nil nil [1319 1417])
+            ("builtin_namepaces" variable nil nil [1419 1661])
+            ("adb_command" variable nil nil [1663 1682])
+            ("_get_mux_device" function
+               (:documentation "
+    docstring for _get_mux_device
+    "
+                :arguments 
+                  ( ("devices" variable nil (reparse-symbol function_parameters) [1705 1712])
+                    ("serial_number" variable nil (reparse-symbol function_parameters) [1714 1727]))                  )
+                nil [1685 1867])
+            ("TCPRelay" type
+               (:superclasses ("BaseRequestHandler")
+                :members 
+                  ( ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1920 1924]))                          )
+                        (reparse-symbol indented_block_body) [1909 2512]))                  
+                :type "class")
+                nil [1869 2512])
+            ("list_ios_apps" function
+               (:documentation "
+    List android apps
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [2532 2538]))                  )
+                nil [2514 2742])
+            ("list_android_apps" function
+               (:documentation "
+    List android apps
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [2766 2772]))                  )
+                nil [2744 3354])
+            ("list_apps" function
+               (:documentation "
+    List apps installed in device
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [3370 3376]))                  )
+                nil [3356 3634])
+            ("on_message" function (:arguments 
+              ( ("message" variable nil (reparse-symbol function_parameters) [3651 3658])
+                ("data" variable nil (reparse-symbol function_parameters) [3660 3664]))              ) nil [3636 4112])
+            ("open_android_app" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [4135 4148])
+                ("new_app" variable nil (reparse-symbol function_parameters) [4150 4157])
+                ("main_activity" variable nil (reparse-symbol function_parameters) [4159 4172]))              ) nil [4114 4354])
+            ("execute_android" function (:arguments 
+              ( ("serial_no" variable nil (reparse-symbol function_parameters) [4376 4385])
+                ("command" variable nil (reparse-symbol function_parameters) [4387 4394])
+                ("frida_device" variable nil (reparse-symbol function_parameters) [4396 4408]))              ) nil [4356 6356])
+            ("open_ios_app" function
+               (:documentation "
+    Open the app on iOS device
+    "
+                :arguments 
+                  ( ("hostname" variable nil (reparse-symbol function_parameters) [6375 6383])
+                    ("port" variable nil (reparse-symbol function_parameters) [6385 6389])
+                    ("app" variable nil (reparse-symbol function_parameters) [6391 6394]))                  )
+                nil [6358 6753])
+            ("_get_info_plist_path" function (:arguments 
+              ( ("zf" variable nil (reparse-symbol function_parameters) [6780 6782]))              ) nil [6755 6993])
+            ("_get_ios_package_prop" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [7021 7025])
+                ("prop" variable nil (reparse-symbol function_parameters) [7027 7031]))              ) nil [6995 7256])
+            ("_get_ios_package_id" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [7282 7286]))              ) nil [7258 7350])
+            ("_get_ios_package_name" function (:arguments 
+              ( ("path" variable nil (reparse-symbol function_parameters) [7378 7382]))              ) nil [7352 7535])
+            ("execute_ios" function (:arguments 
+              ( ("serial_no" variable nil (reparse-symbol function_parameters) [7553 7562])
+                ("command" variable nil (reparse-symbol function_parameters) [7564 7571])
+                ("frida_device" variable nil (reparse-symbol function_parameters) [7573 7585]))              ) nil [7537 9060])
+            ("execute" function
+               (:documentation "
+    Execute something in a device
+    "
+                :arguments 
+                  ( ("serial_no" variable nil (reparse-symbol function_parameters) [9074 9083])
+                    ("platform" variable nil (reparse-symbol function_parameters) [9085 9093])
+                    ("command" variable nil (reparse-symbol function_parameters) [9095 9102])
+                    ("frida_device" variable nil (reparse-symbol function_parameters) [9104 9116]))                  )
+                nil [9062 9535])
+            ("bootstrap_android" function
+               (:documentation "
+    Setup Android device
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [9559 9565]))                  )
+                nil [9537 10148])
+            ("StoppableThreadedTCPServer" type
+               (:superclasses ("ThreadedTCPServer")
+                :members 
+                  ( ("stopped" variable nil (reparse-symbol indented_block_body) [10208 10223])
+                    ("allow_reuse_address" variable nil (reparse-symbol indented_block_body) [10228 10254])
+                    ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [10305 10370]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10273 10277])
+                            ("args" variable nil (reparse-symbol function_parameters) [10279 10284])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [10286 10294]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10260 10371])
+                    ("serve_forever" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10394 10398]))                          )
+                        (reparse-symbol indented_block_body) [10376 10467])
+                    ("create_dummy_request" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10497 10501]))                          )
+                        (reparse-symbol indented_block_body) [10472 10623])
+                    ("force_stop" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10643 10647]))                          )
+                        (reparse-symbol indented_block_body) [10628 10742]))                  
+                :type "class")
+                nil [10150 10742])
+            ("TCPProxyThread" type
+               (:documentation "
+    For running TCP Proxy over usb
+    "
+                :superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("super" code nil (reparse-symbol indented_block_body) [10901 10939])
+                            ("logger" code nil (reparse-symbol indented_block_body) [10948 11075])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11084 11104])
+                            ("addr" variable nil (reparse-symbol indented_block_body) [11113 11145])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11154 11210])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11219 11267])
+                            ("self" variable nil (reparse-symbol indented_block_body) [11276 11313]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [10853 10857])
+                            ("device" variable nil (reparse-symbol function_parameters) [10859 10865])
+                            ("local_port" variable nil (reparse-symbol function_parameters) [10867 10877])
+                            ("device_port" variable nil (reparse-symbol function_parameters) [10879 10890]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [10840 11314])
+                    ("run" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11327 11331]))                          )
+                        (reparse-symbol indented_block_body) [11319 11370])
+                    ("kill" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11384 11388])
+                            ("args" variable nil (reparse-symbol function_parameters) [11390 11395])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11397 11405]))                          )
+                        (reparse-symbol indented_block_body) [11375 11487]))                  
+                :type "class")
+                nil [10744 11487])
+            ("bootstrap_ios" function
+               (:documentation "
+    Setup iOS device
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [11507 11513]))                  )
+                nil [11489 11795])
+            ("bootstrap" function
+               (:documentation "
+    Bootstrap services for device
+    "
+                :arguments 
+                  ( ("device" variable nil (reparse-symbol function_parameters) [11839 11845]))                  )
+                nil [11825 12116])
+            ("start_device" function (:arguments 
+              ( ("serial_number" variable nil (reparse-symbol function_parameters) [12135 12148]))              ) nil [12118 13408])
+            ("Command" type
+               (:superclasses ("BaseCommand")
+                :members 
+                  ( ("help" variable nil (reparse-symbol indented_block_body) [13443 13490])
+                    ("add_arguments" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13514 13518])
+                            ("parser" variable nil (reparse-symbol function_parameters) [13520 13526]))                          )
+                        (reparse-symbol indented_block_body) [13496 13583])
+                    ("handle" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13599 13603])
+                            ("args" variable nil (reparse-symbol function_parameters) [13605 13610])
+                            ("options" variable nil (reparse-symbol function_parameters) [13612 13621]))                          )
+                        (reparse-symbol indented_block_body) [13588 13708]))                  
+                :type "class")
+                nil [13410 13708]))          
+      :file "device.py"
+      :pointmax 13708
+      :fsize 13707
+      :lastmodtime '(22507 62916 820653 197000)
+      :unmatched-syntax '((INDENT_BLOCK 13198 . 13355) (NEWLINE 13197 . 13198) (IF 13164 . 13166) (STRING_LITERAL 13187 . 13196) (COLON 13196 . 13197) (INDENT_BLOCK 13121 . 13155) (NEWLINE 13120 . 13121) (COLON 13119 . 13120) (TRY 13002 . 13005) (AS 13115 . 13117) (INDENT_BLOCK 6273 . 6303) (NEWLINE 6272 . 6273) (COLON 6271 . 6272) (TRY 5862 . 5865) (AS 6267 . 6269))))
+  :file "!home!radar!Projects!appknox!moriarty!moriarty!core!management!commands!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

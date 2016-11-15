@@ -1,0 +1,25 @@
+;; Object scripts/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scripts/"
+  :tables
+  (list
+    (semanticdb-table "log.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("logging" include nil nil [1 15])
+            ("logging.handlers" include nil nil [16 39])
+            ("random" include nil nil [40 53])
+            ("string" include nil nil [54 67])
+            ("my_logger" variable nil nil [69 110])
+            ("my_logger" code nil nil [111 144])
+            ("handler" variable nil nil [146 206])
+            ("my_logger" code nil nil [208 237])
+            ("for" code nil nil [238 382]))          
+      :file "log.py"
+      :pointmax 382
+      :fsize 381
+      :lastmodtime '(22543 9897 137550 714000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!lestrade!scripts!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

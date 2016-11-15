@@ -1,0 +1,77 @@
+;; Object logging/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "logging/"
+  :tables
+  (list
+    (semanticdb-table "SentryLogger.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.anthea.common.logging" package nil nil [1 43])
+            ("com.appknox.anthea.config.AntheaPluginConfig" include nil nil [45 97])
+            ("com.appknox.anthea.constants.AntheaConstants" include nil nil [98 150])
+            ("com.getsentry.raven.Raven" include nil nil [151 184])
+            ("com.getsentry.raven.RavenFactory" include nil nil [185 225])
+            ("com.getsentry.raven.event.Event" include nil nil [226 265])
+            ("com.getsentry.raven.event.EventBuilder" include nil nil [266 312])
+            ("com.getsentry.raven.event.interfaces.UserInterface" include nil nil [313 371])
+            ("org.apache.log4j.Logger" include nil nil [372 403])
+            ("java.net.HttpURLConnection" include nil nil [405 439])
+            ("java.net.InetAddress" include nil nil [440 468])
+            ("java.net.URL" include nil nil [469 489])
+            ("SentryLogger" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("LOG" variable
+                       (:typemodifiers ("static" "public")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [579 643])
+                    ("raven" variable
+                       (:typemodifiers ("private" "static")
+                        :type "Raven")
+                        (reparse-symbol class_member_declaration) [648 675])
+                    ("pluginConfig" variable
+                       (:typemodifiers ("private" "static")
+                        :type "AntheaPluginConfig")
+                        (reparse-symbol class_member_declaration) [680 762])
+                    ("userId" variable
+                       (:typemodifiers ("static")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [768 786])
+                    ("userName" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [791 814])
+                    ("dsn" variable
+                       (:typemodifiers ("static")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [819 837])
+                    ("SentryLogger" function
+                       (:constructor-flag t
+                        :typemodifiers ("private"))
+                        (reparse-symbol class_member_declaration) [903 932])
+                    ("getLogger" function
+                       (:typemodifiers ("public" "static")
+                        :type "Logger")
+                        (reparse-symbol class_member_declaration) [938 997])
+                    ("logMessageIntoSentry" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("message" variable (:type "String") (reparse-symbol formal_parameters) [1043 1057]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1003 2490])
+                    ("logExceptionIntoSentry" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("e" variable (:type "Exception") (reparse-symbol formal_parameters) [2538 2549]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2496 3991]))                  
+                :type "class")
+                nil [547 3994]))          
+      :file "SentryLogger.java"
+      :pointmax 3995
+      :fsize 3994
+      :lastmodtime '(22550 57834 984988 123000)
+      :unmatched-syntax '((SEMICOLON 762 . 763))))
+  :file "!home!radar!Projects!appknox!anthea!src!com!appknox!anthea!common!logging!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

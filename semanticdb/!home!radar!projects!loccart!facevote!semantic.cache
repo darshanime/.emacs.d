@@ -1,0 +1,19 @@
+;; Object facevote/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "facevote/"
+  :tables
+  (list
+    (semanticdb-table "manage.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("os" include nil nil [23 32])
+            ("sys" include nil nil [33 43])
+            ("if" code nil nil [45 257]))          
+      :file "manage.py"
+      :pointmax 257
+      :fsize 256
+      :lastmodtime '(22294 13552 902801 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!loccart!facevote!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

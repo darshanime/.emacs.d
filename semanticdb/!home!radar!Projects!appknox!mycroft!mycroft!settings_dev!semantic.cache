@@ -1,0 +1,21 @@
+;; Object settings_dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "settings_dev/"
+  :tables
+  (list
+    (semanticdb-table "dev.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("mycroft.settings" include nil nil [16 46])
+            ("SEND_EMAIL" variable nil nil [48 66])
+            ("DEVICES_TOKEN" variable nil nil [67 121])
+            ("DEVICES_USER" variable nil nil [122 175])
+            ("DEVICES_HOST" variable nil nil [176 223]))          
+      :file "dev.py"
+      :pointmax 1409
+      :fsize 1408
+      :lastmodtime '(22519 26401 305599 475000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!settings_dev!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

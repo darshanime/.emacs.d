@@ -1,0 +1,40 @@
+;; Object devknox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "devknox/"
+  :tables
+  (list
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("json" include nil nil [1 12])
+            ("tokenapi.decorators" include nil nil [14 60])
+            ("socket" include nil nil [61 74])
+            ("django.conf" include nil nil [76 108])
+            ("django.views.decorators.csrf" include nil nil [109 161])
+            ("django.http" include nil nil [162 198])
+            ("log_entry" function
+               (:decorators 
+                  ( ("csrf_exempt" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("request" variable nil (reparse-symbol function_parameters) [246 253])
+                    ("log_json" variable nil (reparse-symbol function_parameters) [255 263]))                  )
+                nil [201 1011]))          
+      :file "views.py"
+      :pointmax 1011
+      :fsize 1010
+      :lastmodtime '(22526 3997 699106 813000)
+      :unmatched-syntax nil)
+    (semanticdb-table "urls.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.conf.urls" include nil nil [1 33])
+            ("mycroft.devknox.views" include nil nil [35 78])
+            ("urlpatterns" variable nil nil [80 139]))          
+      :file "urls.py"
+      :pointmax 140
+      :fsize 139
+      :lastmodtime '(22526 3998 539108 106000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!devknox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

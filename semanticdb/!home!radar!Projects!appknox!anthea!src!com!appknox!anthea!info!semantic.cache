@@ -1,0 +1,47 @@
+;; Object info/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "info/"
+  :tables
+  (list
+    (semanticdb-table "AntheaUserMessageMap.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.anthea.info" package nil nil [1 33])
+            ("com.appknox.anthea.common.logging.AntheaLogger" include nil nil [35 89])
+            ("com.appknox.anthea.constants.AntheaConstants" include nil nil [90 142])
+            ("com.appknox.anthea.info.beans.Message" include nil nil [143 188])
+            ("com.appknox.anthea.info.beans.UserMessages" include nil nil [189 239])
+            ("org.jetbrains.annotations.NotNull" include nil nil [240 281])
+            ("java.util.HashMap" include nil nil [282 307])
+            ("java.util.Map" include nil nil [308 329])
+            ("AntheaUserMessageMap" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("usrMessages" variable
+                       (:typemodifiers ("private" "static")
+                        :type "UserMessages")
+                        (reparse-symbol class_member_declaration) [485 532])
+                    ("populateMap" function
+                       (:typemodifiers ("private" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [763 1094])
+                    ("getMessageWithId" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("" variable (:type "id") (reparse-symbol formal_parameters) [1278 1280]))                          
+                        :type "Message")
+                        (reparse-symbol class_member_declaration) [1223 1439])
+                    ("readUserMessageFromJson" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1532 1867]))                  
+                :type "class")
+                nil [374 1869]))          
+      :file "AntheaUserMessageMap.java"
+      :pointmax 1870
+      :fsize 1869
+      :lastmodtime '(22470 31771 873926 622000)
+      :unmatched-syntax '((SEMICOLON 1094 . 1095) (SEMICOLON 479 . 480) (NEW 466 . 469) (EQ 464 . 465) (GT 447 . 448) (COMMA 439 . 440) (PRIVATE 414 . 421) (LT 432 . 433))))
+  :file "!home!radar!Projects!appknox!anthea!src!com!appknox!anthea!info!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,289 @@
+;; Object fabfile/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fabfile/"
+  :tables
+  (list
+    (semanticdb-table "__init__.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "__init__.py"
+      :pointmax 32
+      :fsize 31
+      :lastmodtime '(22074 16855 0 0)
+      :unmatched-syntax '(($EOI 32 . 32)))
+    (semanticdb-table "django_fabric_aws.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("''' 
+--------------------------------------------------------------------------------------
+django_fabric_aws.py
+--------------------------------------------------------------------------------------
+A set of fabric commands to manage a Django deployment on AWS
+
+author : Ashok Fernandez (github.com/ashokfernandez/)
+credit : Derived from files in https://github.com/gcollazo/Fabulous
+date   : 11 / 3 / 2014
+
+Commands include:
+    - fab spawn instance  
+        - Spawns a new EC2 instance (as definied in project_conf.py) and return's it's public dns
+          This takes around 8 minutes to complete.
+ 
+    - fab update_packages
+        - Updates the python packages on the server to match those found in requirements/common.txt and 
+          requirements/prod.txt
+ 
+    - fab deploy
+        - Pulls the latest commit from the master branch on the server, collects the static files, syncs the db and                   
+          restarts the server
+ 
+    - fab reload_gunicorn
+        - Pushes the gunicorn startup script to the servers and restarts the gunicorn process, use this if you 
+          have made changes to templates/start_gunicorn.bash
+ 
+    - fab reload_nginx
+        - Pushes the nginx config files to the servers and restarts the nginx, use this if you 
+          have made changes to templates/nginx-app-proxy or templates/nginx.conf
+
+    - fab reload_supervisor
+        - Pushes the supervisor config files to the servers and restarts the supervisor, use this if you 
+          have made changes to templates/supervisord-init or templates/supervisord.conf
+    
+    - fab manage:command=\"management command\"
+        - Runs a python manage.py command on the server. To run this command we need to specify an argument, eg for syncdb
+          type the command -> fab manage:command=\"syncdb --no-input\"
+
+'''" code nil nil [1 1826])
+            ("fabric.api" include nil nil [1828 1852])
+            ("fabric.colors" include nil nil [1853 1913])
+            ("project_conf" include nil nil [1914 1940])
+            ("tasks" include nil nil [1941 1953])
+            ("boto" include nil nil [1954 1965])
+            ("boto.ec2" include nil nil [1966 1981])
+            ("time" include nil nil [1982 1993])
+            ("env" variable nil nil [2018 2055])
+            ("env" variable nil nil [2056 2106])
+            ("env" variable nil nil [2143 2179])
+            ("spawn" function nil nil [2520 2552])
+            ("instance" function (:documentation "
+    Creates an EC2 instance from an Ubuntu AMI and configures it as a Django server
+    with nginx + gunicorn
+    ") nil [2553 3625])
+            ("deploy" function (:documentation "
+    Pulls the latest commit from bitbucket, resyncs the database, collects the static files and restarts the
+    server.
+    ") nil [3626 3898])
+            ("update_packages" function (:documentation "
+    Updates the python packages on the server as defined in requirements/common.txt and 
+    requirements/prod.txt
+    ") nil [3899 4167])
+            ("reload_nginx" function (:documentation "
+    Reloads the nginx config files and restarts nginx
+    ") nil [4168 4359])
+            ("reload_supervisor" function (:documentation "
+    Reloads the supervisor config files and restarts supervisord
+    ") nil [4360 4582])
+            ("reload_gunicorn" function (:documentation "
+    Reloads the Gunicorn startup script and restarts gunicorn
+    ") nil [4583 4815])
+            ("manage" function
+               (:documentation "
+    Runs a python manage.py command on the server
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [4827 4834]))                  )
+                nil [4816 5112])
+            ("_run_task" function
+               (:documentation "
+    Tasks a task from tasks.py and runs through the commands on the server
+    "
+                :arguments 
+                  ( ("task" variable nil (reparse-symbol function_parameters) [5383 5387])
+                    ("start_message" variable nil (reparse-symbol function_parameters) [5389 5402])
+                    ("finished_message" variable nil (reparse-symbol function_parameters) [5404 5420]))                  )
+                nil [5369 6272])
+            ("_create_ec2_instance" function (:documentation "
+    Creates EC2 Instance
+    ") nil [6273 7174])
+            ("_virtualenv" function
+               (:documentation "
+    Allows running commands on the server
+    with an active virtualenv
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7191 7197]))                  )
+                nil [7175 7367])
+            ("_apt" function
+               (:documentation "
+    Runs apt-get install commands
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7377 7383]))                  )
+                nil [7368 7505])
+            ("_pip" function
+               (:documentation "
+    Runs pip install commands
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7515 7521]))                  )
+                nil [7506 7631])
+            ("_run" function
+               (:documentation "
+    Runs command with active user
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7641 7647]))                  )
+                nil [7632 7747])
+            ("_sudo" function
+               (:documentation "
+    Run command as root
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7758 7764]))                  )
+                nil [7748 7855])
+            ("_put" function
+               (:documentation "
+    Moves a file from local computer to server
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [7865 7871]))                  )
+                nil [7856 8002])
+            ("_put_template" function
+               (:documentation "
+    Same as _put() but it loads a file and does variable replacement
+    "
+                :arguments 
+                  ( ("params" variable nil (reparse-symbol function_parameters) [8021 8027]))                  )
+                nil [8003 8257])
+            ("_render" function
+               (:documentation "
+    Does variable replacement
+    "
+                :arguments 
+                  ( ("template" variable nil (reparse-symbol function_parameters) [8270 8278])
+                    ("context" variable nil (reparse-symbol function_parameters) [8280 8287]))                  )
+                nil [8258 8374])
+            ("_write_to" function
+               (:documentation "
+    Writes a string to a file on the server
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [8389 8395])
+                    ("path" variable nil (reparse-symbol function_parameters) [8397 8401]))                  )
+                nil [8375 8509])
+            ("_append_to" function
+               (:documentation "
+    Appends to a file on the server
+    "
+                :arguments 
+                  ( ("string" variable nil (reparse-symbol function_parameters) [8525 8531])
+                    ("path" variable nil (reparse-symbol function_parameters) [8533 8537]))                  )
+                nil [8510 8638])
+            ("_virtualenv_command" function
+               (:documentation "
+    Activates virtualenv and runs command
+    "
+                :arguments 
+                  ( ("command" variable nil (reparse-symbol function_parameters) [8663 8670]))                  )
+                nil [8639 8851]))          
+      :file "django_fabric_aws.py"
+      :pointmax 8851
+      :fsize 8850
+      :lastmodtime '(22535 18288 140422 667000)
+      :unmatched-syntax nil)
+    (semanticdb-table "project_conf.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("''' 
+--------------------------------------------------------------------------------------
+project_conf.py
+--------------------------------------------------------------------------------------
+Configuration settings that detail your EC2 instances and other info about your Django
+servers
+
+author : Ashok Fernandez (github.com/ashokfernandez/)
+credit : Derived from files in https://github.com/gcollazo/Fabulous
+date   : 11 / 3 / 2014
+
+Make sure you fill everything out that looks like it needs to be filled out, there are links 
+in the comments to help.
+'''" code nil nil [1 560])
+            ("os.path" include nil nil [562 576])
+            ("fabconf" variable nil nil [578 590])
+            ("fabconf" variable nil nil [607 661])
+            ("fabconf" variable nil nil [678 714])
+            ("fabconf" variable nil nil [800 837])
+            ("fabconf" variable nil nil [866 896])
+            ("fabconf" variable nil nil [965 1020])
+            ("fabconf" code nil nil [1097 1187])
+            ("fabconf" code nil nil [1213 1282])
+            ("fabconf" code nil nil [1348 1430])
+            ("fabconf" variable nil nil [1446 1480])
+            ("fabconf" code nil nil [1505 1585])
+            ("fabconf" variable nil nil [1616 1664])
+            ("fabconf" variable nil nil [1771 1802])
+            ("fabconf" variable nil nil [1863 1910])
+            ("fabconf" code nil nil [1975 2083])
+            ("fabconf" variable nil nil [2143 2187])
+            ("fabconf" variable nil nil [2188 2231])
+            ("fabconf" variable nil nil [2438 2506])
+            ("fabconf" code nil nil [2538 2662])
+            ("fabconf" variable nil nil [2707 2757])
+            ("fabconf" variable nil nil [2791 2841])
+            ("fabconf" variable nil nil [2878 2948])
+            ("ec2_region" variable nil nil [2986 3010])
+            ("ec2_amis" variable nil nil [3075 3102])
+            ("ec2_keypair" variable nil nil [3163 3202])
+            ("ec2_secgroups" variable nil nil [3255 3298])
+            ("ec2_instancetype" variable nil nil [3350 3379]))          
+      :file "project_conf.py"
+      :pointmax 3551
+      :fsize 3550
+      :lastmodtime '(22319 9048 859946 0)
+      :unmatched-syntax '((NAME 3473 . 3480) ($EOI 3551 . 3551)))
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("''' 
+--------------------------------------------------------------------------------------
+tasks.py
+--------------------------------------------------------------------------------------
+A set of tasks to manage your AWS Django deployment.
+
+author : Ashok Fernandez (github.com/ashokfernandez/)
+credit : Derived from files in https://github.com/gcollazo/Fabulous
+date   : 11 / 3 / 2014
+
+Tasks include:
+    - configure_instance  : Configures a new EC2 instance (as definied in project_conf.py) and return's it's public dns
+                            This takes around 8 minutes to complete.
+
+    - update_packages : Updates the python packages on the server to match those found in requirements/common.txt and
+                        requirements/prod.txt
+
+    - deploy : Pulls the latest commit from the master branch on the server, collects the static files, syncs the db and
+               restarts the server
+
+    - reload_gunicorn : Pushes the gunicorn startup script to the servers and restarts the gunicorn process, use this if you
+                        have made changes to templates/start_gunicorn.bash
+
+    - reload_nginx : Pushes the nginx config files to the servers and restarts the nginx, use this if you
+                     have made changes to templates/nginx-app-proxy or templates/nginx.conf
+
+    - reload_supervisor : Pushes the supervisor config files to the servers and restarts the supervisor, use this if you
+                          have made changes to templates/supervisord-init or templates/supervisord.conf
+
+'''" code nil nil [1 1545])
+            ("configure_instance" variable nil nil [1682 8685])
+            ("update_packages" variable nil nil [8810 9074])
+            ("reload_gunicorn" variable nil nil [9986 10461])
+            ("reload_nginx" variable nil nil [10624 11883])
+            ("reload_supervisor" variable nil nil [12063 13438]))          
+      :file "tasks.py"
+      :pointmax 13439
+      :fsize 13438
+      :lastmodtime '(22535 15141 673400 558000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!loccart!facevote!fabfile!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

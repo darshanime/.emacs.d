@@ -1,0 +1,58 @@
+;; Object meetup-selenium/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "meetup-selenium/"
+  :tables
+  (list
+    (semanticdb-table "script.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [1 12])
+            ("Keys" include nil nil [81 92])
+            ("driver" variable nil nil [95 123])
+            ("urls" variable nil nil [125 5525])
+            ("" code nil nil [5540 5613]))          
+      :file "script.py"
+      :pointmax 6395
+      :fsize 6394
+      :lastmodtime '(22497 63918 961295 285000)
+      :unmatched-syntax '((FOR 5616 . 5619) (NAME 5655 . 5660) (NEWLINE 5662 . 5663) (INDENT_BLOCK 5663 . 5987)))
+    (semanticdb-table "twitter_scroll.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [1 12])
+            ("selenium" include nil nil [14 44])
+            ("driver" variable nil nil [47 75])
+            ("driver" code nil nil [77 131])
+            ("while" code nil nil [132 250]))          
+      :file "twitter_scroll.py"
+      :pointmax 250
+      :fsize 249
+      :lastmodtime '(22525 55485 570749 558000)
+      :unmatched-syntax nil)
+    (semanticdb-table "facebook2.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("time" include nil nil [1 12])
+            ("selenium" include nil nil [14 44])
+            ("selenium.webdriver.common.keys" include nil nil [45 92])
+            ("driver" variable nil nil [95 123])
+            ("android_urls" variable nil nil [125 5154])
+            ("analytics_urls" variable nil nil [5157 6338])
+            ("preneurs_urls" variable nil nil [6340 6795])
+            ("trial_urls" variable nil nil [6798 6858])
+            ("driver" code nil nil [6860 6898])
+            ("email" variable nil nil [6899 6941])
+            ("passwd" variable nil nil [6942 6984])
+            ("submit" variable nil nil [6985 7034])
+            ("email" code nil nil [7035 7075])
+            ("passwd" code nil nil [7076 7104])
+            ("submit" code nil nil [7105 7119])
+            ("for" code nil nil [7121 7332]))          
+      :file "facebook2.py"
+      :pointmax 7739
+      :fsize 7738
+      :lastmodtime '(22498 10503 187959 578000)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!misc!meetup-selenium!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

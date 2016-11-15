@@ -1,0 +1,19 @@
+;; Object home/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "home/"
+  :tables
+  (list
+    (semanticdb-table "play.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Logout" anchor nil nil [351 354])
+            ("{{ data.one_name }}" section nil nil [931 1270])
+            ("{{ data.two_name }}" section nil nil [1270 1388]))          
+      :file "play.html"
+      :pointmax 1388
+      :fsize 1387
+      :lastmodtime '(22287 50411 864483 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!loccart!facevote!home!templates!home!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

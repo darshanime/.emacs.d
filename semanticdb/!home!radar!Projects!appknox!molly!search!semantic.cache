@@ -1,0 +1,372 @@
+;; Object search/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "search/"
+  :tables
+  (list
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.shortcuts" include nil nil [1 36])
+            ("django.views" include nil nil [37 69])
+            ("django.http" include nil nil [70 114])
+            ("django.core.urlresolvers" include nil nil [115 159])
+            ("search.utils" include nil nil [161 242])
+            ("search.models" include nil nil [243 291])
+            ("search.dbapi" include nil nil [292 471])
+            ("HomeView" type
+               (:superclasses ("generic.ListView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [512 546])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [569 573]))                          )
+                        (reparse-symbol indented_block_body) [552 797]))                  
+                :type "class")
+                nil [474 797])
+            ("CategoryView" type
+               (:superclasses ("generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [845 883])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [910 914])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [916 924]))                          )
+                        (reparse-symbol indented_block_body) [889 1173])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1187 1191])
+                            ("request" variable nil (reparse-symbol function_parameters) [1193 1200]))                          )
+                        (reparse-symbol indented_block_body) [1178 1871]))                  
+                :type "class")
+                nil [799 1871])
+            ("SearchView" type
+               (:superclasses ("generic.ListView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [1913 1949])
+                    ("get_queryset" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1972 1976]))                          )
+                        (reparse-symbol indented_block_body) [1955 2063]))                  
+                :type "class")
+                nil [1873 2063])
+            ("AppDetail" type
+               (:superclasses ("generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [2108 2144])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2171 2175])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2177 2185]))                          )
+                        (reparse-symbol indented_block_body) [2150 2477])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2491 2495])
+                            ("request" variable nil (reparse-symbol function_parameters) [2497 2504])
+                            ("id" variable nil (reparse-symbol function_parameters) [2506 2508]))                          )
+                        (reparse-symbol indented_block_body) [2482 3039]))                  
+                :type "class")
+                nil [2065 3039])
+            ("IndexView" type
+               (:superclasses ("generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3084 3119]))                  
+                :type "class")
+                nil [3041 3120])
+            ("ChangesView" type
+               (:superclasses ("generic.TemplateView")
+                :members 
+                  ( ("template_name" variable nil (reparse-symbol indented_block_body) [3167 3204])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [3231 3235])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3237 3245]))                          )
+                        (reparse-symbol indented_block_body) [3210 3629]))                  
+                :type "class")
+                nil [3122 3629]))          
+      :file "views.py"
+      :pointmax 3629
+      :fsize 3628
+      :lastmodtime '(22509 3127 561437 425000)
+      :unmatched-syntax nil)
+    (semanticdb-table "utils.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("requests" include nil nil [28 43])
+            ("bs4" include nil nil [44 73])
+            ("random" include nil nil [74 87])
+            ("search.agents" include nil nil [103 133])
+            ("search.google_play" include nil nil [134 178])
+            ("search.dbapi" include nil nil [179 253])
+            ("get_results" function (:arguments 
+              ( ("query" variable nil (reparse-symbol function_parameters) [272 277]))              ) nil [256 1460])
+            ("get_app_details" function
+               (:documentation "
+    Uses protobuf to get data from the Play Store
+    "
+                :arguments 
+                  ( ("appid" variable nil (reparse-symbol function_parameters) [1482 1487])
+                    ("category" variable nil (reparse-symbol function_parameters) [1489 1497]))                  )
+                nil [1462 2173])
+            ("get_icon_url" function
+               (:documentation "
+    Get the icon url based on the appid
+    "
+                :arguments 
+                  ( ("appid" variable nil (reparse-symbol function_parameters) [2192 2197]))                  )
+                nil [2175 2964])
+            ("get_apps_in_category" function (:arguments 
+              ( ("category_url" variable nil (reparse-symbol function_parameters) [2991 3003]))              ) nil [2966 3768]))          
+      :file "utils.py"
+      :pointmax 3768
+      :fsize 3767
+      :lastmodtime '(22509 3127 549437 341000)
+      :unmatched-syntax nil)
+    (semanticdb-table "models.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [18 57])
+            ("django.db" include nil nil [76 104])
+            ("django.contrib.auth.models" include nil nil [105 148])
+            ("django.utils" include nil nil [149 182])
+            ("search.enums" include nil nil [198 237])
+            ("App" type
+               (:documentation "
+    The App model, stores the data for each App
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("devname" variable nil (reparse-symbol indented_block_body) [333 400])
+                    ("major_version_number" variable nil (reparse-symbol indented_block_body) [405 529])
+                    ("version_code" variable nil (reparse-symbol indented_block_body) [534 606])
+                    ("version_string" variable nil (reparse-symbol indented_block_body) [611 685])
+                    ("category" variable nil (reparse-symbol indented_block_body) [690 758])
+                    ("content_rating" variable nil (reparse-symbol indented_block_body) [763 837])
+                    ("installation_size" variable nil (reparse-symbol indented_block_body) [842 960])
+                    ("downloads" variable nil (reparse-symbol indented_block_body) [965 1034])
+                    ("upload_date" variable nil (reparse-symbol indented_block_body) [1039 1110])
+                    ("app_type" variable nil (reparse-symbol indented_block_body) [1115 1183])
+                    ("dev_email" variable nil (reparse-symbol indented_block_body) [1188 1257])
+                    ("dev_website" variable nil (reparse-symbol indented_block_body) [1262 1333])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1338 1402])
+                    ("packagename" variable nil (reparse-symbol indented_block_body) [1407 1526])
+                    ("icon" variable nil (reparse-symbol indented_block_body) [1531 1595])
+                    ("permissions" variable nil (reparse-symbol indented_block_body) [1600 1672])
+                    ("saved_at" variable nil (reparse-symbol indented_block_body) [1677 1727])
+                    ("category_app" variable nil (reparse-symbol indented_block_body) [1732 1781])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1799 1803]))                          )
+                        (reparse-symbol indented_block_body) [1787 1831]))                  
+                :type "class")
+                nil [240 1831])
+            ("Rank" type
+               (:documentation "
+    The ranking for category apps
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("category" variable nil (reparse-symbol indented_block_body) [1913 1981])
+                    ("app" variable nil (reparse-symbol indented_block_body) [1986 2017])
+                    ("rank" variable nil (reparse-symbol indented_block_body) [2022 2059])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2077 2081]))                          )
+                        (reparse-symbol indented_block_body) [2065 2127]))                  
+                :type "class")
+                nil [1833 2127])
+            ("Following" type
+               (:documentation "
+    Mapping of each model and the following
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [2225 2255])
+                    ("app" variable nil (reparse-symbol indented_block_body) [2260 2288])
+                    ("Meta" type
+                       (:members 
+                          ( ("unique_together" variable nil (reparse-symbol indented_block_body) [2314 2347]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [2294 2348])
+                    ("__str__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2365 2369]))                          )
+                        (reparse-symbol indented_block_body) [2353 2424]))                  
+                :type "class")
+                nil [2130 2424])
+            ("Update" type
+               (:documentation "
+    Store updates in apps
+    "
+                :superclasses ("models.Model")
+                :members 
+                  ( ("app_name" variable nil (reparse-symbol indented_block_body) [2500 2533])
+                    ("update_type" variable nil (reparse-symbol indented_block_body) [2538 2649])
+                    ("detected_at" variable nil (reparse-symbol indented_block_body) [2654 2690])
+                    ("old_value" variable nil (reparse-symbol indented_block_body) [2695 2741])
+                    ("new_value" variable nil (reparse-symbol indented_block_body) [2746 2792])
+                    ("save" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2807 2811])
+                            ("args" variable nil (reparse-symbol function_parameters) [2813 2818])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2820 2828]))                          )
+                        (reparse-symbol indented_block_body) [2798 2970]))                  
+                :type "class")
+                nil [2426 2970]))          
+      :file "models.py"
+      :pointmax 2970
+      :fsize 2969
+      :lastmodtime '(22509 3127 505437 33000)
+      :unmatched-syntax nil)
+    (semanticdb-table "dbapi.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("django.contrib.auth.models" include nil nil [1 44])
+            ("search.models" include nil nil [46 100])
+            ("search.enums" include nil nil [101 140])
+            ("datetime" include nil nil [141 170])
+            ("get_app_by_name" function (:arguments 
+              ( ("package_name" variable nil (reparse-symbol function_parameters) [193 205]))              ) nil [173 323])
+            ("does_user_follow_app" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [350 354])
+                ("package_name" variable nil (reparse-symbol function_parameters) [356 368]))              ) nil [325 540])
+            ("create_app" function
+               (:documentation "
+    create app by consuming the protobuf result
+    "
+                :arguments 
+                  ( ("app_obj" variable nil (reparse-symbol function_parameters) [557 564])
+                    ("category" variable nil (reparse-symbol function_parameters) [566 574])
+                    ("icon" variable nil (reparse-symbol function_parameters) [582 586]))                  )
+                nil [542 1628])
+            ("user_followed_app" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1652 1656])
+                ("appid" variable nil (reparse-symbol function_parameters) [1658 1663]))              ) nil [1630 1898])
+            ("user_unfollowed_app" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [1924 1928])
+                ("appid" variable nil (reparse-symbol function_parameters) [1930 1935]))              ) nil [1900 2052])
+            ("update_field" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [2071 2074])
+                ("fieldName" variable nil (reparse-symbol function_parameters) [2076 2085])
+                ("oldValue" variable nil (reparse-symbol function_parameters) [2087 2095])
+                ("newValue" variable nil (reparse-symbol function_parameters) [2097 2105]))              ) nil [2054 2421])
+            ("get_apps_followed_by_user" function (:arguments 
+              ( ("user" variable nil (reparse-symbol function_parameters) [2453 2457])
+                ("category" variable nil (reparse-symbol function_parameters) [2459 2467]))              ) nil [2423 2681])
+            ("create_or_update_ranking" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [2712 2715])
+                ("rank" variable nil (reparse-symbol function_parameters) [2717 2721])
+                ("category" variable nil (reparse-symbol function_parameters) [2723 2731]))              ) nil [2683 3224])
+            ("set_category_to_true" function (:arguments 
+              ( ("appid" variable nil (reparse-symbol function_parameters) [3251 3256]))              ) nil [3226 3350]))          
+      :file "dbapi.py"
+      :pointmax 3350
+      :fsize 3349
+      :lastmodtime '(22509 3127 441436 584000)
+      :unmatched-syntax nil)
+    (semanticdb-table "agents.py"
+      :file "agents.py"
+      :fsize 52819
+      :lastmodtime '(22509 3127 389436 219000))
+    (semanticdb-table "google_play.py"
+      :file "google_play.py"
+      :fsize 12098
+      :lastmodtime '(22381 27145 39800 113000))
+    (semanticdb-table "celery.py"
+      :file "celery.py"
+      :fsize 873
+      :lastmodtime '(22394 3579 815712 556000))
+    (semanticdb-table "tasks.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("__future__" include nil nil [1 39])
+            ("datetime" include nil nil [40 80])
+            ("django.core.mail" include nil nil [82 133])
+            ("search.celery" include nil nil [135 172])
+            ("search.models" include nil nil [173 221])
+            ("search.dbapi" include nil nil [222 259])
+            ("search.utils" include nil nil [260 314])
+            ("search.enums" include nil nil [315 354])
+            ("" code nil nil [367 398])
+            ("send_change_mail" function
+               (:documentation "
+    Send email function
+    example call:
+    send_change_mail([\"example@abc.com\"], \"appname\",
+    \"changeenum\", \"newvalue\", \"oldvalue\")
+    "
+                :arguments 
+                  ( ("to_addrs" variable nil (reparse-symbol function_parameters) [420 428])
+                    ("appName" variable nil (reparse-symbol function_parameters) [430 437])
+                    ("changeEnum" variable nil (reparse-symbol function_parameters) [439 449])
+                    ("newValue" variable nil (reparse-symbol function_parameters) [451 459])
+                    ("oldValue" variable nil (reparse-symbol function_parameters) [461 469])
+                    ("subject" variable nil (reparse-symbol function_parameters) [492 499]))                  )
+                nil [399 1300])
+            ("" code nil nil [1312 1345])
+            ("get_apps_to_update" function nil nil [1346 1676])
+            ("" code nil nil [1688 1714])
+            ("get_emails" function (:arguments 
+              ( ("app" variable nil (reparse-symbol function_parameters) [1730 1733]))              ) nil [1715 1977])
+            ("update_apps" function
+               (:decorators 
+                  ( ("app_.task" function (:type "decorator") nil nil))                  
+                :arguments 
+                  ( ("apps_to_update" variable nil (reparse-symbol function_parameters) [2006 2020]))                  )
+                nil [1979 7713]))          
+      :file "tasks.py"
+      :pointmax 7713
+      :fsize 7712
+      :lastmodtime '(22509 3127 505437 33000)
+      :unmatched-syntax nil)
+
+    (semanticdb-table "enums.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("orm_choices" include nil nil [1 56])
+            ("ChangeTypeEnum" type
+               (:documentation "
+    Change Type Enum
+    "
+                :members 
+                  ( ("Meta" type
+                       (:members 
+                          ( ("UNKNOWN" variable nil (reparse-symbol indented_block_body) [151 183])
+                            ("DEVNAME" variable nil (reparse-symbol indented_block_body) [192 231])
+                            ("MAJOR_VERSION_NUMBER" variable nil (reparse-symbol indented_block_body) [240 298])
+                            ("VERSION_CODE" variable nil (reparse-symbol indented_block_body) [307 349])
+                            ("VERSION_STRING" variable nil (reparse-symbol indented_block_body) [358 404])
+                            ("CATEGORY" variable nil (reparse-symbol indented_block_body) [413 447])
+                            ("CONTENT_RATING" variable nil (reparse-symbol indented_block_body) [456 502])
+                            ("INSTALLATION_SIZE" variable nil (reparse-symbol indented_block_body) [511 563])
+                            ("DOWNLOADS" variable nil (reparse-symbol indented_block_body) [572 608])
+                            ("UPLOAD_DATE" variable nil (reparse-symbol indented_block_body) [617 658])
+                            ("APP_TYPE" variable nil (reparse-symbol indented_block_body) [667 702])
+                            ("DEV_EMAIL" variable nil (reparse-symbol indented_block_body) [711 754])
+                            ("DEV_WEBSITE" variable nil (reparse-symbol indented_block_body) [763 810])
+                            ("PERMISSIONS" variable nil (reparse-symbol indented_block_body) [819 860])
+                            ("NAME" variable nil (reparse-symbol indented_block_body) [869 896])
+                            ("PACKAGENAME" variable nil (reparse-symbol indented_block_body) [905 947])
+                            ("ICON" variable nil (reparse-symbol indented_block_body) [956 983]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [131 984]))                  
+                :type "class")
+                nil [68 984]))          
+      :file "enums.py"
+      :pointmax 984
+      :fsize 983
+      :lastmodtime '(22403 41814 435420 669000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!molly!search!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

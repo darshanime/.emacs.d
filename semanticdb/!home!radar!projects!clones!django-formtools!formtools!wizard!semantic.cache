@@ -1,0 +1,678 @@
+;; Object wizard/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "wizard/"
+  :tables
+  (list
+    (semanticdb-table "views.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("re" include nil nil [1 10])
+            ("collections" include nil nil [11 46])
+            ("django" include nil nil [48 72])
+            ("django.core.urlresolvers" include nil nil [73 117])
+            ("django.forms" include nil nil [118 168])
+            ("django.shortcuts" include nil nil [169 206])
+            ("django.utils" include nil nil [207 235])
+            ("django.utils.decorators" include nil nil [236 287])
+            ("django.utils.translation" include nil nil [288 338])
+            ("django.views.generic" include nil nil [339 384])
+            ("ManagementForm" include nil nil [398 419])
+            ("get_storage" include nil nil [434 452])
+            ("NoFileStorageConfigured" include nil nil [478 508])
+            ("normalize_name" function
+               (:documentation "
+    Converts camel-case style names into underscore separated words. Example::
+
+        >>> normalize_name('oneTwoThree')
+        'one_two_three'
+        >>> normalize_name('FourFiveSix')
+        'four_five_six'
+
+    "
+                :arguments 
+                  ( ("name" variable nil (reparse-symbol function_parameters) [530 534]))                  )
+                nil [511 873])
+            ("StepsHelper" type
+               (:superclasses ("object")
+                :members 
+                  ( ("__init__" function
+                       (:suite 
+                          ( ("self" variable nil (reparse-symbol indented_block_body) [943 964]))                          
+                        :parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [920 924])
+                            ("wizard" variable nil (reparse-symbol function_parameters) [926 932]))                          
+                        :constructor-flag t)
+                        (reparse-symbol indented_block_body) [907 965])
+                    ("__dir__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [982 986]))                          )
+                        (reparse-symbol indented_block_body) [970 1013])
+                    ("__len__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1030 1034]))                          )
+                        (reparse-symbol indented_block_body) [1018 1063])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1081 1085]))                          )
+                        (reparse-symbol indented_block_body) [1068 1165])
+                    ("all" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1192 1196]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1170 1297])
+                    ("count" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1326 1330]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1302 1432])
+                    ("current" function
+                       (:parent "dummy"
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1463 1467]))                          
+                        :documentation "
+        Returns the current step. If no current step is stored in the
+        storage backend, the first step will be returned.
+        ")
+                        (reparse-symbol indented_block_body) [1437 1685])
+                    ("first" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1714 1718]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1690 1794])
+                    ("last" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1822 1826]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1799 1902])
+                    ("next" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [1930 1934]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [1907 2014])
+                    ("prev" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2042 2046]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2019 2130])
+                    ("index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2159 2163]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2135 2261])
+                    ("step0" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2290 2294]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2266 2328])
+                    ("step1" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2357 2361]))                          
+                        :decorators 
+                          ( ("property" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2333 2399]))                  
+                :type "class")
+                nil [875 2399])
+            ("WizardView" type
+               (:documentation "
+    The WizardView is used to create multi-page forms and handles all the
+    storage and validation stuff. The wizard is based on Django's generic
+    class based views.
+    "
+                :superclasses ("TemplateView")
+                :members 
+                  ( ("storage_name" variable nil (reparse-symbol indented_block_body) [2624 2643])
+                    ("form_list" variable nil (reparse-symbol indented_block_body) [2648 2664])
+                    ("initial_dict" variable nil (reparse-symbol indented_block_body) [2669 2688])
+                    ("instance_dict" variable nil (reparse-symbol indented_block_body) [2693 2713])
+                    ("condition_dict" variable nil (reparse-symbol indented_block_body) [2718 2739])
+                    ("template_name" variable nil (reparse-symbol indented_block_body) [2744 2795])
+                    ("__repr__" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [2814 2818]))                          )
+                        (reparse-symbol indented_block_body) [2801 2898])
+                    ("as_view" function
+                       (:documentation "
+        This method is used within urls.py to create unique wizardview
+        instances for every request. We need to override this method because
+        we add some kwargs which are needed to make the wizardview usable.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [2936 2939])
+                            ("args" variable nil (reparse-symbol function_parameters) [2941 2946])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [2948 2956]))                          
+                        :decorators 
+                          ( ("classonlymethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [2903 3323])
+                    ("get_initkwargs" function
+                       (:documentation "
+        Creates a dict with all needed parameters for the form wizard instances
+
+        * `form_list` - is a list of forms. The list entries can be single form
+          classes or tuples of (`step_name`, `form_class`). If you pass a list
+          of forms, the wizardview will convert the class list to
+          (`zero_based_counter`, `form_class`). This is needed to access the
+          form for a specific step.
+        * `initial_dict` - contains a dictionary of initial data dictionaries.
+          The key should be equal to the `step_name` in the `form_list` (or
+          the str of the zero based counter - if no step_names added in the
+          `form_list`)
+        * `instance_dict` - contains a dictionary whose values are model
+          instances if the step is based on a ``ModelForm`` and querysets if
+          the step is based on a ``ModelFormSet``. The key should be equal to
+          the `step_name` in the `form_list`. Same rules as for `initial_dict`
+          apply.
+        * `condition_dict` - contains a dictionary of boolean values or
+          callables. If the value of for a specific `step_name` is callable it
+          will be called with the wizardview instance as the only argument.
+          If the return value is true, the step's form will be used.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [3364 3367])
+                            ("form_list" variable nil (reparse-symbol function_parameters) [3369 3378])
+                            ("initial_dict" variable nil (reparse-symbol function_parameters) [3385 3397])
+                            ("instance_dict" variable nil (reparse-symbol function_parameters) [3404 3417])
+                            ("condition_dict" variable nil (reparse-symbol function_parameters) [3447 3461])
+                            ("args" variable nil (reparse-symbol function_parameters) [3468 3473])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [3475 3483]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [3328 7012])
+                    ("get_prefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7032 7036])
+                            ("request" variable nil (reparse-symbol function_parameters) [7038 7045])
+                            ("args" variable nil (reparse-symbol function_parameters) [7047 7052])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [7054 7062]))                          )
+                        (reparse-symbol indented_block_body) [7017 7173])
+                    ("get_form_list" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [7196 7200]))                          
+                        :documentation "
+        This method returns a form_list based on the initial form list but
+        checks if there is a condition method/value in the condition_list.
+        If an entry exists in the condition list, it will call/read the value
+        and respect the result. (True means add the form, False means ignore
+        the form)
+
+        The form_list is always generated on the fly because condition methods
+        could use data from other (maybe previous forms).
+        ")
+                        (reparse-symbol indented_block_body) [7178 8228])
+                    ("dispatch" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [8246 8250])
+                            ("request" variable nil (reparse-symbol function_parameters) [8252 8259])
+                            ("args" variable nil (reparse-symbol function_parameters) [8261 8266])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [8268 8276]))                          
+                        :documentation "
+        This method gets called by the routing engine. The first argument is
+        `request` which contains a `HttpRequest` instance.
+        The request is stored in `self.request` for later use. The storage
+        instance is stored in `self.storage`.
+
+        After processing the request using the `dispatch` method, the
+        response gets updated by the storage engine (for example add cookies).
+        ")
+                        (reparse-symbol indented_block_body) [8233 9231])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9244 9248])
+                            ("request" variable nil (reparse-symbol function_parameters) [9250 9257])
+                            ("args" variable nil (reparse-symbol function_parameters) [9259 9264])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9266 9274]))                          
+                        :documentation "
+        This method handles GET requests.
+
+        If a GET request reaches this point, the wizard assumes that the user
+        just starts at the first step or wants to restart the process.
+        The data of the wizard will be resetted before rendering the first step
+        ")
+                        (reparse-symbol indented_block_body) [9236 9752])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [9766 9770])
+                            ("args" variable nil (reparse-symbol function_parameters) [9772 9777])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [9779 9787]))                          
+                        :documentation "
+        This method handles POST requests.
+
+        The wizard will render either the current step (if form validation
+        wasn't successful), the next step (if the current step was stored
+        successful) or the done view (if no more steps are available)
+        ")
+                        (reparse-symbol indented_block_body) [9757 11909])
+                    ("render_next_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [11935 11939])
+                            ("form" variable nil (reparse-symbol function_parameters) [11941 11945])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [11947 11955]))                          
+                        :documentation "
+        This method gets called when the next step/form should be rendered.
+        `form` contains the last/current form.
+        ")
+                        (reparse-symbol indented_block_body) [11914 12557])
+                    ("render_goto_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [12583 12587])
+                            ("goto_step" variable nil (reparse-symbol function_parameters) [12589 12598])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [12600 12608]))                          
+                        :documentation "
+        This method gets called when the current step has to be changed.
+        `goto_step` contains the requested step to go to.
+        ")
+                        (reparse-symbol indented_block_body) [12562 13007])
+                    ("render_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [13028 13032])
+                            ("form" variable nil (reparse-symbol function_parameters) [13034 13038])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [13040 13048]))                          
+                        :documentation "
+        This method gets called when all forms passed. The method should also
+        re-validate all steps to prevent manipulation. If any form fails to
+        validate, `render_revalidation_failure` should get called.
+        If everything is fine call `done`.
+        ")
+                        (reparse-symbol indented_block_body) [13012 14190])
+                    ("get_form_prefix" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14215 14219])
+                            ("step" variable nil (reparse-symbol function_parameters) [14221 14225])
+                            ("form" variable nil (reparse-symbol function_parameters) [14232 14236]))                          
+                        :documentation "
+        Returns the prefix which will be used when calling the actual form for
+        the given step. `step` contains the step-name, `form` the form which
+        will be called with the returned prefix.
+
+        If no step is given, the form_prefix will determine the current step
+        automatically.
+        ")
+                        (reparse-symbol indented_block_body) [14195 14662])
+                    ("get_form_initial" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [14688 14692])
+                            ("step" variable nil (reparse-symbol function_parameters) [14694 14698]))                          
+                        :documentation "
+        Returns a dictionary which will be passed to the form for `step`
+        as `initial`. If no initial data was provided while initializing the
+        form wizard, an empty dictionary will be returned.
+        ")
+                        (reparse-symbol indented_block_body) [14667 14981])
+                    ("get_form_instance" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15008 15012])
+                            ("step" variable nil (reparse-symbol function_parameters) [15014 15018]))                          
+                        :documentation "
+        Returns an object which will be passed to the form for `step`
+        as `instance`. If no instance object was provided while initializing
+        the form wizard, None will be returned.
+        ")
+                        (reparse-symbol indented_block_body) [14986 15290])
+                    ("get_form_kwargs" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15315 15319])
+                            ("step" variable nil (reparse-symbol function_parameters) [15321 15325]))                          
+                        :documentation "
+        Returns the keyword arguments for instantiating the form
+        (or formset) on the given step.
+        ")
+                        (reparse-symbol indented_block_body) [15295 15480])
+                    ("get_form" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [15498 15502])
+                            ("step" variable nil (reparse-symbol function_parameters) [15504 15508])
+                            ("data" variable nil (reparse-symbol function_parameters) [15515 15519])
+                            ("files" variable nil (reparse-symbol function_parameters) [15526 15531]))                          
+                        :documentation "
+        Constructs the form for a given `step`. If no `step` is defined, the
+        current step will be determined automatically.
+
+        The form will be initialized using the `data` argument to prefill the
+        new form. If needed, instance or queryset (for `ModelForm` or
+        `ModelFormSet`) will be added too.
+        ")
+                        (reparse-symbol indented_block_body) [15485 16869])
+                    ("process_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [16891 16895])
+                            ("form" variable nil (reparse-symbol function_parameters) [16897 16901]))                          
+                        :documentation "
+        This method is used to postprocess the form data. By default, it
+        returns the raw `form.data` dictionary.
+        ")
+                        (reparse-symbol indented_block_body) [16874 17094])
+                    ("process_step_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17122 17126])
+                            ("form" variable nil (reparse-symbol function_parameters) [17128 17132]))                          
+                        :documentation "
+        This method is used to postprocess the form files. By default, it
+        returns the raw `form.files` dictionary.
+        ")
+                        (reparse-symbol indented_block_body) [17099 17328])
+                    ("render_revalidation_failure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17365 17369])
+                            ("step" variable nil (reparse-symbol function_parameters) [17371 17375])
+                            ("form" variable nil (reparse-symbol function_parameters) [17377 17381])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [17383 17391]))                          
+                        :documentation "
+        Gets called when a form doesn't validate when rendering the done
+        view. By default, it changes the current step to failing forms step
+        and renders the form.
+        ")
+                        (reparse-symbol indented_block_body) [17333 17681])
+                    ("get_form_step_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17709 17713])
+                            ("form" variable nil (reparse-symbol function_parameters) [17715 17719]))                          
+                        :documentation "
+        Is used to return the raw form data. You may use this method to
+        manipulate the data.
+        ")
+                        (reparse-symbol indented_block_body) [17686 17872])
+                    ("get_form_step_files" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [17901 17905])
+                            ("form" variable nil (reparse-symbol function_parameters) [17907 17911]))                          
+                        :documentation "
+        Is used to return the raw form files. You may use this method to
+        manipulate the data.
+        ")
+                        (reparse-symbol indented_block_body) [17877 18066])
+                    ("get_all_cleaned_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [18096 18100]))                          
+                        :documentation "
+        Returns a merged dictionary of all step cleaned_data dictionaries.
+        If a step contains a `FormSet`, the key will be prefixed with
+        'formset-' and contain a list of the formset cleaned_data dictionaries.
+        ")
+                        (reparse-symbol indented_block_body) [18071 18980])
+                    ("get_cleaned_data_for_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19015 19019])
+                            ("step" variable nil (reparse-symbol function_parameters) [19021 19025]))                          
+                        :documentation "
+        Returns the cleaned data for a given `step`. Before returning the
+        cleaned data, the stored values are revalidated through the form.
+        If the data doesn't validate, None will be returned.
+        ")
+                        (reparse-symbol indented_block_body) [18985 19588])
+                    ("get_next_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [19611 19615])
+                            ("step" variable nil (reparse-symbol function_parameters) [19617 19621]))                          
+                        :documentation "
+        Returns the next step after the given `step`. If no more steps are
+        available, None will be returned. If the `step` argument is None, the
+        current step will be determined automatically.
+        ")
+                        (reparse-symbol indented_block_body) [19593 20115])
+                    ("get_prev_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20138 20142])
+                            ("step" variable nil (reparse-symbol function_parameters) [20144 20148]))                          
+                        :documentation "
+        Returns the previous step before the given `step`. If there are no
+        steps available, None will be returned. If the `step` argument is
+        None, the current step will be determined automatically.
+        ")
+                        (reparse-symbol indented_block_body) [20120 20641])
+                    ("get_step_index" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20665 20669])
+                            ("step" variable nil (reparse-symbol function_parameters) [20671 20675]))                          
+                        :documentation "
+        Returns the index for the given `step` name. If no step is given,
+        the current step will be used to get the index.
+        ")
+                        (reparse-symbol indented_block_body) [20646 20961])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [20987 20991])
+                            ("form" variable nil (reparse-symbol function_parameters) [20993 20997])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [20999 21007]))                          
+                        :documentation "
+        Returns the template context for a step. You can overwrite this method
+        to add more data for all or some steps. This method returns a
+        dictionary containing the rendered form step. Available template
+        context variables are:
+
+         * all extra data stored in the storage backend
+         * `wizard` - a dictionary representation of the wizard instance
+
+        Example::
+
+            class MyWizard(WizardView):
+                def get_context_data(self, form, **kwargs):
+                    context = super(MyWizard, self).get_context_data(form=form,
+                                                                     **kwargs)
+                    if self.steps.current == 'my_step_name':
+                        context.update({'another_var': True})
+                    return context
+        ")
+                        (reparse-symbol indented_block_body) [20966 22248])
+                    ("render" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22264 22268])
+                            ("form" variable nil (reparse-symbol function_parameters) [22270 22274])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [22281 22289]))                          
+                        :documentation "
+        Returns a ``HttpResponse`` containing all needed context data.
+        ")
+                        (reparse-symbol indented_block_body) [22253 22535])
+                    ("done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [22549 22553])
+                            ("form_list" variable nil (reparse-symbol function_parameters) [22555 22564])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [22566 22574]))                          
+                        :documentation "
+        This method must be overridden by a subclass to process to form data
+        after processing all steps.
+        ")
+                        (reparse-symbol indented_block_body) [22540 22877]))                  
+                :type "class")
+                nil [2401 22877])
+            ("SessionWizardView" type
+               (:documentation "
+    A WizardView with pre-configured SessionStorage backend.
+    "
+                :superclasses ("WizardView")
+                :members 
+                  ( ("storage_name" variable nil (reparse-symbol indented_block_body) [22997 23061]))                  
+                :type "class")
+                nil [22879 23062])
+            ("CookieWizardView" type
+               (:documentation "
+    A WizardView with pre-configured CookieStorage backend.
+    "
+                :superclasses ("WizardView")
+                :members 
+                  ( ("storage_name" variable nil (reparse-symbol indented_block_body) [23180 23242]))                  
+                :type "class")
+                nil [23064 23243])
+            ("NamedUrlWizardView" type
+               (:documentation "
+    A WizardView with URL named steps support.
+    "
+                :superclasses ("WizardView")
+                :members 
+                  ( ("url_name" variable nil (reparse-symbol indented_block_body) [23350 23365])
+                    ("done_step_name" variable nil (reparse-symbol indented_block_body) [23370 23391])
+                    ("get_initkwargs" function
+                       (:documentation "
+        We require a url_name to reverse URLs later. Additionally users can
+        pass a done_step_name to change the URL name of the \"done\" view.
+        "
+                        :arguments 
+                          ( ("cls" variable nil (reparse-symbol function_parameters) [23433 23436])
+                            ("args" variable nil (reparse-symbol function_parameters) [23438 23443])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [23445 23453]))                          
+                        :decorators 
+                          ( ("classmethod" function (:type "decorator") nil nil))                          )
+                        (reparse-symbol indented_block_body) [23397 24186])
+                    ("get_step_url" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24208 24212])
+                            ("step" variable nil (reparse-symbol function_parameters) [24214 24218]))                          )
+                        (reparse-symbol indented_block_body) [24191 24282])
+                    ("get" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [24295 24299])
+                            ("args" variable nil (reparse-symbol function_parameters) [24301 24306])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [24308 24316]))                          
+                        :documentation "
+        This renders the form or, if needed, does the http redirects.
+        ")
+                        (reparse-symbol indented_block_body) [24287 26238])
+                    ("post" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26252 26256])
+                            ("args" variable nil (reparse-symbol function_parameters) [26258 26263])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [26265 26273]))                          
+                        :documentation "
+        Do a redirect if user presses the prev. step button. The rest of this
+        is super'd from WizardView.
+        ")
+                        (reparse-symbol indented_block_body) [26243 26691])
+                    ("get_context_data" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [26717 26721])
+                            ("form" variable nil (reparse-symbol function_parameters) [26723 26727])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [26729 26737]))                          
+                        :documentation "
+        NamedUrlWizardView provides the url_name of this wizard in the context
+        dict `wizard`.
+        ")
+                        (reparse-symbol indented_block_body) [26696 27031])
+                    ("render_next_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27057 27061])
+                            ("form" variable nil (reparse-symbol function_parameters) [27063 27067])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27069 27077]))                          
+                        :documentation "
+        When using the NamedUrlWizardView, we have to redirect to update the
+        browser's URL to match the shown step.
+        ")
+                        (reparse-symbol indented_block_body) [27036 27369])
+                    ("render_goto_step" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27395 27399])
+                            ("goto_step" variable nil (reparse-symbol function_parameters) [27401 27410])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27412 27420]))                          
+                        :documentation "
+        This method gets called when the current step has to be changed.
+        `goto_step` contains the requested step to go to.
+        ")
+                        (reparse-symbol indented_block_body) [27374 27678])
+                    ("render_revalidation_failure" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27715 27719])
+                            ("failed_step" variable nil (reparse-symbol function_parameters) [27721 27732])
+                            ("form" variable nil (reparse-symbol function_parameters) [27734 27738])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [27740 27748]))                          
+                        :documentation "
+        When a step fails, we have to redirect the user to the first failing
+        step.
+        ")
+                        (reparse-symbol indented_block_body) [27683 27970])
+                    ("render_done" function
+                       (:parent "dummy"
+                        :arguments 
+                          ( ("self" variable nil (reparse-symbol function_parameters) [27991 27995])
+                            ("form" variable nil (reparse-symbol function_parameters) [27997 28001])
+                            ("kwargs" variable nil (reparse-symbol function_parameters) [28003 28011]))                          
+                        :documentation "
+        When rendering the done view, we have to redirect first (if the URL
+        name doesn't fit).
+        ")
+                        (reparse-symbol indented_block_body) [27975 28344]))                  
+                :type "class")
+                nil [23245 28344])
+            ("NamedUrlSessionWizardView" type
+               (:documentation "
+    A NamedUrlWizardView with pre-configured SessionStorage backend.
+    "
+                :superclasses ("NamedUrlWizardView")
+                :members 
+                  ( ("storage_name" variable nil (reparse-symbol indented_block_body) [28488 28552]))                  
+                :type "class")
+                nil [28346 28553])
+            ("NamedUrlCookieWizardView" type
+               (:documentation "
+    A NamedUrlFormWizard with pre-configured CookieStorageBackend.
+    "
+                :superclasses ("NamedUrlWizardView")
+                :members 
+                  ( ("storage_name" variable nil (reparse-symbol indented_block_body) [28694 28756]))                  
+                :type "class")
+                nil [28555 28757]))          
+      :file "views.py"
+      :pointmax 28757
+      :fsize 28756
+      :lastmodtime '(22513 60962 910183 735000)
+      :unmatched-syntax '((FROM 453 . 457) (PERIOD 458 . 459) (FROM 420 . 424) (PERIOD 425 . 426) (FROM 386 . 390) (PERIOD 391 . 392)))
+    (semanticdb-table "forms.py"
+      :file "forms.py"
+      :fsize 211
+      :lastmodtime '(22513 60962 910183 735000)))
+  :file "!home!radar!projects!clones!django-formtools!formtools!wizard!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

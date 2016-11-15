@@ -1,0 +1,65 @@
+;; Object devknox/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "devknox/"
+  :tables
+  (list
+    (semanticdb-table "base.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Devknox CRM" section nil nil [190 286])
+            ("Devknox CRM" section nil nil [286 487])
+            ("Devknox CRM" section nil nil [487 565])
+            ("Users" section (:members 
+              ( ("Add User" anchor nil nil [793 796])
+                ("Update User" anchor nil nil [869 872])
+                ("Delete User" anchor nil nil [982 985])
+                ("Welcome {{ user.username }}" section (:members 
+                  ( ("Devknox CRM" section nil nil [1273 1588]))                  ) nil [1229 1588]))              ) nil [565 1588]))          
+      :file "base.html"
+      :pointmax 1588
+      :fsize 1587
+      :lastmodtime '(22571 711 827324 508000)
+      :unmatched-syntax nil)
+    (semanticdb-table "confirm_delete.html"
+      :major-mode 'html-mode
+      :tags nil
+      :file "confirm_delete.html"
+      :pointmax 230
+      :fsize 229
+      :lastmodtime '(22571 115 250870 360000)
+      :unmatched-syntax nil)
+    (semanticdb-table "form_render.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("{{ form_title }}" section (:members 
+              ( ("{{ extra_text }}" section nil nil [159 780]))              ) nil [127 780]))          
+      :file "form_render.html"
+      :pointmax 780
+      :fsize 779
+      :lastmodtime '(22571 114 706870 77000)
+      :unmatched-syntax nil)
+    (semanticdb-table "get_search_query.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("Search for {{ get_data.current_type }}" section (:members 
+              ( ("{{ result }}" anchor nil nil [1305 1308]))              ) nil [178 1534])
+            ("No {{ get_data.current_type }} found" section nil nil [1534 1739]))          
+      :file "get_search_query.html"
+      :pointmax 1739
+      :fsize 1738
+      :lastmodtime '(22571 587 147212 120000)
+      :unmatched-syntax nil)
+    (semanticdb-table "search_view.html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("List of {{ current_type }}" section (:members 
+              ( ("{{ result }}" anchor nil nil [821 824]))              ) nil [138 1050])
+            ("No {{ current_type }} found" section nil nil [1050 1182]))          
+      :file "search_view.html"
+      :pointmax 1182
+      :fsize 1181
+      :lastmodtime '(22571 586 675211 707000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!devknox!templates!devknox!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

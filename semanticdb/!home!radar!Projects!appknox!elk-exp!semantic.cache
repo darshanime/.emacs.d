@@ -1,0 +1,16 @@
+;; Object elk-exp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "elk-exp/"
+  :tables
+  (list
+    (semanticdb-table "data.json"
+      :major-mode 'js-mode
+      :tags nil
+      :file "data.json"
+      :pointmax 2194870
+      :fsize 2194924
+      :lastmodtime '(22527 35612 538298 321000)
+      :unmatched-syntax '((BRACK_BLOCK 1 . 2194869))))
+  :file "!home!radar!Projects!appknox!elk-exp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

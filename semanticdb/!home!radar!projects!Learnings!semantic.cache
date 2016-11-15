@@ -1,0 +1,30 @@
+;; Object Learnings/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "Learnings/"
+  :tables
+  (list
+    (semanticdb-table "DataStructures.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("java.util.*" include nil nil [1 20])
+            ("DataStructures" type
+               (:members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [73 86]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [49 4273]))                  
+                :type "class")
+                nil [22 4275]))          
+      :file "DataStructures.java"
+      :pointmax 4672
+      :fsize 4671
+      :lastmodtime '(22561 28978 50594 917000)
+      :unmatched-syntax '((BRACE_BLOCK 4513 . 4671) (RSHIFT 4510 . 4512) (IDENTIFIER 4503 . 4510) (COMMA 4501 . 4502) (IDENTIFIER 4495 . 4501) (LT 4494 . 4495) (IDENTIFIER 4489 . 4494) (DOT 4488 . 4489) (IDENTIFIER 4485 . 4488) (LT 4484 . 4485) (BRACE_BLOCK 4326 . 4438) (GT 4324 . 4325) (IDENTIFIER 4318 . 4324) (CLASS 4277 . 4282) (LT 4317 . 4318))))
+  :file "!home!radar!projects!Learnings!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

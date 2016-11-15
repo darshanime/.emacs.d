@@ -1,0 +1,503 @@
+;; Object del soon/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "del soon/"
+  :tables
+  (list
+    (semanticdb-table "How to Get Grammarly Premium Account Free (2016).html"
+      :major-mode 'html-mode
+      :tags 
+        '( ("How to Get Grammarly Premium Account Free (2016)" section nil nil [194 3086])
+            ("var OneSignal = OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = \"OneSignalSDKUpdaterWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PATH = \"OneSignalSDKWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl(\"https://www.whattechsays.com\");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '46ed813c-cba1-42ef-b62b-44958fe8cf27';
+oneSignal_options['autoRegister'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = \"WhatTechSays - How to Guide, Tips and Tricks\";
+oneSignal_options['welcomeNotification']['message'] = \"\";
+oneSignal_options['welcomeNotification']['url'] = \"https://www.whattechsays.com\";
+oneSignal_options['path'] = \"https://www.whattechsays.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/\";
+oneSignal_options['safari_web_id'] = \"web.onesignal.auto.0c986762-0fae-40b1-a5f6-ee95f7275a97\";
+            OneSignal.init(window._oneSignalInitOptions);
+                });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName(\"OneSignal-prompt\");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener(\"load\", function(event){
+               documentInitOneSignal();
+          });
+      }" section nil nil [3086 3209])
+            ("var OneSignal = OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = \"OneSignalSDKUpdaterWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PATH = \"OneSignalSDKWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl(\"https://www.whattechsays.com\");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '46ed813c-cba1-42ef-b62b-44958fe8cf27';
+oneSignal_options['autoRegister'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = \"WhatTechSays - How to Guide, Tips and Tricks\";
+oneSignal_options['welcomeNotification']['message'] = \"\";
+oneSignal_options['welcomeNotification']['url'] = \"https://www.whattechsays.com\";
+oneSignal_options['path'] = \"https://www.whattechsays.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/\";
+oneSignal_options['safari_web_id'] = \"web.onesignal.auto.0c986762-0fae-40b1-a5f6-ee95f7275a97\";
+            OneSignal.init(window._oneSignalInitOptions);
+                });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName(\"OneSignal-prompt\");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener(\"load\", function(event){
+               documentInitOneSignal();
+          });
+      }" section nil nil [3209 3327])
+            ("var OneSignal = OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = \"OneSignalSDKUpdaterWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PATH = \"OneSignalSDKWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl(\"https://www.whattechsays.com\");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '46ed813c-cba1-42ef-b62b-44958fe8cf27';
+oneSignal_options['autoRegister'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = \"WhatTechSays - How to Guide, Tips and Tricks\";
+oneSignal_options['welcomeNotification']['message'] = \"\";
+oneSignal_options['welcomeNotification']['url'] = \"https://www.whattechsays.com\";
+oneSignal_options['path'] = \"https://www.whattechsays.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/\";
+oneSignal_options['safari_web_id'] = \"web.onesignal.auto.0c986762-0fae-40b1-a5f6-ee95f7275a97\";
+            OneSignal.init(window._oneSignalInitOptions);
+                });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName(\"OneSignal-prompt\");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener(\"load\", function(event){
+               documentInitOneSignal();
+          });
+      }" section nil nil [3327 3452])
+            ("var OneSignal = OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = \"OneSignalSDKUpdaterWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PATH = \"OneSignalSDKWorker.js.php\";
+        OneSignal.SERVICE_WORKER_PARAM = { scope: '/' };
+
+        OneSignal.setDefaultNotificationUrl(\"https://www.whattechsays.com\");
+        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '46ed813c-cba1-42ef-b62b-44958fe8cf27';
+oneSignal_options['autoRegister'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = \"WhatTechSays - How to Guide, Tips and Tricks\";
+oneSignal_options['welcomeNotification']['message'] = \"\";
+oneSignal_options['welcomeNotification']['url'] = \"https://www.whattechsays.com\";
+oneSignal_options['path'] = \"https://www.whattechsays.com/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/\";
+oneSignal_options['safari_web_id'] = \"web.onesignal.auto.0c986762-0fae-40b1-a5f6-ee95f7275a97\";
+            OneSignal.init(window._oneSignalInitOptions);
+                });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName(\"OneSignal-prompt\");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener(\"load\", function(event){
+               documentInitOneSignal();
+          });
+      }" section nil nil [3452 6822])
+            ("[if lt IE 9]>
+<script type='text/javascript' src='https://www.whattechsays.com/wp-content/themes/genesis/lib/js/html5shiv.min.js'>" section nil nil [6822 6952])
+            ("[if lt IE 9]>
+<script type='text/javascript' src='https://www.whattechsays.com/wp-content/themes/genesis/lib/js/html5shiv.min.js'>" section nil nil [6952 7108])
+            ("li{counter-increment:foo;display:table-row;margin-bottom:.75em}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog ol>li:before{content:counter(foo) \".\";display:table-cell;text-align:right}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog:after,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog:before{top:100%;border:solid transparent;content:\" \";height:0;width:0;position:absolute}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body{z-index:2147482000;max-width:100%;white-space:nowrap;text-overflow:ellipsis;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog.onesignal-bell-launcher-dialog-opened{-webkit-transform:scale(1) translateZ(0);transform:scale(1) translateZ(0);opacity:1}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a{box-sizing:border-box;text-decoration:none;color:initial}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a:active,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a:focus,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a:hover,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a:hover:active,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog a:visited{text-decoration:none;color:initial}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog button{box-sizing:border-box;border:1px solid transparent;padding:.625em 1em;box-shadow:none;border-radius:4px;font-weight:400;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-size:12px;letter-spacing:.65px;cursor:pointer}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog button.action{color:#fff;background:#e54b4d;width:100%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog button.action:hover{background:#dd2022}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher .onesignal-bell-launcher-dialog button.action:active{background:#b1191b}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm{height:32px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-button{width:32px;height:32px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-badge{font-size:8px;width:12px;height:12px;line-height:12px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-message{padding:9.6px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-message:after{border-width:6.6px;margin-top:-6.6px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-message .onesignal-bell-launcher-message-body{font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog{padding:.3em .8em .6em;color:#333}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog:after{border-top-color:#fff;border-width:6.6px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog:before{border-top-color:hsla(0,0%,71%,.1);border-width:8.6px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body{font-size:14px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body h1{font-size:15px;line-height:1.2em;font-weight:500;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;letter-spacing:.2px;text-align:center;color:#41090a}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body p{font-size:14px;font-weight:400;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .divider{border-bottom:1px solid rgba(0,0,0,.1);margin:.25em -.93em}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .kickback{text-align:center;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:300;font-size:9.8px;letter-spacing:.5px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions{max-width:95vw;max-height:70vh;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:400;font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions img{width:100%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:330px;border:1px solid rgba(0,0,0,.1);border-radius:3px;background:hsla(0,0%,98%,.5);overflow:auto;margin:.5em 0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon{width:50px;height:50px;margin:6px;margin-right:3px;border-radius:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default{background:#e3e4e5}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon img{width:50px;height:50px;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container{margin:6px;margin-left:3px;-webkit-box-flex:1;-ms-flex:1;flex:1}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text{height:5px;width:100%;background:#e3e4e5;margin:5px 0;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short{width:75%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium{width:87%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type{margin-top:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-sm .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type{margin-bottom:0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md{height:48px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-button{width:48px;height:48px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-badge{font-size:12px;width:18px;height:18px;line-height:18px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-message{padding:14.4px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-message:after{border-width:9.9px;margin-top:-9.9px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-message .onesignal-bell-launcher-message-body{font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog{padding:.3em .8em .6em;color:#333}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog:after{border-top-color:#fff;border-width:9.9px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog:before{border-top-color:hsla(0,0%,71%,.1);border-width:11.9px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body{font-size:14px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body h1{font-size:15px;line-height:1.2em;font-weight:500;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;letter-spacing:.2px;text-align:center;color:#41090a}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body p{font-size:14px;font-weight:400;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .divider{border-bottom:1px solid rgba(0,0,0,.1);margin:.25em -.93em}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .kickback{text-align:center;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:300;font-size:9.8px;letter-spacing:.5px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions{max-width:95vw;max-height:70vh;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:400;font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions img{width:100%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:330px;border:1px solid rgba(0,0,0,.1);border-radius:3px;background:hsla(0,0%,98%,.5);overflow:auto;margin:.5em 0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon{width:50px;height:50px;margin:6px;margin-right:3px;border-radius:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default{background:#e3e4e5}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon img{width:50px;height:50px;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container{margin:6px;margin-left:3px;-webkit-box-flex:1;-ms-flex:1;flex:1}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text{height:5px;width:100%;background:#e3e4e5;margin:5px 0;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short{width:75%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium{width:87%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type{margin-top:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-md .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type{margin-bottom:0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg{height:64px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-button{width:64px;height:64px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-badge{font-size:12px;width:24px;height:24px;line-height:24px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-message{padding:19.2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-message:after{border-width:13.2px;margin-top:-13.2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-message .onesignal-bell-launcher-message-body{font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog{padding:.3em .8em .6em;color:#333}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog:after{border-top-color:#fff;border-width:13.2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog:before{border-top-color:hsla(0,0%,71%,.1);border-width:15.2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body{font-size:14px;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body h1{font-size:15px;line-height:1.2em;font-weight:500;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;letter-spacing:.2px;text-align:center;color:#41090a}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body p{font-size:14px;font-weight:400;font-family:Helvetica Neue,Helvetica,Arial,sans-serif}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .divider{border-bottom:1px solid rgba(0,0,0,.1);margin:.25em -.93em}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .kickback{text-align:center;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:300;font-size:9.8px;letter-spacing:.5px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions{max-width:95vw;max-height:70vh;font-family:Helvetica Neue,Helvetica,Arial,sans-serif;font-weight:400;font-size:14px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .instructions img{width:100%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification{display:-webkit-box;display:-ms-flexbox;display:flex;max-width:330px;border:1px solid rgba(0,0,0,.1);border-radius:3px;background:hsla(0,0%,98%,.5);overflow:auto;margin:.5em 0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon{width:50px;height:50px;margin:6px;margin-right:3px;border-radius:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon.push-notification-icon-default{background:#e3e4e5}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-icon img{width:50px;height:50px;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container{margin:6px;margin-left:3px;-webkit-box-flex:1;-ms-flex:1;flex:1}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text{height:5px;width:100%;background:#e3e4e5;margin:5px 0;border-radius:1px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-short{width:75%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text.push-notification-text-medium{width:87%}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:first-of-type{margin-top:2px}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-lg .onesignal-bell-launcher-dialog .onesignal-bell-launcher-dialog-body .push-notification .push-notification-text-container .push-notification-text:last-of-type{margin-bottom:0}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button svg .background{fill:#e54b4d}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button svg .foreground{fill:#fff}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button svg .stroke{fill:none;stroke:#fff;stroke-width:3px;stroke-miterlimit:10}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button.onesignal-bell-launcher-badge-active svg .background,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button.onesignal-bell-launcher-button-active svg .background{fill:#dd2022!important}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-button .pulse-ring{border:7px solid hsla(0,0%,100%,.4)}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-default .onesignal-bell-launcher-badge{border:1px solid #fff;background:#000;color:#fff}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button svg .background{fill:#fff}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button svg .foreground{fill:#e54b4d}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button svg .stroke{fill:none;stroke:#e54b4d;stroke-width:3px;stroke-miterlimit:10}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button.onesignal-bell-launcher-badge-active svg .background,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button.onesignal-bell-launcher-button-active svg .background{fill:#f2f2f2!important}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-button .pulse-ring{border:7px solid rgba(229,75,77,.4)}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher.onesignal-bell-launcher-theme-inverse .onesignal-bell-launcher-badge{border:1px solid #fff;background:#e54b4d;color:#fff}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher-active,#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher-enabled{-webkit-transform:scale(1);transform:scale(1);opacity:1}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher-disabled{visibility:hidden}#onesignal-bell-container.onesignal-reset .onesignal-bell-launcher-inactive{opacity:.5}#onesignal-bell-container.onesignal-reset .pulse-ring{border-radius:50%;position:absolute;left:0;top:0;bottom:0;right:0;-webkit-animation:notifyButtonPulse .35s ease-in-out;animation:notifyButtonPulse .35s ease-in-out;-webkit-animation-iteration-count:1;animation-iteration-count:1;opacity:0;z-index:1000;pointer-events:none}@media print{#onesignal-bell-container{display:none}}@-webkit-keyframes notifyButtonPulse{0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:0;border-width:10px}50%{opacity:1;border-width:5px}to{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0;border-width:1px}}@keyframes notifyButtonPulse{0%{-webkit-transform:scale(.1);transform:scale(.1);opacity:0;border-width:10px}50%{opacity:1;border-width:5px}to{-webkit-transform:scale(1.2);transform:scale(1.2);opacity:0;border-width:1px}}" section nil nil [7108 7247])
+            ("/******************************************************************************
+***   COPY PROTECTED BY http://chetangole.com/blog/wp-copyprotect/   version 3.1.0 ****
+******************************************************************************/
+function disableSelection(target){
+if (typeof target.onselectstart!=\"undefined\") //For IE 
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!=\"undefined\") //For Firefox
+	target.style.MozUserSelect=\"none\"
+else //All other route (For Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = \"default\"
+}" section nil nil [7247 7925])
+            ("/******************************************************************************
+***   COPY PROTECTED BY http://chetangole.com/blog/wp-copyprotect/   version 3.1.0 ****
+******************************************************************************/
+function disableSelection(target){
+if (typeof target.onselectstart!=\"undefined\") //For IE 
+	target.onselectstart=function(){return false}
+else if (typeof target.style.MozUserSelect!=\"undefined\") //For Firefox
+	target.style.MozUserSelect=\"none\"
+else //All other route (For Opera)
+	target.onmousedown=function(){return false}
+target.style.cursor = \"default\"
+}" section nil nil [7925 8909])
+            ("(adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: \"ca-pub-7673195738743060\",
+    enable_page_level_ads: true
+  });" section nil nil [8909 9030])
+            ("(adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: \"ca-pub-7673195738743060\",
+    enable_page_level_ads: true
+  });" section nil nil [9030 9187])
+            ("(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-53012628-1', 'auto');
+  ga('send', 'pageview');" section nil nil [9187 66384])
+            ("About" section (:members 
+              ( ("About" anchor nil nil [67975 67978])
+                ("Contact Us" anchor nil nil [68206 68209])
+                ("WhatTechSays" anchor nil nil [68527 68530]))              ) nil [66384 68929])
+            ("Automatic -->
+<ins class=\"adsbygoogle\" style=\"display: block; height: 90px;\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"8761469439\" data-ad-format=\"auto\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_1_expand\" style=\"display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent\"><ins id=\"aswift_1_anchor\" style=\"display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:760px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_1\" name=\"aswift_1\" style=\"left:0;position:absolute;top:0;\" width=\"760\" height=\"90\" frameborder=\"0\">" section nil nil [68929 70157])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section (:members 
+              ( ("How To" anchor nil nil [70604 70607])
+                ("Android" anchor nil nil [70848 70851])
+                ("iOS" anchor nil nil [71096 71099])
+                ("Technology" anchor nil nil [71332 71335])
+                ("Best Of" anchor nil nil [71578 71581])
+                ("Internet" anchor nil nil [71824 71827])
+                ("How to Get Grammarly Premium Account Free" section nil nil [72290 72578]))              ) nil [70157 72578])
+            ("300 Sidebar -->
+<ins class=\"adsbygoogle\" style=\"display: inline-block; width: 300px; height: 250px;\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"4431825038\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_2_expand\" style=\"display:inline-table;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent\"><ins id=\"aswift_2_anchor\" style=\"display:block;border:none;height:250px;margin:0;padding:0;position:relative;visibility:visible;width:300px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_2\" name=\"aswift_2\" style=\"left:0;position:absolute;top:0;\" width=\"300\" height=\"250\" frameborder=\"0\">" section nil nil [72578 73811])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section nil nil [73811 75604])
+            ("Link ADS -->
+<ins class=\"adsbygoogle\" style=\"display:inline-block;width:200px;height:90px\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"8111092234\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_3_expand\" style=\"display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><ins id=\"aswift_3_anchor\" style=\"display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_3\" name=\"aswift_3\" style=\"left:0;position:absolute;top:0;\" width=\"200\" height=\"90\" frameborder=\"0\">" section nil nil [75604 76824])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section (:members 
+              ( ("Grammarly Premium Account Features" section (:members 
+                  ( ("online Plagiarism Checker tools" anchor nil nil [77261 77264])
+                    ("Advanced Grammar and Spelling Checks" section nil nil [77493 78034]))                  ) nil [76902 78034]))              ) nil [76824 78034])
+            ("Link ADS -->
+<ins class=\"adsbygoogle\" style=\"display:inline-block;width:200px;height:90px\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"8111092234\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_4_expand\" style=\"display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><ins id=\"aswift_4_anchor\" style=\"display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_4\" name=\"aswift_4\" style=\"left:0;position:absolute;top:0;\" width=\"200\" height=\"90\" frameborder=\"0\">" section nil nil [78034 79254])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section (:members 
+              ( ("Vocabulary Enhancement" section nil nil [79332 79766])
+                ("Plagiarism Detection" section nil nil [79766 80294]))              ) nil [79254 80294])
+            ("Link ADS -->
+<ins class=\"adsbygoogle\" style=\"display:inline-block;width:200px;height:90px\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"8111092234\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_5_expand\" style=\"display:inline-table;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><ins id=\"aswift_5_anchor\" style=\"display:block;border:none;height:90px;margin:0;padding:0;position:relative;visibility:visible;width:200px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_5\" name=\"aswift_5\" style=\"left:0;position:absolute;top:0;\" width=\"200\" height=\"90\" frameborder=\"0\">" section nil nil [80294 81514])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section (:members 
+              ( ("Get Grammarly Premium Account Free" section (:members 
+                  ( ("Sign Up Grammarly" anchor nil nil [82044 82047]))                  ) nil [81592 83637]))              ) nil [81514 83637])
+            ("gads -->
+<ins class=\"adsbygoogle gads\" style=\"display: inline-block; width: 728px; height: 300px;\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"8761469439\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_6_expand\" style=\"display:inline-table;border:none;height:300px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent\"><ins id=\"aswift_6_anchor\" style=\"display:block;border:none;height:300px;margin:0;padding:0;position:relative;visibility:visible;width:728px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_6\" name=\"aswift_6\" style=\"left:0;position:absolute;top:0;\" width=\"728\" height=\"300\" frameborder=\"0\">" section nil nil [83637 84868])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section (:members 
+              ( ("Get Google’s Nik Collection Photo Editing Software Free" anchor nil nil [84955 84958])
+                ("How to Make Free Calls Online to any Number" anchor nil nil [85125 85128])
+                ("How to Get YouTube Red for Free on Android Devices" anchor nil nil [85278 85281]))              ) nil [84868 89342])
+            ("Related -->
+<ins class=\"adsbygoogle\" style=\"display: block; height: 363px;\" data-ad-client=\"ca-pub-7673195738743060\" data-ad-slot=\"1063185036\" data-ad-format=\"autorelaxed\" data-adsbygoogle-status=\"done\"><ins id=\"aswift_7_expand\" style=\"display:inline-table;border:none;height:363px;margin:0;padding:0;position:relative;visibility:visible;width:727px;background-color:transparent\"><ins id=\"aswift_7_anchor\" style=\"display:block;border:none;height:363px;margin:0;padding:0;position:relative;visibility:visible;width:727px;background-color:transparent\"><iframe marginwidth=\"0\" marginheight=\"0\" vspace=\"0\" hspace=\"0\" allowtransparency=\"true\" scrolling=\"no\" allowfullscreen=\"true\" onload=\"var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}\" id=\"aswift_7\" name=\"aswift_7\" style=\"left:0;position:absolute;top:0;\" width=\"727\" height=\"363\" frameborder=\"0\">" section nil nil [89342 90579])
+            ("(adsbygoogle = window.adsbygoogle || []).push({});" section nil nil [90579 91972])
+            ("/*
+			Custom functionality for safari and IE
+			 */
+			(function( d ) {
+				// In case the placeholder functionality is available we remove labels
+				if ( ( 'placeholder' in d.createElement( 'input' ) ) ) {
+					var label = d.querySelector( 'label[for=subscribe-field-blog_subscription-2]' );
+						label.style.clip 	 = 'rect(1px, 1px, 1px, 1px)';
+						label.style.position = 'absolute';
+						label.style.height   = '1px';
+						label.style.width    = '1px';
+						label.style.overflow = 'hidden';
+				}
+
+				// Make sure the email value is filled in before allowing submit
+				var form = d.getElementById('subscribe-blog-blog_subscription-2'),
+					input = d.getElementById('subscribe-field-blog_subscription-2'),
+					handler = function( event ) {
+						if ( '' === input.value ) {
+							input.focus();
+
+							if ( event.preventDefault ){
+								event.preventDefault();
+							}
+
+							return false;
+						}
+					};
+
+				if ( window.addEventListener ) {
+					form.addEventListener( 'submit', handler, false );
+				} else {
+					form.attachEvent( 'onsubmit', handler );
+				}
+			})( document );" section (:members 
+              ( ("About <span itemprop=\"name\">CHANDAN" section (:members 
+                  ( ("Facebook" anchor nil nil [94258 94261])
+                    ("Twitter" anchor nil nil [94376 94379])
+                    ("Google+" anchor nil nil [94488 94491])
+                    ("Pinterest" anchor nil nil [94577 94580]))                  ) nil [93935 95154]))              ) nil [91972 95154])
+            ("/* <![CDATA[ */
+		var disqus_url = 'https://www.whattechsays.com/get-grammarly-premium-account-free/';
+		var disqus_identifier = '4737 https://www.whattechsays.com/?p=4737';
+		var disqus_container_id = 'disqus_thread';
+		var disqus_domain = 'disqus.com';
+		var disqus_shortname = 'whattechsays';
+		var disqus_title = \"How to Get Grammarly Premium Account Free\";
+		var disqus_config = function () {
+			var config = this; // Access to the config object
+			config.language = '';
+
+			/* Add the ability to add javascript callbacks */
+			
+			/*
+			   All currently supported events:
+				* preData — fires just before we request for initial data
+				* preInit - fires after we get initial data but before we load any dependencies
+				* onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+				* afterRender - fires when template is rendered but before we show it
+				* onReady - everything is done
+			 */
+
+			config.callbacks.preData.push(function() {
+				// clear out the container (its filled for SEO/legacy purposes)
+				document.getElementById(disqus_container_id).innerHTML = '';
+			});
+						config.callbacks.onReady.push(function() {
+				// sync comments in the background so we don't block the page
+				var script = document.createElement('script');
+				script.async = true;
+				script.src = '?cf_action=sync_comments&post_id=4737';
+
+				var firstScript = document.getElementsByTagName( \"script\" )[0];
+				firstScript.parentNode.insertBefore(script, firstScript);
+			});
+								};
+	/* ]]> */" section nil nil [95154 96734])
+            ("/* <![CDATA[ */
+		var DsqLocal = {
+			'trackbacks': [
+				],
+			'trackback_url': \"https:\\/\\/www.whattechsays.com\\/get-grammarly-premium-account-free\\/trackback\\/\"		};
+	/* ]]> */" section (:members 
+              ( ("How to Create a QR Code for Contact Info for Free" section (:members 
+                  ( ("How to Create a QR Code for Contact Info for Free" anchor nil nil [98200 98203]))                  ) nil [98176 98529])
+                ("How to Turn a Balloon into Mobile Case" section (:members 
+                  ( ("How to Turn a Balloon into Mobile Case" anchor nil nil [98553 98556]))                  ) nil [98529 98899])
+                ("Original vs Fake Samsung Charger, How to Differentiate?" section (:members 
+                  ( ("Original vs Fake Samsung Charger, How to Differentiate?" anchor nil nil [98923 98926]))                  ) nil [98899 99307])
+                ("How to Remote Control Android from another Android" section (:members 
+                  ( ("How to Remote Control Android from another Android" anchor nil nil [99331 99334]))                  ) nil [99307 99731])
+                ("How to Turn off Automatic Updates in Windows 10" section (:members 
+                  ( ("How to Turn off Automatic Updates in Windows 10" anchor nil nil [99755 99758]))                  ) nil [99731 100179])
+                ("How to Set WhatsApp Profile Picture Without Cropping" section (:members 
+                  ( ("How to Set WhatsApp Profile Picture Without Cropping" anchor nil nil [100203 100206]))                  ) nil [100179 100570])
+                ("How to Pay BSNL Broadband Bill Online" section (:members 
+                  ( ("How to Pay BSNL Broadband Bill Online" anchor nil nil [100594 100597]))                  ) nil [100570 100953])
+                ("How to Get Ditto TV 1 Year Free Subscription on Android" section (:members 
+                  ( ("How to Get Ditto TV 1 Year Free Subscription on Android" anchor nil nil [100977 100980])
+                    ("WhatTechSays |" anchor nil nil [101311 101314])
+                    ("Sitemap" anchor nil nil [101396 101399]))                  ) nil [100953 101761]))              ) nil [96734 101761])
+            ("/* <![CDATA[ */var anOptions ={\"anOptionChoice\":\"2\",\"anOptionStats\":\"2\",\"anOptionAdsSelectors\":\"#google-ads,.promo.adsense,.sponsored\",\"anOptionCookie\":\"2\",\"anOptionCookieLife\":\"30\",\"anPageRedirect\":\"\",\"anPermalink\":\"undefined\",\"anOptionModalEffect\":\"fadeAndPop\",\"anOptionModalspeed\":\"350\",\"anOptionModalclose\":false,\"anOptionModalOverlay\":\"rgba( 10,10,10,0.95 )\",\"anAlternativeActivation\":false,\"anAlternativeElement\":\"\",\"anAlternativeText\":\"<p><strong>AdBlock detected!<\\/strong><\\/p>\\n<p>Please add <a title=\\\"http:\\/\\/themeisle.com\\/\\\" href=\\\"themeisle.com\\\" target=\\\"_blank\\\">www.themeisle.com<\\/a> to your adblocking whitelist or disable your adblocking software.<\\/p>\\n\",\"anAlternativeClone\":\"2\",\"anAlternativeProperties\":\"\",\"anOptionModalShowAfter\":0,\"anPageMD5\":\"\",\"anSiteID\":0,\"modalHTML\":\"<div class=\\\"l0doLd1p9bYn-default\\\">\\n\\t<h1 style=\\\"color:#ffffff\\\">AdBlocker Detected!<\\/h1>\\n\\t<p>We don't have any Banner, Flash or popup ads. We don't implement these annoying types of ads!<\\/p>\\n<p>We need money to operate this site, and almost all of it comes from our online advertising.<\\/p>\\n<p><strong>Please add <a title=\\\"WhatTechSays\\\" href=\\\"https:\\/\\/www.whattechsays.com\\\" target=\\\"_blank\\\">www.whattechsays.com<\\/a> to your ad blocking whitelist or disable your adblocking software.<\\/strong><\\/p>\\n<\\/div>\\n\"}/* ]]> */" section (:members 
+              ( ("AdBlocker Detected!<\\/h1>\\n\\t<p>We don't have any Banner, Flash or popup ads. We don't implement these annoying types of ads!<\\/p>\\n<p>We need money to operate this site, and almost all of it comes from our online advertising.<\\/p>\\n<p><strong>Please add <a title=\\\"WhatTechSays\\\" href=\\\"https:\\/\\/www.whattechsays.com\\\" target=\\\"_blank\\\">www.whattechsays.com<\\/a> to your ad blocking whitelist or disable your adblocking software.<\\/strong><\\/p>\\n<\\/div>\\n\"}/* ]]> */" section nil nil [102632 103415]))              ) nil [101761 103415])
+            ("disableSelection(document.body)" section nil nil [103415 103491])
+            ("window.WPCOM_sharing_counts = {\"https:\\/\\/www.whattechsays.com\\/get-grammarly-premium-account-free\\/\":4737};" section nil nil [103491 104182])
+            ("var q2w3_sidebar_options = new Array();
+q2w3_sidebar_options[0] = { \"sidebar\" : \"sidebar\", \"margin_top\" : 10, \"margin_bottom\" : 150, \"stop_id\" : \"\", \"screen_max_width\" : 400, \"screen_max_height\" : 0, \"width_inherit\" : false, \"refresh_interval\" : 1500, \"window_load_hook\" : false, \"disable_mo_api\" : false, \"widgets\" : ['featured-post-3'] };" section nil nil [104182 104312])
+            ("var q2w3_sidebar_options = new Array();
+q2w3_sidebar_options[0] = { \"sidebar\" : \"sidebar\", \"margin_top\" : 10, \"margin_bottom\" : 150, \"stop_id\" : \"\", \"screen_max_width\" : 400, \"screen_max_height\" : 0, \"width_inherit\" : false, \"refresh_interval\" : 1500, \"window_load_hook\" : false, \"disable_mo_api\" : false, \"widgets\" : ['featured-post-3'] };" section nil nil [104312 104452])
+            ("var q2w3_sidebar_options = new Array();
+q2w3_sidebar_options[0] = { \"sidebar\" : \"sidebar\", \"margin_top\" : 10, \"margin_bottom\" : 150, \"stop_id\" : \"\", \"screen_max_width\" : 400, \"screen_max_height\" : 0, \"width_inherit\" : false, \"refresh_interval\" : 1500, \"window_load_hook\" : false, \"disable_mo_api\" : false, \"widgets\" : ['featured-post-3'] };" section nil nil [104452 104589])
+            ("var q2w3_sidebar_options = new Array();
+q2w3_sidebar_options[0] = { \"sidebar\" : \"sidebar\", \"margin_top\" : 10, \"margin_bottom\" : 150, \"stop_id\" : \"\", \"screen_max_width\" : 400, \"screen_max_height\" : 0, \"width_inherit\" : false, \"refresh_interval\" : 1500, \"window_load_hook\" : false, \"disable_mo_api\" : false, \"widgets\" : ['featured-post-3'] };" section nil nil [104589 104972])
+            ("/* <![CDATA[ */
+var ajax_object = {\"ajaxurl\":\"https:\\/\\/www.whattechsays.com\\/wp-admin\\/admin-ajax.php\"};
+/* ]]> */" section nil nil [104972 105113])
+            ("/* <![CDATA[ */
+var ajax_object = {\"ajaxurl\":\"https:\\/\\/www.whattechsays.com\\/wp-admin\\/admin-ajax.php\"};
+/* ]]> */" section nil nil [105113 105249])
+            ("/* <![CDATA[ */
+var ajax_object = {\"ajaxurl\":\"https:\\/\\/www.whattechsays.com\\/wp-admin\\/admin-ajax.php\"};
+/* ]]> */" section nil nil [105249 105407])
+            ("/* <![CDATA[ */
+var sharing_js_options = {\"lang\":\"en\",\"counts\":\"1\"};
+/* ]]> */" section nil nil [105407 105543])
+            ("/* <![CDATA[ */
+var sharing_js_options = {\"lang\":\"en\",\"counts\":\"1\"};
+/* ]]> */" section nil nil [105543 105675])
+            ("/* <![CDATA[ */
+var sharing_js_options = {\"lang\":\"en\",\"counts\":\"1\"};
+/* ]]> */" section nil nil [105675 105796])
+            ("var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-google-plus-1', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-telegram', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtelegram', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});" section nil nil [105796 105927])
+            ("var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-facebook', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-twitter', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-google-plus-1', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+var windowOpen;
+			jQuery( document.body ).on( 'click', 'a.share-telegram', function() {
+				// If there's another sharing window open, close it.
+				if ( 'undefined' !== typeof windowOpen ) {
+					windowOpen.close();
+				}
+				windowOpen = window.open( jQuery( this ).attr( 'href' ), 'wpcomtelegram', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});" section nil nil [105927 107477])
+            ("var disqus_shortname = \"whattechsays\";
+    if (typeof ds_loaded == \"undefined\") {
+        var ds_loaded = false;
+    }
+    function loadDisqus() {
+        var disqus_div = document.getElementById(\"disqus_thread\");
+        var top = disqus_div.offsetTop;
+        var disqus_data = disqus_div.dataset;
+        if ( !ds_loaded && ( window.scrollY || window.pageYOffset ) + window.innerHeight > top ) {
+            ds_loaded = true;
+            for (var key in disqus_data) {
+                if (key.substr(0,6) == \"disqus\") {
+                    window[\"disqus_\" + key.replace(\"disqus\",\"\").toLowerCase()] = disqus_data[key];
+								}
+                }
+                var dsq = document.createElement(\"script\");
+                dsq.type = \"text/javascript\";
+                dsq.async = true;
+                dsq.src = \"https://\" + window.disqus_shortname + \".disqus.com/embed.js\";
+                if(document.getElementById(\"dcl-hidden-div\")) {
+                    document.getElementById(\"dcl-hidden-div\").innerHTML = \"Loading...\";
+                }
+                (document.getElementsByTagName(\"head\")[0] || document.getElementsByTagName(\"body\")[0]).appendChild(dsq);
+            }
+        }
+					document.getElementById(\"dcl_comment_btn\").onclick = function() { loadDisqus() };" section nil nil [107477 108805])
+            ("/* <![CDATA[ */
+                var hash = window.location.hash;
+                var disqus_shortname = 'whattechsays';
+                if(hash!==''){
+                    var ds_loaded = true;
+                    var dcl_loaded = 1;
+                    (function() {
+                        var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/' + 'embed' + '.js' + '?pname=wordpress&pver=2.84';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();}
+                /* ]]> */" section nil nil [108805 109598])
+            ("_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'71286872',post:'4737',tz:'5.5',srv:'www.whattechsays.com'} ]);
+	_stq.push([ 'clickTrackerInit', '71286872', '4737' ]);" section nil nil [109598 109753])
+            ("_stq = window._stq || [];
+	_stq.push([ 'view', {v:'ext',j:'1:4.3.2',blog:'71286872',post:'4737',tz:'5.5',srv:'www.whattechsays.com'} ]);
+	_stq.push([ 'clickTrackerInit', '71286872', '4737' ]);" section nil nil [109753 110137]))          
+      :file "How to Get Grammarly Premium Account Free (2016).html"
+      :pointmax 110137
+      :fsize 110170
+      :lastmodtime '(22551 34078 316650 819000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Desktop!del soon!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

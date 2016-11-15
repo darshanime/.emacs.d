@@ -1,0 +1,182 @@
+;; Object actions/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "actions/"
+  :tables
+  (list
+    (semanticdb-table "DevknoxScan.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.actions" package nil nil [1 37])
+            ("com.appknox.devknox.beans.Message" include nil nil [39 80])
+            ("com.appknox.devknox.gui.DevknoxMessageDialog" include nil nil [81 133])
+            ("com.appknox.devknox.utilities.DevknoxPluginConfig" include nil nil [134 191])
+            ("com.appknox.devknox.utilities.DevknoxUserMessageMap" include nil nil [192 251])
+            ("com.appknox.devknox.utilities.InspectionsBundle" include nil nil [252 307])
+            ("com.intellij.analysis.AnalysisScope" include nil nil [308 351])
+            ("com.intellij.analysis.BaseAnalysisAction" include nil nil [352 400])
+            ("com.intellij.codeInspection.InspectionManager" include nil nil [401 454])
+            ("com.intellij.codeInspection.InspectionProfile" include nil nil [455 508])
+            ("com.intellij.codeInspection.ex.*" include nil nil [509 549])
+            ("com.intellij.openapi.fileEditor.FileDocumentManager" include nil nil [550 609])
+            ("com.intellij.openapi.project.Project" include nil nil [610 654])
+            ("org.jetbrains.annotations.NotNull" include nil nil [655 696])
+            ("DevknoxScan" type
+               (:typemodifiers ("public")
+                :superclasses "BaseAnalysisAction"
+                :members 
+                  ( ("myGlobalInspectionContext" variable
+                       (:typemodifiers ("private")
+                        :type "GlobalInspectionContextImpl")
+                        (reparse-symbol class_member_declaration) [813 875])
+                    ("myExternalProfile" variable
+                       (:typemodifiers ("protected")
+                        :type "InspectionProfile")
+                        (reparse-symbol class_member_declaration) [880 926])
+                    ("DevknoxScan" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [932 1070])
+                    ("analyze" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("" variable (:type "project") (reparse-symbol formal_parameters) [1129 1136])
+                            ("" variable (:type "scope") (reparse-symbol formal_parameters) [1161 1166]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1089 1761])
+                    ("runInspections" function
+                       (:typemodifiers ("protected")
+                        :arguments 
+                          ( ("project" variable (:type "Project") (reparse-symbol formal_parameters) [1796 1811])
+                            ("scope" variable (:type "AnalysisScope") (reparse-symbol formal_parameters) [1813 1832]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1766 2386])
+                    ("getGlobalInspectionContext" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("project" variable (:type "Project") (reparse-symbol formal_parameters) [2456 2471]))                          
+                        :type "GlobalInspectionContextImpl")
+                        (reparse-symbol class_member_declaration) [2393 2715])
+                    ("canceled" function
+                       (:typemodifiers ("protected")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2735 2836])
+                    ("getToolWrappers" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("project" variable (:type "Project") (reparse-symbol formal_parameters) [2889 2904]))                          
+                        :type "InspectionToolWrapper[]")
+                        (reparse-symbol class_member_declaration) [2842 6454]))                  
+                :type "class")
+                nil [755 6456]))          
+      :file "DevknoxScan.java"
+      :pointmax 6457
+      :fsize 6456
+      :lastmodtime '(22560 11773 877956 132000)
+      :unmatched-syntax nil)
+    (semanticdb-table "About.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.actions" package nil nil [1 37])
+            ("com.appknox.devknox.beans.Message" include nil nil [39 80])
+            ("com.appknox.devknox.gui.DevknoxMessageDialog" include nil nil [81 133])
+            ("com.appknox.devknox.utilities.DevknoxUserMessageMap" include nil nil [134 193])
+            ("com.intellij.openapi.actionSystem.AnAction" include nil nil [194 244])
+            ("com.intellij.openapi.actionSystem.AnActionEvent" include nil nil [245 300])
+            ("About" type
+               (:typemodifiers ("public")
+                :superclasses "AnAction"
+                :members 
+                  ( ("actionPerformed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AnActionEvent") (reparse-symbol formal_parameters) [442 457]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [414 674]))                  
+                :type "class")
+                nil [359 676]))          
+      :file "About.java"
+      :pointmax 677
+      :fsize 676
+      :lastmodtime '(22560 11773 877956 132000)
+      :unmatched-syntax nil)
+    (semanticdb-table "Login.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.actions" package nil nil [1 37])
+            ("com.appknox.devknox.beans.Message" include nil nil [39 80])
+            ("com.appknox.devknox.gui.DevknoxMessageDialog" include nil nil [81 133])
+            ("com.appknox.devknox.gui.login.DevknoxLoginDialogBox" include nil nil [134 193])
+            ("com.appknox.devknox.utilities.DevknoxConstants" include nil nil [194 248])
+            ("com.appknox.devknox.utilities.DevknoxPluginConfig" include nil nil [249 306])
+            ("com.appknox.devknox.utilities.DevknoxUserMessageMap" include nil nil [307 366])
+            ("com.intellij.codeInsight.daemon.impl.DaemonCodeAnalyzerImpl" include nil nil [367 434])
+            ("com.intellij.codeInspection.InspectionManager" include nil nil [435 488])
+            ("com.intellij.codeInspection.ex.GlobalInspectionContextImpl" include nil nil [489 555])
+            ("com.intellij.codeInspection.ex.InspectionManagerEx" include nil nil [556 614])
+            ("com.intellij.openapi.actionSystem.*" include nil nil [615 658])
+            ("com.intellij.openapi.project.Project" include nil nil [659 703])
+            ("Login" type
+               (:typemodifiers ("public")
+                :superclasses "AnAction"
+                :members 
+                  ( ("Login" function
+                       (:constructor-flag t
+                        :typemodifiers ("public")
+                        :arguments 
+                          ( ("text" variable (:type "String") (reparse-symbol formal_parameters) [817 828]))                          )
+                        (reparse-symbol class_member_declaration) [804 857])
+                    ("actionPerformed" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AnActionEvent") (reparse-symbol formal_parameters) [905 920]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [877 2755])
+                    ("update" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("e" variable (:type "AnActionEvent") (reparse-symbol formal_parameters) [2794 2809]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2775 3373]))                  
+                :type "class")
+                nil [762 3375]))          
+      :file "Login.java"
+      :pointmax 3376
+      :fsize 3375
+      :lastmodtime '(22560 11773 877956 132000)
+      :unmatched-syntax nil)
+    (semanticdb-table "RegisterLogin.java"
+      :major-mode 'java-mode
+      :tags 
+        '( ("com.appknox.devknox.actions" package nil nil [1 37])
+            ("com.appknox.devknox.utilities.DevknoxPluginConfig" include nil nil [39 96])
+            ("com.appknox.devknox.utilities.InspectionsBundle" include nil nil [97 152])
+            ("com.intellij.openapi.actionSystem.ActionManager" include nil nil [153 208])
+            ("com.intellij.openapi.actionSystem.DefaultActionGroup" include nil nil [209 269])
+            ("com.intellij.openapi.components.ApplicationComponent" include nil nil [270 330])
+            ("org.jetbrains.annotations.NotNull" include nil nil [331 372])
+            ("RegisterLogin" type
+               (:typemodifiers ("public")
+                :interfaces ("ApplicationComponent")
+                :members 
+                  ( ("initComponent" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [511 1507])
+                    ("disposeComponent" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1527 1566])
+                    ("getComponentName" function
+                       (:typemodifiers ("public")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1599 1695]))                  
+                :type "class")
+                nil [431 1697]))          
+      :file "RegisterLogin.java"
+      :pointmax 1698
+      :fsize 1697
+      :lastmodtime '(22560 11773 881956 124000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!anthea!src!main!java!com!appknox!devknox!actions!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

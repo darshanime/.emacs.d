@@ -1,0 +1,16 @@
+;; Object tests/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "tests/"
+  :tables
+  (list
+    (semanticdb-table "test_tasks.py"
+      :major-mode 'python-mode
+      :tags nil
+      :file "test_tasks.py"
+      :pointmax 310
+      :fsize 309
+      :lastmodtime '(22507 22045 64266 208000)
+      :unmatched-syntax nil))
+  :file "!home!radar!Projects!appknox!mycroft!mycroft!core!tests!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

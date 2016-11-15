@@ -1,0 +1,24 @@
+;; Object cardekho_one/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cardekho_one/"
+  :tables
+  (list
+    (semanticdb-table "items.py"
+      :major-mode 'python-mode
+      :tags 
+        '( ("scrapy" include nil nil [1 14])
+            ("CardekhoOneItem" type
+               (:superclasses ("scrapy.Item")
+                :members 
+                  ( ("title" variable nil (reparse-symbol indented_block_body) [56 78])
+                    ("price" variable nil (reparse-symbol indented_block_body) [83 105]))                  
+                :type "class")
+                nil [16 135]))          
+      :file "items.py"
+      :pointmax 135
+      :fsize 134
+      :lastmodtime '(21997 60058 745451 0)
+      :unmatched-syntax nil))
+  :file "!home!radar!projects!scrapycodes!cardekho final!cardekho_one!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
