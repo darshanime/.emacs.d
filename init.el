@@ -467,6 +467,8 @@ Position the cursor at it's beginning, according to the current mode."
   :config
   (simpleclip-mode 1))
 
+(use-package go-mode)
+
 (use-package centered-window-mode
   :ensure t)
 
@@ -1087,20 +1089,23 @@ Position the cursor at it's beginning, according to the current mode."
   (setq org-src-tab-acts-natively t)
   (org-babel-do-load-languages
    'org-babel-load-languages '((C . t) (python . t) (java . t)))
-  (define-key org-mode-map (kbd "C-#") 'org-download-screenshot)
+  (define-key org-mode-map (kbd "C-#") 'radar-insert-screenshot)
   )
 
-(use-package org-download)
 
 ;; define shortcuts to add pictures and src
 (global-set-key (kbd "C-!") 'radar-insert-picture)
 (global-set-key (kbd "C-#") 'org-download-screenshot)
 (global-set-key (kbd "C-*") 'radar-insert-src)
 
-(defun radar-insert-picture ()
+(use-package org-download)
+
+(defun radar-insert-screenshot ()
   "Use to insert picture."
   (interactive)
-  (insert "#+ATTR_ORG: :width 400\n#+ATTR_ORG: :height 400\n[[~/Pictures/org-inline/twisted_.png]]\n"))
+  (insert "#+ATTR_ORG: :width 400\n#+ATTR_ORG: :height 400")
+  (defun org-download--dir () "./assets/")
+  (org-download-screenshot))
 
 (defun radar-insert-src ()
   "Use to insert src."
@@ -1207,7 +1212,7 @@ Position the cursor at it's beginning, according to the current mode."
  '(initial-buffer-choice "~/org/master.org")
  '(package-selected-packages
    (quote
-    (centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
