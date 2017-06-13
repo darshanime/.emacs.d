@@ -467,6 +467,16 @@ Position the cursor at it's beginning, according to the current mode."
   :config
   (simpleclip-mode 1))
 
+(use-package elfeed
+  :config
+  (global-set-key (kbd "C-x w") 'elfeed)
+  (setq elfeed-feeds
+        '(("http://nullprogram.com/feed/" nullprogram)
+          ("http://planet.emacsen.org/atom.xml" emacsen)
+          ("https://lwn.net/headlines/rss" lwn)
+          ("http://xkcd.com/rss.xml" xkcd)))
+  (setf url-queue-timeout 30))
+
 (use-package go-mode)
 
 (use-package centered-window-mode
@@ -841,7 +851,7 @@ Position the cursor at it's beginning, according to the current mode."
 
 ;; only turn on if a window system is available
 (case window-system
-  ((x w32) (nyan-mode)))
+  ((ns x w32) (nyan-mode)))
 
 
 ;; helm-projectile settings
@@ -967,7 +977,11 @@ Position the cursor at it's beginning, according to the current mode."
   :config
   (add-hook 'markdown-mode-hook 'writeroom-mode)
   (add-hook 'markdown-mode-hook 'writegood-mode)
-  (add-hook 'markdown-mode-hook 'artbollocks-mode))
+  (add-hook 'markdown-mode-hook 'artbollocks-mode)
+  (define-key markdown-mode-map (kbd "C-c C-s C-c") 'markdown-insert-code)
+  (define-key markdown-mode-map (kbd "C-c C-s C-b") 'markdown-insert-bold)
+  (define-key markdown-mode-map (kbd "C-c C-s C-i") 'markdown-insert-italic)
+  )
 
 (use-package auto-capitalize
   :config
@@ -994,6 +1008,7 @@ Position the cursor at it's beginning, according to the current mode."
   (which-key-mode)
   (which-key-setup-side-window-bottom))
 
+;; setting for highlighting the present line
 (use-package hl-line
   :config
   (global-hl-line-mode -1))
@@ -1005,18 +1020,6 @@ Position the cursor at it's beginning, according to the current mode."
       '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages))))
 
 (use-package helm-proc)
-
-;; ALWAYS AT THE BOTTOM
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; PACKAGE: workgroups2               ;;
-;;                                    ;;
-;; GROUP: Convenience -> Workgroups   ;;
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-(use-package workgroups2
-  :config
-  (workgroups-mode 1)
-  )
 
 ;; MIT Scheme in Emacs
 (setq scheme-program-name "scm")
@@ -1144,7 +1147,7 @@ Position the cursor at it's beginning, according to the current mode."
   (global-discover-mode 1))
 
 ;; activate the context menu
-(global-set-key (kbd "s-d y") 'yafolding-discover)
+;; (global-set-key (kbd "s-d y") 'yafolding-discover)
 
 (use-package prodigy
   :config
@@ -1212,7 +1215,7 @@ Position the cursor at it's beginning, according to the current mode."
  '(initial-buffer-choice "~/org/master.org")
  '(package-selected-packages
    (quote
-    (go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
@@ -1222,7 +1225,7 @@ Position the cursor at it's beginning, according to the current mode."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- )
+ '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 128 :width normal :foundry "DAMA" :family "Ubuntu Mono")))))
 
 ;; including elpy
 (use-package elpy)
@@ -1366,6 +1369,11 @@ Position the cursor at it's beginning, according to the current mode."
 (set-selection-coding-system 'utf-8)
 (setq locale-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
+
+;; mac specific edits
+(setq insert-directory-program "gls" dired-use-ls-dired t)
+(setq ring-bell-function 'ignore)
+(set-frame-font "Ubuntu Mono 17" nil t)
 
 (provide 'init)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
