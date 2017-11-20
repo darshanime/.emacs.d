@@ -9,6 +9,9 @@
 
 (package-initialize)
 
+;; adding imagemagick path to PATH env
+(setenv "PATH" (concat (getenv "PATH") "/usr/local/Cellar/imagemagick/7.0.6-6"))
+
 ;; install use-package
 (unless (package-installed-p 'use-package)
   (package-install 'use-package))
@@ -17,7 +20,59 @@
 
 (use-package yafolding
   :config
-  (yafolding-mode 1))
+  (yafolding-mode 1)
+  (add-hook 'prog-mode-hook
+            (lambda () (yafolding-mode)))
+  (defvar yafolding-mode-map
+    (let ((map (make-sparse-keymap)))
+      (define-key map (kbd "<C-S-return>") #'yafolding-hide-parent-element)
+      (define-key map (kbd "<C-M-return>") #'yafolding-toggle-all)
+      (define-key map (kbd "<C-return>") #'yafolding-toggle-element)
+      map)))
+
+;; (use-package aggressive-indent-mode)
+
+(use-package clojure-mode
+  :config
+  (add-hook 'clojure-mode-hook #'subword-mode)
+  (add-hook 'clojure-mode-hook #'smartparens-strict-mode)
+  (add-hook 'clojure-mode-hook #'aggressive-indent-mode)
+  )
+
+(use-package cider)
+(use-package auto-complete
+  :config
+  (require 'auto-complete-config)
+  (ac-config-default)
+  )
+
+(use-package ac-c-headers
+  :config
+  (add-hook 'c-mode-hook
+            (lambda ()
+              (add-to-list 'ac-sources 'ac-source-c-headers)
+              (add-to-list 'ac-sources 'ac-source-c-header-symbols t)))
+  )
+
+(use-package google-c-style
+  :config
+  (add-hook 'c-mode-common-hook 'google-set-c-style)
+  (add-hook 'c-mode-common-hook 'google-make-newline-indent)
+  )
+(use-package flymake-cursor)
+(use-package iedit)
+(use-package flymake-google-cpplint
+  :config
+  (add-hook 'c++-mode-hook 'flymake-google-cpplint-load))
+
+(use-package jq-mode
+  :config
+  (autoload 'jq-mode "jq-mode.el"
+    "Major mode for editing jq files" t)
+  (add-to-list 'auto-mode-alist '("\\.jq$" . jq-mode))
+  (with-eval-after-load "json-mode"
+  (define-key json-mode-map (kbd "C-c C-j") #'jq-interactively))
+  )
 
 (use-package lispy
   :defer t
@@ -120,6 +175,8 @@
   (windmove-default-keybindings 'super)
   ;; wrap around at edges
   (setq windmove-wrap-around t))
+
+;; (use-package transmission)
 
 ;; saveplace remembers your location in a file when saving files
 (use-package saveplace
@@ -387,6 +444,12 @@ Position the cursor at it's beginning, according to the current mode."
  dired-listing-switches "-lha"          ; human-readable listing
  )
 
+;; use 4 indent
+(add-hook 'json-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
+
 ;; automatically refresh dired buffer on changes
 (add-hook 'dired-mode-hook 'auto-revert-mode)
 
@@ -463,21 +526,91 @@ Position the cursor at it's beginning, according to the current mode."
 
 (add-to-list 'load-path' "~/.emacs.d/lisp")
 
+(use-package docker)
+
 (use-package simpleclip
   :config
   (simpleclip-mode 1))
+
+(use-package 2048-game)
+
+(use-package ace-jump-mode
+  :config
+  (autoload
+    'ace-jump-mode
+    "ace-jump-mode"
+    "Emacs quick move minor mode"
+    t)
+  ;; you can select the key you prefer to
+  (define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+  (autoload
+    'ace-jump-mode-pop-mark
+    "ace-jump-mode"
+    "Ace jump back:-)"
+    t)
+  (eval-after-load "ace-jump-mode"
+    '(ace-jump-mode-enable-mark-sync))
+  (define-key global-map (kbd "C-x SPC") 'ace-jump-mode-pop-mark))
+
+(use-package keychain-environment)
+(use-package highlight-numbers)
 
 (use-package elfeed
   :config
   (global-set-key (kbd "C-x w") 'elfeed)
   (setq elfeed-feeds
         '(("http://nullprogram.com/feed/" nullprogram)
-          ("http://planet.emacsen.org/atom.xml" emacsen)
+          ("http://akaptur.com/atom.xml" akaptur)
+          ("http://feeds.feedburner.com/se-radio" se-radio)
           ("https://lwn.net/headlines/rss" lwn)
+          ("http://www.commitstrip.com/en/feed/atom/?" commitstrip)
+          ("https://jeremykun.com/feed/atom/" math-n-programming)
+          ("https://golangweekly.com/rss/1b3gf1ok" go-lang-weekly)
           ("http://xkcd.com/rss.xml" xkcd)))
   (setf url-queue-timeout 30))
 
-(use-package go-mode)
+(use-package go-mode
+  :config
+  ;; use godoc from within emacs
+  (defun set-exec-path-from-shell-PATH ()
+    (let ((path-from-shell (replace-regexp-in-string
+                            "[ \t\n]*$"
+                            ""
+                            (shell-command-to-string "$SHELL --login -i -c 'echo $PATH'"))))
+      (setenv "PATH" path-from-shell)
+      (setq eshell-path-env path-from-shell) ; for eshell users
+      (setq exec-path (split-string path-from-shell path-separator))))
+
+  (when window-system (set-exec-path-from-shell-PATH))
+  (setenv "GOPATH" "/Users/darshanchoudhary/go")
+
+  (add-to-list 'exec-path "/Users/darshanchoudhary/go/bin")
+
+  (defun my-go-mode-hook ()
+    (setq gofmt-command "goimports")
+    (add-hook 'before-save-hook 'gofmt-before-save)
+    (local-set-key (kbd "M-.") 'godef-jump)
+    (local-set-key (kbd "M-*") 'pop-tag-mark)
+    (auto-complete-mode 1)
+    (if (not (string-match "go" compile-command))
+        (set (make-local-variable 'compile-command)
+             "go build -v && go test -v && go vet"))
+    )
+  (add-hook 'go-mode-hook 'my-go-mode-hook)
+  (with-eval-after-load 'go-mode
+    (require 'go-autocomplete))
+  )
+
+(use-package go-guru
+  :config
+  (go-guru-hl-identifier-mode)
+)
+
+(use-package go-eldoc
+  :config
+  (add-hook 'go-mode-hook 'go-eldoc-setup)
+  (setq go-eldoc-gocode "go")
+  )
 
 (use-package centered-window-mode
   :ensure t)
@@ -533,7 +666,14 @@ Position the cursor at it's beginning, according to the current mode."
 (require 'yasnippet)
 (yas-global-mode 1)
 
+;; https://github.com/baohaojun/bbyac
+(use-package bbyac)
+
 (add-hook 'after-init-hook 'global-company-mode)
+(use-package company-restclient
+  :config
+  (add-to-list 'company-backends 'company-restclient))
+
 
 (use-package expand-region)
 (global-set-key (kbd "M-m") 'er/expand-region)
@@ -745,7 +885,9 @@ Position the cursor at it's beginning, according to the current mode."
   (emms-all)
 
   (emms-default-players)
-  (setq emms-player-vlc-command-name "/usr/bin/vlc")
+
+  ;; for gnu/linux, it would be /usr/local/vlc
+  (setq emms-player-vlc-command-name "/Users/darshanchoudhary/Desktop/VLC.app/Contents/MacOS/VLC")
 
   (with-eval-after-load 'emms
     (emms-standard)
@@ -976,7 +1118,6 @@ Position the cursor at it's beginning, according to the current mode."
 (use-package markdown-mode
   :config
   (add-hook 'markdown-mode-hook 'writeroom-mode)
-  (add-hook 'markdown-mode-hook 'writegood-mode)
   (add-hook 'markdown-mode-hook 'artbollocks-mode)
   (define-key markdown-mode-map (kbd "C-c C-s C-c") 'markdown-insert-code)
   (define-key markdown-mode-map (kbd "C-c C-s C-b") 'markdown-insert-bold)
@@ -1011,10 +1152,12 @@ Position the cursor at it's beginning, according to the current mode."
 ;; setting for highlighting the present line
 (use-package hl-line
   :config
-  (global-hl-line-mode -1))
+  (global-hl-line-mode 1))
 
 (use-package flycheck-pos-tip
   :config
+  (with-eval-after-load 'flycheck
+    (flycheck-pos-tip-mode))
   (eval-after-load 'flycheck
     '(custom-set-variables
       '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages))))
@@ -1067,6 +1210,17 @@ Position the cursor at it's beginning, according to the current mode."
   ;; enable syntax highlighting in org-mode
   (setq org-src-fontify-natively t)
 
+  ;; disable looking in data when using C-; (helm-projectile-grep)
+  (add-to-list 'grep-find-ignored-directories "data")
+
+  ;; enable displaying symbols as symbols (greek letters etc)
+  (setq org-pretty-entities t)
+
+  ;; now, a_{b} will be interpreted as a_subscript-b
+  ;; and a^{b} will be interpreted as a-superscript-b
+  (setq org-use-sub-superscripts "{}")
+
+
   ;; truncate-lines everywhere. this wasn't the case with org mode
   (setq truncate-lines nil)
 
@@ -1101,7 +1255,12 @@ Position the cursor at it's beginning, according to the current mode."
 (global-set-key (kbd "C-#") 'org-download-screenshot)
 (global-set-key (kbd "C-*") 'radar-insert-src)
 
-(use-package org-download)
+(use-package org-download
+  :config
+  (if (eq system-type 'darwin)
+      (setq org-download-screenshot-method "screencapture -i %s")
+    ))
+
 
 (defun radar-insert-screenshot ()
   "Use to insert picture."
@@ -1126,14 +1285,12 @@ Position the cursor at it's beginning, according to the current mode."
   :config
   (setq org-journal-dir (concat org-directory "/journal")))
 
+;; https://github.com/domtronn/all-the-icons.el#readme
+(use-package all-the-icons)
+
 ;; restclient for .http files
 (use-package restclient
   :mode ("\\.http\\'" . restclient-mode))
-
-;; magit github pulls
-(use-package magit-gh-pulls
-  :config
-  (add-hook 'magit-mode-hook 'turn-on-magit-gh-pulls))
 
 ;; restore window points when returning to buffers
 (use-package pointback
@@ -1153,11 +1310,11 @@ Position the cursor at it's beginning, according to the current mode."
   :config
 
   (prodigy-define-service
-    :name "mycroft-start server"
+    :name "synon-start server"
     :tags '(appknox)
-    :cwd "~/Projects/appknox/mycroft/"
-    :command "bash"
-    :args '("scripts/start_server.sh")
+    :cwd "~/zinnov/synon/synon"
+    :command "python"
+    :args '("manage.py" "runserver" "0.0.0.0:8000")
     :stop-signal 'sigkill
     :kill-process-buffer-on-stop t)
 
@@ -1213,9 +1370,10 @@ Position the cursor at it's beginning, according to the current mode."
  '(flycheck-checker-error-threshold 1000)
  '(flycheck-display-errors-function (function flycheck-pos-tip-error-messages))
  '(initial-buffer-choice "~/org/master.org")
+ '(magit-commit-arguments (quote ("--gpg-sign=02C4AE21763B59AD")))
  '(package-selected-packages
    (quote
-    (elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
@@ -1232,7 +1390,7 @@ Position the cursor at it's beginning, according to the current mode."
 (elpy-enable)
 (use-package pyvenv
   :config
-  (pyvenv-workon "mycroft"))
+  (pyvenv-workon "zinnov"))
 
 (setq elpy-test-runner 'elpy-test-pytest-runner)
 (setq elpy-rpc-timeout nil)
@@ -1268,16 +1426,6 @@ Position the cursor at it's beginning, according to the current mode."
     (insert (format-time-string format))))
 (global-set-key (kbd "C-c d") 'insert-date)
 
-
-(use-package w3m)
-(defun google (what)
-  "Use google to search for WHAT."
-  (interactive "sSearch: ")
-  (w3m-browse-url (concat "http://www.google.co.in/search?q="
-                          (w3m-url-encode-string what))))
-
-(global-set-key (kbd "C-M-g") 'google)
-
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq-default
  indent-tabs-mode nil ;; no tabs in programs
@@ -1304,6 +1452,57 @@ Position the cursor at it's beginning, according to the current mode."
 
 (add-hook 'java-mode-hook 'fc-java-insert-public-class)
 
+;; delete present file and buffer
+(defun delete-file-and-buffer ()
+  "Kill the current buffer and deletes the file it is visiting."
+  (interactive)
+  (let ((filename (buffer-file-name)))
+    (if filename
+        (if (y-or-n-p (concat "Do you really want to delete file " filename " ?"))
+            (progn
+              (delete-file filename)
+              (message "Deleted file %s." filename)
+              (kill-buffer)))
+      (message "Not a file visiting buffer!"))))
+
+(global-set-key (kbd "C-c D")  'delete-file-and-buffer)
+
+;; copy present buffer to os clipboard
+(defun copy-current-buffer-to-os-clipboard ()
+  (save-excursion
+    (mark-whole-buffer)
+    (defun copy-to-clipboard ()
+      (interactive)
+      (let ((thing (if (region-active-p)
+                       (buffer-substring-no-properties (region-beginning) (region-end))
+                     (thing-at-point 'symbol))))
+        (simpleclip-set-contents thing)
+        (message "thing => clipboard!")))
+    (copy-to-clipboard)
+    (keyboard-quit))
+  )
+(global-set-key (kbd "C-x p")  (lambda () (interactive) (copy-current-buffer-to-os-clipboard)))
+
+(defun wenshan-other-docview-buffer-scroll-down ()
+  "There are two visible buffers, one for taking notes and one
+for displaying PDF, and the focus is on the notes buffer. This
+command moves the PDF buffer forward."
+  (interactive)
+  (other-window 1)
+  (doc-view-scroll-up-or-next-page)
+  (other-window 1))
+
+(defun wenshan-other-docview-buffer-scroll-up ()
+  "There are two visible buffers, one for taking notes and one
+for displaying PDF, and the focus is on the notes buffer. This
+command moves the PDF buffer backward."
+  (interactive)
+  (other-window 1)
+  (doc-view-scroll-down-or-previous-page)
+  (other-window 1))
+
+(global-set-key (kbd "<f8>") 'wenshan-other-docview-buffer-scroll-up)
+(global-set-key (kbd "<f9>") 'wenshan-other-docview-buffer-scroll-down)
 
 ;; the perfect auto-correct.
 ;; http://endlessparentheses.com/ispell-and-abbrev-the-perfect-auto-correct.html
@@ -1371,10 +1570,11 @@ Position the cursor at it's beginning, according to the current mode."
 (prefer-coding-system 'utf-8)
 
 ;; mac specific edits
-(setq insert-directory-program "gls" dired-use-ls-dired t)
+(setq insert-directory-program "/usr/local/bin/gls" dired-use-ls-dired t)
 (setq ring-bell-function 'ignore)
 (set-frame-font "Ubuntu Mono 17" nil t)
 
 (provide 'init)
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
+(put 'downcase-region 'disabled nil)
