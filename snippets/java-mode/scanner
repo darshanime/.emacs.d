@@ -1,0 +1,8 @@
+# -*- mode: snippet -*-
+# name: scanner
+# key: scan
+# --
+Scanner scan = new Scanner(System.in);
+int a = scan.nextInt();
+
+scan.close();

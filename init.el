@@ -46,6 +46,9 @@
   (ac-config-default)
   )
 
+(use-package terraform-mode)
+(use-package git-timemachine)
+
 (use-package ac-c-headers
   :config
   (add-hook 'c-mode-hook
@@ -73,6 +76,17 @@
   (with-eval-after-load "json-mode"
   (define-key json-mode-map (kbd "C-c C-j") #'jq-interactively))
   )
+
+(use-package ansible
+  :config
+  (add-hook 'yaml-mode-hook '(lambda () (ansible 1)))
+  (setq ansible::vault-password-file "~/.prod-vault-pass")
+  (global-set-key (kbd "C-c b") 'ansible::decrypt-buffer)
+  (global-set-key (kbd "C-c g") 'ansible::encrypt-buffer))
+
+(use-package ansible-doc
+  :config
+  (add-hook 'yaml-mode-hook #'ansible-doc-mode))
 
 (use-package lispy
   :defer t
@@ -727,8 +741,6 @@ Position the cursor at it's beginning, according to the current mode."
 (add-hook 'after-init-hook #'global-flycheck-mode)
 
 (require 'flycheck-tip)
-(flycheck-tip-use-timer 'verbose)
-
 
 (use-package golden-ratio
   :config
@@ -1117,7 +1129,7 @@ Position the cursor at it's beginning, according to the current mode."
 
 (use-package markdown-mode
   :config
-  (add-hook 'markdown-mode-hook 'writeroom-mode)
+  ;; (add-hook 'markdown-mode-hook 'writeroom-mode)
   (add-hook 'markdown-mode-hook 'artbollocks-mode)
   (define-key markdown-mode-map (kbd "C-c C-s C-c") 'markdown-insert-code)
   (define-key markdown-mode-map (kbd "C-c C-s C-b") 'markdown-insert-bold)
@@ -1275,7 +1287,7 @@ Position the cursor at it's beginning, according to the current mode."
   ;; ;; C
   ;; (insert "#+begin_src C\n#include <stdio.h>\n\nint main()\n{\n\n    return 0;\n}\n#+end_src")
   ;; python
-  (insert "#+begin_src python\n\n#+end_src")
+  (insert "#+begin_src go\n\n#+end_src")
   )
 
 ;; revert buffer - darshanime
@@ -1310,13 +1322,26 @@ Position the cursor at it's beginning, according to the current mode."
   :config
 
   (prodigy-define-service
-    :name "synon-start server"
-    :tags '(appknox)
-    :cwd "~/zinnov/synon/synon"
-    :command "python"
-    :args '("manage.py" "runserver" "0.0.0.0:8000")
+    :name "draup - start server"
+    :tags '(draup)
+    :init (lambda () (pyvenv-workon "draup"))
+    :cwd "~/zinnov/draup-server"
+    :command "bash"
+    :args '("start.sh")
     :stop-signal 'sigkill
-    :kill-process-buffer-on-stop t)
+    :kill-process-buffer-on-stop t
+    )
+
+  (prodigy-define-service
+    :name "gateway - start server"
+    :tags '(gateway)
+    :init (lambda () (pyvenv-workon "py2"))
+    :cwd "~/zinnov/gateway/gateway"
+    :command "bash"
+    :args '("start.sh")
+    :stop-signal 'sigkill
+    :kill-process-buffer-on-stop t
+    )
 
   (prodigy-define-service
     :name "mycroft start celery"
@@ -1362,6 +1387,8 @@ Position the cursor at it's beginning, according to the current mode."
   :config
   (persistent-scratch-setup-default))
 
+(use-package nginx-mode)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -1373,7 +1400,7 @@ Position the cursor at it's beginning, according to the current mode."
  '(magit-commit-arguments (quote ("--gpg-sign=02C4AE21763B59AD")))
  '(package-selected-packages
    (quote
-    (cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (git-timemachine ansible-doc ansible terraform-mode nginx-mode cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
@@ -1399,6 +1426,7 @@ Position the cursor at it's beginning, according to the current mode."
 (setq elpy-rpc-python-command "python3")
 (elpy-rpc-restart)
 (define-key elpy-mode-map (kbd "M-,") 'pop-tag-mark)
+(add-to-list 'auto-mode-alist '("\\.pyx\\'" . python-mode))
 
 
 (defun add-mode-line-dirtrack ()
@@ -1504,6 +1532,27 @@ command moves the PDF buffer backward."
 (global-set-key (kbd "<f8>") 'wenshan-other-docview-buffer-scroll-up)
 (global-set-key (kbd "<f9>") 'wenshan-other-docview-buffer-scroll-down)
 
+;; search in selected region
+;; https://stackoverflow.com/questions/1893795/emacs-newbie-question-how-to-search-within-a-region
+(defun isearch-forward-region-cleanup ()
+  "turn off variable, widen"
+  (if isearch-forward-region
+      (widen))
+  (setq isearch-forward-region nil))
+(defvar isearch-forward-region nil
+  "variable used to indicate we're in region search")
+(add-hook 'isearch-mode-end-hook 'isearch-forward-region-cleanup)
+
+(defun isearch-forward-region (&optional regexp-p no-recursive-edit)
+   "Do an isearch-forward, but narrow to region first."
+   (interactive "P\np")
+   (narrow-to-region (point) (mark))
+   (goto-char (point-min))
+   (setq isearch-forward-region t)
+   (isearch-mode t (not (null regexp-p)) nil (not no-recursive-edit)))
+
+(global-set-key (kbd "C-S-s") 'isearch-forward-region)
+
 ;; the perfect auto-correct.
 ;; http://endlessparentheses.com/ispell-and-abbrev-the-perfect-auto-correct.html
 
@@ -1578,3 +1627,4 @@ command moves the PDF buffer backward."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; init.el ends here
 (put 'downcase-region 'disabled nil)
+(put 'narrow-to-region 'disabled nil)
