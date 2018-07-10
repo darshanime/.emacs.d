@@ -40,6 +40,7 @@
   )
 
 (use-package cider)
+(use-package sql-indent)
 (use-package auto-complete
   :config
   (require 'auto-complete-config)
@@ -88,23 +89,15 @@
   :config
   (add-hook 'yaml-mode-hook #'ansible-doc-mode))
 
-(use-package lispy
-  :defer t
-  ;; :bind (:map lispy-mode-map
-  ;;             ("C-e" . nil)
-  ;;             ("/" . nil)
-  ;;             ("M-i" . nil)
-  ;;             ("M-e" . lispy-iedit)
-  ;;             ("S" . special-lispy-splice)
-  ;;             ("g" . special-lispy-goto-local)
-  ;;             ("G" . special-lispy-goto))
-  :init
-  (dolist (hook '(emacs-lisp-mode-hook
-                  lisp-interaction-mode-hook
-                  lisp-mode-hook
-                  scheme-mode-hook
-                  clojure-mode-hook))
-    (add-hook hook (lambda () (lispy-mode 1)))))
+
+(use-package free-keys
+  :config
+  (bind-key "C-h C-k" 'free-keys)
+  )
+
+(global-set-key (kbd "C-(") 'forward-list)
+(global-set-key (kbd "C-)") 'backward-list)
+
 
 (use-package lorem-ipsum
   :config
@@ -462,7 +455,7 @@ Position the cursor at it's beginning, according to the current mode."
 (add-hook 'json-mode-hook
           (lambda ()
             (make-local-variable 'js-indent-level)
-            (setq js-indent-level 2)))
+            (setq js-indent-level 4)))
 
 ;; automatically refresh dired buffer on changes
 (add-hook 'dired-mode-hook 'auto-revert-mode)
@@ -574,6 +567,7 @@ Position the cursor at it's beginning, according to the current mode."
   (global-set-key (kbd "C-x w") 'elfeed)
   (setq elfeed-feeds
         '(("http://nullprogram.com/feed/" nullprogram)
+          ("http://www.righto.com/feeds/posts/default" ken)
           ("http://akaptur.com/atom.xml" akaptur)
           ("http://feeds.feedburner.com/se-radio" se-radio)
           ("https://lwn.net/headlines/rss" lwn)
@@ -618,7 +612,13 @@ Position the cursor at it's beginning, according to the current mode."
 (use-package go-guru
   :config
   (go-guru-hl-identifier-mode)
-)
+  )
+
+(use-package wgrep)
+
+(use-package neotree
+  :config
+  (setq neo-smart-open t))
 
 (use-package go-eldoc
   :config
@@ -677,8 +677,15 @@ Position the cursor at it's beginning, according to the current mode."
 (require 'undo-tree)
 (global-undo-tree-mode)
 
-(require 'yasnippet)
-(yas-global-mode 1)
+;; use this when we add new snippets and want them loaded eg: Kubernetes, Elasticsearch etc
+(use-package yasnippet
+  :config
+  (yas-global-mode 1)
+  )
+
+(use-package go-snippets)
+
+(use-package yasnippet-snippets)
 
 ;; https://github.com/baohaojun/bbyac
 (use-package bbyac)
@@ -731,6 +738,9 @@ Position the cursor at it's beginning, according to the current mode."
     (window-configuration-to-register :magit-fullscreen)
     ad-do-it
     (delete-other-windows))
+  ;; performance improvements
+  (setq vc-handled-backends nil)
+  (setq magit-refresh-status-buffer nil)
   )
 
 (global-unset-key (kbd "C-x g"))
@@ -848,6 +858,7 @@ Position the cursor at it's beginning, according to the current mode."
 ;; emojis in emacs
 (use-package emojify
   :config
+  (emojify-set-emoji-styles (list "unicode" "github"))
   (add-hook 'after-init-hook #'global-emojify-mode))
 
 
@@ -1103,6 +1114,9 @@ Position the cursor at it's beginning, according to the current mode."
   (global-set-key (kbd "C-c h g") 'helm-google-suggest)
   (global-set-key (kbd "C-c h M-:") 'helm-eval-expression-with-eldoc)
 
+  ;; this is for go programs which have the dependencies in the vendor dir
+  (add-to-list 'projectile-globally-ignored-directories "vendor")
+
   (require 'helm-eshell)
   (add-hook 'eshell-mode-hook
             #'(lambda ()
@@ -1232,7 +1246,6 @@ Position the cursor at it's beginning, according to the current mode."
   ;; and a^{b} will be interpreted as a-superscript-b
   (setq org-use-sub-superscripts "{}")
 
-
   ;; truncate-lines everywhere. this wasn't the case with org mode
   (setq truncate-lines nil)
 
@@ -1257,8 +1270,13 @@ Position the cursor at it's beginning, according to the current mode."
   ;; indent code in src tabs
   (setq org-src-tab-acts-natively t)
   (org-babel-do-load-languages
-   'org-babel-load-languages '((C . t) (python . t) (java . t)))
+   'org-babel-load-languages '((C . t) (python . t) (java . t) (dot . t)))
+
   (define-key org-mode-map (kbd "C-#") 'radar-insert-screenshot)
+
+  ;; Hide leading stars
+  (setq org-startup-indented t
+        org-hide-leading-stars t)
   )
 
 
@@ -1273,6 +1291,7 @@ Position the cursor at it's beginning, according to the current mode."
       (setq org-download-screenshot-method "screencapture -i %s")
     ))
 
+(use-package tldr)
 
 (defun radar-insert-screenshot ()
   "Use to insert picture."
@@ -1400,7 +1419,7 @@ Position the cursor at it's beginning, according to the current mode."
  '(magit-commit-arguments (quote ("--gpg-sign=02C4AE21763B59AD")))
  '(package-selected-packages
    (quote
-    (git-timemachine ansible-doc ansible terraform-mode nginx-mode cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (sql-indent free-keys neotree wgrep tldr yasnippet-snippets go-snippets git-timemachine ansible-doc ansible terraform-mode nginx-mode cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
