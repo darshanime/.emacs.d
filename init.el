@@ -18,6 +18,8 @@
 (require 'use-package)
 (setq use-package-always-ensure t)
 
+(use-package quack)
+
 (use-package yafolding
   :config
   (yafolding-mode 1)
@@ -31,6 +33,15 @@
       map)))
 
 ;; (use-package aggressive-indent-mode)
+;; use file names relative to project root
+;; https://emacs.stackexchange.com/questions/38759/projectile-buffer-names-with-project-relative-filenames
+(defun my-proj-relative-buf-name ()
+  (ignore-errors
+    (rename-buffer
+     (file-relative-name buffer-file-name (projectile-project-root)))))
+
+(add-hook 'prog-mode-hook #'my-proj-relative-buf-name)
+
 
 (use-package clojure-mode
   :config
@@ -49,6 +60,11 @@
 
 (use-package terraform-mode)
 (use-package git-timemachine)
+(use-package helm-dash)
+(use-package kubernetes
+  :ensure t
+  :commands (kubernetes-overview))
+
 
 (use-package ac-c-headers
   :config
@@ -561,6 +577,7 @@ Position the cursor at it's beginning, according to the current mode."
 
 (use-package keychain-environment)
 (use-package highlight-numbers)
+;; (use-package company-go)
 
 (use-package elfeed
   :config
@@ -576,6 +593,9 @@ Position the cursor at it's beginning, according to the current mode."
           ("https://golangweekly.com/rss/1b3gf1ok" go-lang-weekly)
           ("http://xkcd.com/rss.xml" xkcd)))
   (setf url-queue-timeout 30))
+
+
+(use-package go-autocomplete)
 
 (use-package go-mode
   :config
@@ -600,13 +620,12 @@ Position the cursor at it's beginning, according to the current mode."
     (local-set-key (kbd "M-.") 'godef-jump)
     (local-set-key (kbd "M-*") 'pop-tag-mark)
     (auto-complete-mode 1)
+    (ac-config-default)
     (if (not (string-match "go" compile-command))
         (set (make-local-variable 'compile-command)
              "go build -v && go test -v && go vet"))
     )
   (add-hook 'go-mode-hook 'my-go-mode-hook)
-  (with-eval-after-load 'go-mode
-    (require 'go-autocomplete))
   )
 
 (use-package go-guru
@@ -690,7 +709,30 @@ Position the cursor at it's beginning, according to the current mode."
 ;; https://github.com/baohaojun/bbyac
 (use-package bbyac)
 
-(add-hook 'after-init-hook 'global-company-mode)
+;; (use-package company
+;;   :config
+;;   (setq company-tooltip-limit 20)                      ; bigger popup window
+;;   (setq company-idle-delay .3)                         ; decrease delay before autocompletion popup shows
+;;   (setq company-echo-delay 0)                          ; remove annoying blinking
+;;   (setq company-begin-commands '(self-insert-command)) ; start autocompletion only after typing
+;;   (add-hook 'after-init-hook 'global-company-mode)
+;;   (custom-set-faces
+;;    '(company-preview
+;;      ((t (:foreground "darkgray" :underline t))))
+;;    '(company-preview-common
+;;      ((t (:inherit company-preview))))
+;;    '(company-tooltip
+;;      ((t (:background "lightgray" :foreground "black"))))
+;;    '(company-tooltip-selection
+;;      ((t (:background "steelblue" :foreground "white"))))
+;;    '(company-tooltip-common
+;;      ((((type x)) (:inherit company-tooltip :weight bold))
+;;       (t (:inherit company-tooltip))))
+;;    '(company-tooltip-common-selection
+;;      ((((type x)) (:inherit company-tooltip-selection :weight bold))
+;;       (t (:inherit company-tooltip-selection)))))
+;;   )
+
 (use-package company-restclient
   :config
   (add-to-list 'company-backends 'company-restclient))
@@ -794,7 +836,8 @@ Position the cursor at it's beginning, according to the current mode."
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; dracula theme                      ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; (load-theme 'solarized-theme t)
+;;(load-theme 'solarized-theme t)
+(use-package dracula-theme)
 
 ;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes/emacs-color-theme-solarized")
 ;; ;;(load-theme 'solarized t)
@@ -991,8 +1034,9 @@ Position the cursor at it's beginning, according to the current mode."
 
 (use-package yaml-mode
   :config
-  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode)))
-
+  (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+  (add-hook 'yaml-mode-hook 'highlight-indentation-mode)
+  )
 
 ;; sass mode
 (use-package sass-mode
@@ -1178,7 +1222,9 @@ Position the cursor at it's beginning, according to the current mode."
 ;; setting for highlighting the present line
 (use-package hl-line
   :config
-  (global-hl-line-mode 1))
+  (global-hl-line-mode 1)
+  (set-face-attribute 'hl-line nil :inherit nil :background "gray38")
+)
 
 (use-package flycheck-pos-tip
   :config
@@ -1189,9 +1235,10 @@ Position the cursor at it's beginning, according to the current mode."
       '(flycheck-display-errors-function #'flycheck-pos-tip-error-messages))))
 
 (use-package helm-proc)
+(use-package realgud)
 
 ;; MIT Scheme in Emacs
-(setq scheme-program-name "scm")
+(setq scheme-program-name "scheme")
 
 ;; rename current buffer
 (defun rename-current-buffer-file ()
@@ -1270,7 +1317,7 @@ Position the cursor at it's beginning, according to the current mode."
   ;; indent code in src tabs
   (setq org-src-tab-acts-natively t)
   (org-babel-do-load-languages
-   'org-babel-load-languages '((C . t) (python . t) (java . t) (dot . t)))
+   'org-babel-load-languages '((C . t) (python . t) (java . t) (scheme . t) (dot . t)))
 
   (define-key org-mode-map (kbd "C-#") 'radar-insert-screenshot)
 
@@ -1306,7 +1353,7 @@ Position the cursor at it's beginning, according to the current mode."
   ;; ;; C
   ;; (insert "#+begin_src C\n#include <stdio.h>\n\nint main()\n{\n\n    return 0;\n}\n#+end_src")
   ;; python
-  (insert "#+begin_src go\n\n#+end_src")
+  (insert "#+begin_src scheme\n\n#+end_src")
   )
 
 ;; revert buffer - darshanime
@@ -1354,7 +1401,7 @@ Position the cursor at it's beginning, according to the current mode."
   (prodigy-define-service
     :name "gateway - start server"
     :tags '(gateway)
-    :init (lambda () (pyvenv-workon "py2"))
+    :init (lambda () (pyvenv-workon "gate"))
     :cwd "~/zinnov/gateway/gateway"
     :command "bash"
     :args '("start.sh")
@@ -1416,20 +1463,37 @@ Position the cursor at it's beginning, according to the current mode."
  '(flycheck-checker-error-threshold 1000)
  '(flycheck-display-errors-function (function flycheck-pos-tip-error-messages))
  '(initial-buffer-choice "~/org/master.org")
- '(magit-commit-arguments (quote ("--gpg-sign=02C4AE21763B59AD")))
+ '(magit-commit-arguments nil)
  '(package-selected-packages
    (quote
-    (sql-indent free-keys neotree wgrep tldr yasnippet-snippets go-snippets git-timemachine ansible-doc ansible terraform-mode nginx-mode cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess auto-complete)))
+    (dracula-theme quack kubernetes helm-dash realgud company-go sql-indent free-keys neotree wgrep tldr yasnippet-snippets go-snippets git-timemachine ansible-doc ansible terraform-mode nginx-mode cider clojure-mode aggressive-indent-mode define-word company-restclient jq-mode flymake-google-cpplint flymake-cursor google-c-style ac-c-headers go-guru go-eldoc go-autocomplete bbyac csv-mode all-the-icons transmission no-littering ace-jump-mode 2048-game keychain-environment elfeed go-mode centered-window-mode org-journal org-download helm-swoop helm-emms emms-mode-line-cycle emms ztree yafolding workgroups2 w3m volatile-highlights use-package undo-tree smartparens smart-tab smart-shift simpleclip restclient restart-emacs recentf-ext rebox2 rainbow-mode rainbow-delimiters prodigy pointback persistent-scratch octicons nyan-mode multiple-cursors magit-gh-pulls lorem-ipsum lispy know-your-http-well info+ ibuffer-vc highlight-symbol highlight-numbers help-mode+ help-fns+ help+ helm-projectile helm-flyspell helm-descbinds golden-ratio gist flycheck-tip expand-region ereader emojify elpy duplicate-thing dockerfile-mode discover-my-major discover direx dired+ diff-hl coffee-mode clean-aindent-mode circe chess)))
  '(safe-local-variable-values (quote ((mangle-whitespace . t))))
  '(send-mail-function (quote smtpmail-send-it))
  '(smtpmail-smtp-server "smtp.googlemail.com")
  '(smtpmail-smtp-service 25))
+;; (custom-set-faces
+;;  ;; custom-set-faces was added by Custom.
+;;  ;; If you edit it by hand, you could mess it up, so be careful.
+;;  ;; Your init file should contain only one such instance.
+;;  ;; If there is more than one, they won't work right.
+;;  '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 128 :width normal :foundry "DAMA" :family "Ubuntu Mono"))))
+;;  '(company-preview ((t (:foreground "darkgray" :underline t))))
+;;  '(company-preview-common ((t (:inherit company-preview))))
+;;  '(company-tooltip ((t (:background "lightgray" :foreground "black"))))
+;;  '(company-tooltip-common ((((type x)) (:inherit company-tooltip :weight bold)) (t (:inherit company-tooltip))))
+;;  '(company-tooltip-common-selection ((((type x)) (:inherit company-tooltip-selection :weight bold)) (t (:inherit company-tooltip-selection))))
+;;  '(company-tooltip-selection ((t (:background "steelblue" :foreground "white")))))
+
+;; custom colors just for modeline, to make it more visible
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:inherit nil :stipple nil :background "White" :foreground "Black" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 128 :width normal :foundry "DAMA" :family "Ubuntu Mono")))))
+ '(mode-line ((t (:foreground "#030303" :background "#bdbdbd" :box nil))))
+ '(mode-line-inactive ((t (:foreground "#f9f9f9" :background "#666666" :box nil)))))
+
+;; make comments gray
+(set-face-foreground 'font-lock-comment-face "gray")
+;; change helm's selection line background
+;; https://emacs.stackexchange.com/questions/5772/how-to-change-helms-highlight-color
+(set-face-attribute 'helm-selection nil :background "purple")
 
 ;; including elpy
 (use-package elpy)
